@@ -1,0 +1,98 @@
+html {
+  font-size: 18px;
+}
+body {
+  background-image: url(../assets/img/background.png);
+  background-size: cover;
+  padding: 25px 50px;
+}
+h2 {
+  color: #8af2c5;
+}
+img {
+  width: 30%;
+}
+.about-candidate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: #fff;
+}
+h3 {
+  color: #fff;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+}
+p {
+  margin: 0;
+}
+.candidate-name {
+  font-size: 3rem;
+}
+.navi-panel {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.navi-panel > a > img {
+  width: 60px;
+}
+.picture-shadow {
+  box-shadow: 0 0 10px rgba(20, 19, 19, 0.5);
+}
+#language-switcher {
+  width: 30px;
+}
+.certificate-link {
+  color: rgb(189, 198, 10);
+}
+.educate-prop {
+  color: cornflowerblue;
+}
+.experience-item-blok {
+}
+.experience-item {
+  color: brown;
+}
+.experience-prop{
+  color:darkgray;
+}
+.contacts {
+  display: flex;
+  justify-content: space-around;
+}
+.social-network {
+  display: flex;
+}
+.social-network > li {
+  list-style: none;
+  margin: 10px;
+}
+.social-network > li > a > img {
+  width: 30px;
+}
+.phone {
+  display: flex;
+}
+.phone > li {
+  list-style: none;
+  padding-left: 40px;
+}
+.phone > li > img {
+  width: 30px;
+}
+
+footer {
+  width: 100%;
+}
+@media screen and (max-width: 1300px) {
+  img {
+    width: 150px;
+  }
+}
