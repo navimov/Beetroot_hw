@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  display: flex;
+  justify-content: left;
+  background-color: rgb(196, 215, 216);
+}
+div {
+  background-color: #fff;
+}
+.enter_block {
+  padding: 0 10%;
+  margin: 0 10%;
+}
+h1 {
+  margin: 5% 0;
+}
+h2 {
+  margin: 3% 0;
+}
+section {
+  padding: 0 10%;
+  margin: 0 10%;
+}
+article {
+  padding: 0 12%;
+  margin: 0 12%;
+}
+p {
+  margin: 2% 0;
+  font-size: 1.1rem;
+}
+ul {
+  margin: 0 2%;
+}
+img {
+  width: 100%;
+}
+#bowsers_icons {
+  width: fit-content;
+}
+aside > section {
+  padding: 5% 0;
+  margin: 0 3%;
+}
+aside > section > h2 {
+  color: #282360;
+}
+.aside_list {
+  list-style: none;
+}
+iframe {
+  border: none;
+}
