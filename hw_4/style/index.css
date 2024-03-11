@@ -48,7 +48,7 @@ h1 {
   font-weight: bold;
 }
 h2 {
-  font-size: 34;
+  font-size: 34px;
   font-weight: bold;
 }
 .about {
@@ -75,4 +75,48 @@ h2 {
   flex-direction: column;
   align-items: center;
   height: 50px;
+}
+.program_list li {
+  display: inline-block;
+}
+
+.skills {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 564px;
+}
+.skills_heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-items: auto;
+}
+.skills_heading > p {
+  margin-top: 20px;
+}
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+  width: 100%;
+  background-color: #f6f6f6;
+}
+
+.portfolio > h2 {
+  margin-bottom: -20px;
+}
+.portfolio_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 70px;
+}
+.portfolio_item > img {
+  margin-bottom: 40px;
 }
