@@ -131,6 +131,44 @@ h2 {
   align-items: center;
   margin-top: 70px;
 }
+.fashion_link_blok {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.fashion_link {
+  text-decoration: underline;
+}
+.program_list_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 170px;
+  height: 230px;
+}
+.program_list_item_blok {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px;
+  height: 143px;
+}
+
+.program_list_item_blok > img {
+  margin-bottom: 20px;
+}
+
+.program_list_item_caption {
+  font-size: 14px;
+  color: #828282;
+}
+.program_list_item_stars {
+  display: flex;
+  margin-top: 60px;
+}
+
 .portfolio_item > img {
   margin-bottom: 40px;
 }
