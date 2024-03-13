@@ -1,0 +1,32 @@
+body {
+  background-color: rgb(10, 16, 24);
+}
+#register_form {
+  width: 350px;
+  margin: 50px 50px;
+  background-color: #6fc8c0;
+}
+.form_item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+  height: 25px;
+}
+.form_item_textarea {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+}
+.form_item_agree {
+  display: flex;
+  justify-content: left;
+  padding-bottom: 10px;
+}
+.form_item_buttons {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+button {
+  margin-left: 30px;
+}

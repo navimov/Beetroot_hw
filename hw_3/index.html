@@ -7,47 +7,7 @@
     <title>Homework 3</title>
   </head>
   <body>
-    <dialog id="modal">
-      <h2>Welcome to registration form</h2>
-      <form id="register_form">
-        <label for="fullname">Full name</label>
-        <input type="text" id="fullname" name="fullname" maxlength="50" />
-
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" />
-
-        <label for="password">password</label>
-        <input type="password" id="password" name="password" />
-
-        <label for="confirmpass">Confirm password</label>
-        <input type="password" id="confirmpass" name="confirmpass" />
-
-        <label for="sex">Sex</label>
-        <div id="sex">
-          <input type="radio" id="sexMan" name="sex" />
-          <label for="sexMan">Man</label>
-          <input type="radio" id="sexWoman" name="sex" />
-          <label for="sexWoman">Woman</label>
-        </div>
-
-        <label for="age">Age</label>
-        <input type="number" id="age" name="age" />
-
-        <label for="course">Course</label>
-        <select id="course" name="course">
-          <option disabled selected>-=Choose a course=-</option>
-          <option value="FE">Front End</option>
-          <option value="Java">Java</option>
-          <option value="DevOps">DevOps</option>
-        </select>
-
-        <input type="reset" value="Reset the form" />
-        <input type="submit" value="submit" />
-      </form>
-      <form method="dialog">
-        <button>Close</button>
-      </form>
-    </dialog>
+   
     <header>
       <nav class="header_nav">
         <button class="modal_button" onclick="modal.show()">Sign In</button>
