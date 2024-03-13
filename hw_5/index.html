@@ -8,81 +8,95 @@
   </head>
   <body>
     <form id="register_form">
-      <div class="form_item">
-        <label for="fullname">Full name</label>
-        <input
-          type="text"
-          id="fullname"
-          name="fullname"
-          placeholder="full name"
-          maxlength="50"
-          required
-        />
-      </div>
-      <div class="form_item">
-        <label for="email">Email</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Email"
-          required
-        />
-      </div>
-      <div class="form_item">
-        <label for="password">password</label>
-        <input
-          type="password"
-          id="password"
-          name="password"
-          placeholder="password"
-          required
-        />
-      </div>
-      <div class="form_item">
-        <label for="confirmpass">Confirm password</label>
-        <input
-          type="password"
-          id="confirmpass"
-          name="confirmpass"
-          placeholder="confirm password"
-          required
-        />
-      </div>
-      <div class="form_item">
-        <label for="sex">Sex</label>
-        <div>
-          <input type="radio" id="sexMan" name="sex" checked />
-          <label for="sexMan">Man</label>
-          <input type="radio" id="sexWoman" name="sex" />
-          <label for="sexWoman">Woman</label>
+      <div class="main_input_lf">
+        <div class="labels">
+          <label for="fullname">Full name</label>
+          <label for="email">Email</label>
+          <label for="password">password</label>
+          <label for="confirmpass">Confirm password</label>
+          <label for="sex">Sex</label>
+          <label for="age">Age</label>
+          <label for="course">Course</label>
+          <label for="adress" id="fullAdress_label">Full adress</label>
+        </div>
+        <div class="input_fields">
+          <div class="form_item">
+            <input
+              type="text"
+              id="fullname"
+              name="fullname"
+              placeholder="full name"
+              maxlength="50"
+              required
+            />
+          </div>
+          <div class="form_item">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div class="form_item">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="password"
+              required
+            />
+          </div>
+          <div class="form_item">
+            <input
+              type="password"
+              id="confirmpass"
+              name="confirmpass"
+              placeholder="confirm password"
+              required
+            />
+          </div>
+          <div class="form_item">
+            <div>
+              <input type="radio" id="sexMan" name="sex" checked />
+              <label for="sexMan">Man</label>
+              <input type="radio" id="sexWoman" name="sex" />
+              <label for="sexWoman">Woman</label>
+            </div>
+          </div>
+          <div class="form_item">
+            <input
+              id="user_age"
+              type="number"
+              id="age"
+              name="age"
+              maxlength="3"
+              placeholder="age"
+              required
+            />
+          </div>
+          <div class="form_item">
+            <select id="course" name="course" required>
+              <option disabled selected>-=Choose a course=-</option>
+              <option value="FE">Front End</option>
+              <option value="Java">Java</option>
+              <option value="DevOps">DevOps</option>
+            </select>
+          </div>
+          <div class="form_item_textarea">
+            <textarea
+              name="adress"
+              id="adress"
+              cols="30"
+              rows="5"
+              placeholder="country, region, city/village, street"
+              required
+            ></textarea>
+          </div>
         </div>
       </div>
-      <div class="form_item">
-        <label for="age">Age</label>
-        <input type="number" id="age" name="age" placeholder="age" required />
-      </div>
-      <div class="form_item">
-        <label for="course">Course</label>
-        <select id="course" name="course" required>
-          <option disabled selected>-=Choose a course=-</option>
-          <option value="FE">Front End</option>
-          <option value="Java">Java</option>
-          <option value="DevOps">DevOps</option>
-        </select>
-      </div>
-      <div class="form_item_textarea">
-        <label for="adress">Full adress</label>
-        <textarea
-          name="adress"
-          id="adress"
-          cols="30"
-          rows="5"
-          placeholder="country, region, city/village, street"
-          required
-        ></textarea>
-      </div>
-      <div class="form_item_agree">
+      <div id="agreement_blok">
         <input type="checkbox" id="agreement" name="agreement" required />
         <label for="agreement"
           >I agree to the processing to my personal data</label
