@@ -1,11 +1,11 @@
 body {
-  background-color: rgb(10, 16, 24);
+  background-color: rgb(231, 235, 241);
 }
 #register_form {
   width: 450px;
   margin: 50px 50px;
   padding-top: 20px;
-  background-color: #6fc8c0;
+  background-color: #dde2e2;
 }
 
 #register_form > div {
@@ -44,11 +44,9 @@ body {
   padding-bottom: 30px;
 }
 #reset_button {
-  border-radius: 10px;
   height: 25px;
 }
 button {
   margin-left: 30px;
-  border-radius: 10px;
   height: 25px;
 }
