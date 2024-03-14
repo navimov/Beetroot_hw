@@ -140,6 +140,8 @@ h2 {
 }
 .fashion_link {
   text-decoration: underline;
+  width: 200px;
+  text-align: center;
 }
 .program_list_item {
   display: flex;
