@@ -1,18 +1,14 @@
-@font-face {
-  font-family: "Open SansB";
-  src: url("../fonts/open-sans/static/OpenSans-Bold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Open SansR";
-  src: url("../fonts/open-sans/static/OpenSans-Regular.ttf") format("truetype");
-}
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 body {
-  font-family: "Open SansR";
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 18px;
 }
 main {
   display: flex;
@@ -26,6 +22,7 @@ header {
 }
 .primary_nav {
   margin: 25px auto;
+  padding: 6px 0;
   width: 496px;
   height: 30px;
 }
@@ -34,12 +31,15 @@ header {
   display: flex;
   justify-content: space-between;
 }
+.main_nav > li > a {
+  font-size: 18px;
+}
 a {
   text-decoration: none;
   color: #828282;
 }
 .active_page {
-  font-family: "Open SansB";
+  font-family: "Open Sans";
   color: #070707;
 }
 hr {
@@ -55,13 +55,14 @@ hr {
   height: 497px;
 }
 h1 {
+  font-family: "Open Sans";
+  font-weight: 700;
   margin-top: 0;
-  font-family: "Open SansB";
+  padding-top: 5px;
   font-size: 48px;
-  font-weight: bold;
 }
 h2 {
-  font-family: "Open SansB";
+  font-family: "open Sans";
   font-size: 34px;
   font-weight: bold;
 }
@@ -73,7 +74,7 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 100px 0;
+  padding: 85px 0;
 }
 .about_info {
   display: flex;
@@ -89,7 +90,13 @@ h2 {
   flex-direction: column;
   align-items: center;
   height: 50px;
+  margin-bottom: -9px;
 }
+
+.about_info > * {
+  align-items: center;
+}
+
 .program_list li {
   display: inline-block;
 }
@@ -107,10 +114,14 @@ h2 {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  align-items: auto;
 }
 .skills_heading > p {
   margin-top: 20px;
+}
+.program_list {
+  display: flex;
+  justify-content: space-between;
+  width: 1050px;
 }
 .portfolio {
   display: flex;
@@ -129,7 +140,7 @@ h2 {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-top: 70px;
+  margin-top: 73px;
 }
 .fashion_link_blok {
   width: 200px;
@@ -140,13 +151,14 @@ h2 {
 }
 .fashion_link {
   text-decoration: underline;
-  width: 200px;
+  width: 260px;
   text-align: center;
 }
 .program_list_item {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 40px;
   width: 170px;
   height: 230px;
 }
@@ -168,15 +180,22 @@ h2 {
 }
 .program_list_item_stars {
   display: flex;
+
   margin-top: 60px;
+}
+.program_list_item_stars > img {
+  width: 26px;
+  margin-left: 4px;
+  margin-right: 4px;
+  height: 26px;
 }
 
 .portfolio_item > img {
-  margin-bottom: 40px;
+  margin-bottom: 41px;
 }
 .contacts {
   margin-bottom: 100px;
-  margin-top: 70px;
+  margin-top: 100px;
   height: 400px;
   display: flex;
   justify-content: space-between;
@@ -184,6 +203,7 @@ h2 {
   align-items: center;
 }
 .contacts_header {
+  padding-top: 6px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -195,6 +215,11 @@ h2 {
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
+}
+.contacts_text_item_connect {
+  font-size: 18px;
+  color: #828282;
+  text-align: center;
 }
 .contacts_text_item > p {
   font-size: 14px;
@@ -208,6 +233,9 @@ h2 {
   font-weight: bold;
   border-radius: 22px;
   background-color: #070707;
+}
+.button:hover{
+  cursor: pointer;
 }
 .social_list {
   list-style: none;
