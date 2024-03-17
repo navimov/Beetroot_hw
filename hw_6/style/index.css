@@ -1,0 +1,100 @@
+html {
+  font-family: "Roboto", "sans serif";
+  font-weight: 400;
+  box-sizing: border-box;
+  border: 15px solid white;
+}
+
+header {
+  background-color: #4a4f56;
+  color: #ff8984;
+  padding: 19px 0 12px 0;
+}
+header > div {
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  padding-bottom: 2px;
+}
+p {
+  padding-top: 2px;
+  font-size: 16px;
+  line-height: 19px;
+}
+main {
+  background-color: #3b3f45;
+  height: 100vh;
+}
+
+.container {
+  max-width: 534px;
+  margin: 0 auto;
+}
+.product_list {
+  padding: 20px 0 45px 0;
+}
+.product_item {
+  background-color: #88839e;
+  color: white;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 11px 0 13px 0;
+}
+.product_item small {
+  font-size: 11px;
+  line-height: 13px;
+  vertical-align: middle;
+}
+button[type="submit"] {
+  background-color: #4a4f56;
+  color: #ff8984;
+  font-size: 18px;
+  width: 100%;
+  padding: 12px 0;
+  border: none;
+}
+.product_item:nth-child(even) {
+  background-color: #7a7593;
+}
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"] + label::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 19px;
+  height: 19px;
+  margin: 0 16px 0 12px;
+  background-color: white;
+}
+input[type="checkbox"]:checked + label::before {
+  content: "";
+  background-image: url(../style/icon/check.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+}
+small:before {
+  content: "(";
+}
+small:after {
+  content: ")";
+}
+
+.product_item:hover {
+  background-color: #625e77;
+  border-bottom: 3px solid white;
+  border-top: 3px solid white;
+}
+.product_item:active {
+  background-color: #ff8984;
+  opacity: 0.7;
+}
