@@ -35,6 +35,13 @@ header {
   display: flex;
   justify-content: space-between;
 }
+.main_nav > li:hover {
+  text-shadow: 1px 1px 1px #000;
+}
+.main_nav > li {
+  text-shadow: 1px 1px 1px #fff;
+}
+
 .main_nav > li > a {
   font-size: 18px;
 }
@@ -250,6 +257,9 @@ h2 {
 .social_network_icon {
   width: 40px;
   height: 40px;
+}
+.social_network_icon:hover {
+  opacity: 0.5;
 }
 .contact_icons {
   display: flex;
