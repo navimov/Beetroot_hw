@@ -245,6 +245,7 @@ h2 {
 }
 .button:hover {
   cursor: pointer;
+  background-color: rgb(74, 70, 66);
 }
 .social_list {
   list-style: none;
