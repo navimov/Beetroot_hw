@@ -3,28 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="style/index.css" />
     <title>Productly</title>
   </head>
   <body>
     <header class="header">
       <div class="header_nav_container">
         <div class="header_nav_item_blok">
-          <a href="#">
+          <a href="#" class="logo_link">
             <img src="style/ico/Group 31.svg" alt="product logo" />
             <img src="style/ico/Productly.png" alt="productly caption logo" />
           </a>
         </div>
-        <div class="header_nav_item_blok">
+        <div class="header_menu_item_blok">
           <ul class="header_menu">
-            <li class="header_menu_item"><a href="#">Product</a></li>
+            <li class="header_menu_item">
+              <a id="main_menu_item" href="#">Product</a>
+            </li>
             <li class="header_menu_item"><a href="#">Customers</a></li>
             <li class="header_menu_item"><a href="#">Pricing</a></li>
             <li class="header_menu_item"><a href="#">Resources</a></li>
           </ul>
         </div>
-        <div class="header_nav_item_blok">
-          <button>Sign In</button>
-          <button>Sign Up</button>
+        <div class="header_nav_button_blok">
+          <button class="header_button">Sign In</button>
+          <button class="header_button">Sign Up</button>
         </div>
       </div>
     </header>
@@ -34,13 +38,19 @@
           <div><h1>The Design Thinking superpowers</h1></div>
           <div>
             <p class="hero_text_item">
-              Tools, tutorials, design and innovation experts, all in one place!
-              The most intuitive way to imagine your next user experience.
+              Tools, tutorials, design and innovation experts, all in one <br />
+              place! The most intuitive way to imagine your next user <br />
+              experience.
             </p>
           </div>
           <button class="button">Get Started</button>
         </div>
-        <div class="hero_img"></div>
+        <div class="hero_img">
+          <img
+            src="image/hero_image.png"
+            alt="Three people smile on a purple oval background"
+          />
+        </div>
       </section>
     </main>
   </body>
