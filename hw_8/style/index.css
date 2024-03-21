@@ -1,6 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 .body {
   box-sizing: border-box;
+  font-size: 18px;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -63,4 +64,111 @@
 }
 .button__header-margin {
   margin: 19px 136px 19px 246px;
+}
+
+.content {
+  width: 100%;
+  height: 833px;
+  background-color: #f6f6f6;
+  padding: 150px 135px;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1170px;
+  height: 533px;
+}
+.title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 570px;
+  height: 140px;
+}
+.title__header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 368px;
+  height: 58px;
+}
+.title__header-text {
+  font-size: 40px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  letter-spacing: 13%;
+}
+.divider {
+  width: 45px;
+  height: 4px;
+  background-color: #dddbdb;
+}
+.divider__margin-top {
+  margin-top: 20px;
+}
+.title__sub-title {
+  width: 570;
+  height: 42px;
+}
+.title__sub-title_margin-top {
+  margin-top: 40px;
+}
+.title__sub-title-text {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  font-weight: 700;
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  height: 333px;
+  background-color: #f6f6f6;
+}
+.cards__margin {
+  margin-top: 60px;
+}
+.cards__photo {
+  width: 270px;
+  height: 270px;
+}
+.cards__name {
+  width: 170px;
+  height: 43px;
+}
+.cards__person-name {
+  font-weight: 700;
+  font-size: 19px;
+  height: 21px;
+}
+.cards__name_margin {
+  margin-top: 21px;
+}
+.cards__person-position {
+  font-size: 19px;
+  font-weight: 400;
+  height: 22px;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 1440px;
+  height: 260px;
+}
+.footer__padding {
+  padding: 40px 0;
+}
+.footer__social-networks {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  height: 42px;
+}
+.footer__social-network_item {
+  text-decoration: none;
 }
