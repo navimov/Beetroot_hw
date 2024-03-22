@@ -162,7 +162,7 @@ h1 {
   text-align: start;
 }
 .feature__button_margin {
-  margin-top: 70px;
+  margin-top: 70px 0 74px;
 }
 .footer {
   width: 1200px;
@@ -177,6 +177,10 @@ h1 {
 }
 .footer__item {
   display: inline-block;
+  vertical-align: top;
+}
+.footer__item_margin-left {
+  margin-left: 125px;
 }
 .footer__item_width {
   width: 135px;
@@ -194,6 +198,10 @@ h1 {
   width: 280px;
   height: 57px;
 }
+.footer__item_entry-form_margin {
+  margin-right: 60px;
+  margin-bottom: 25px;
+}
 .footer__item_list {
   width: fit-content;
   height: fit-content;
@@ -204,4 +212,22 @@ h1 {
 }
 .footer__list-item_margin-bottom {
   margin-bottom: 15px;
+}
+.entry__text {
+  width: 340px;
+  height: 50px;
+  border: 1px solid gray;
+}
+.entry__text-margin {
+  margin: 25px 0;
+}
+.footer__button-size {
+  width: 180px;
+  height: 50px;
+}
+.input {
+  border: none;
+}
+.input__margin {
+  margin: 15px 0 15px 10px;
 }
