@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 
 body {
+  background-color: rgba(255, 229, 210, 0.1);
   font-family: "Montserrat";
   font-weight: 400;
   margin: 0;
@@ -13,76 +14,58 @@ body {
   height: 80px;
   width: 1440px;
 }
-.header_nav_container {
+.header-container {
   position: absolute;
   width: 1200px;
   margin: 0 120px;
   margin: 17px 120px;
 }
-.header_nav_container .header_button:last-child {
-  background-color: #ff9900;
+.button {
+  border: none;
+}
+.button-header {
   width: 110px;
   height: 46px;
-  border: none;
+}
+.button__yellow-style {
+  background-color: #ff9900;
   color: #fff;
 }
-.header_nav_container .header_button:first-child {
+.button__white-style {
   background-color: #fff;
-  width: 110px;
-  height: 46px;
-  border: none;
   color: #2f281e;
+  text-align: start;
+  font-size: 18px;
 }
-.header_menu_item_blok {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+.header__menu {
+  position: relative;
+  left: 170px;
   display: inline-block;
 }
-.header_nav_item_blok {
-  display: inline-block;
-}
-.header_menu_item a {
+.header__item a {
   color: #2f281e;
   line-height: 28px;
   text-decoration: none;
 }
-.header_menu_item {
+.header__item {
   display: inline-block;
-  margin-left: 15px;
+  margin-left: 12px;
 }
-.logo_link img:first-child {
-  width: 33px;
-  font-size: 16px;
-  height: 30px;
+.logo {
+  display: inline-block;
+  width: 200px;
+  height: 32px;
 }
-.logo_link img:nth-child(2) {
-  width: 154px;
-  height: 30px;
-  margin-left: 4px;
-}
-.header_nav_item_blok {
-  width: 252px;
-  height: 46px;
-}
-.button {
-  border: none;
-  width: 110px;
-  padding: 0;
+.button__hero {
   width: 180px;
   height: 50px;
-  background-color: #ff9900;
   font-size: 16px;
-  color: #fff;
 }
 
 #main_menu_item {
   color: #ff9900;
 }
-.header_menu {
-  align-items: center;
-}
-.header_nav_button_blok {
+.header-button-blok {
   position: absolute;
   display: inline-block;
   right: -25px;
@@ -94,9 +77,9 @@ body {
   position: relative;
   width: 1200px;
   margin-top: 87px;
-  padding: 0 104px 98px 120px;
+  padding: 0 104px 74px 120px;
 }
-.hero_text_blok {
+.hero__text {
   position: absolute;
   margin: 75px 0 98px;
   width: 500px;
@@ -107,13 +90,118 @@ h1 {
   font-weight: bold;
   line-height: 54px;
 }
-.hero_text_item {
+.hero__subtext {
   margin-top: 30px;
   margin-bottom: 31px;
   line-height: 28px;
 }
-.hero_img {
-  left: 676px;
-  top: -25px;
-  position: absolute;
+.hero__picture {
+  display: inline-block;
+  position: relative;
+  left: 556px;
+  top: -24px;
+}
+.features {
+  width: 1440px;
+  text-align: center;
+  height: 510px;
+}
+.title__blok {
+  display: inline-block;
+  width: 539px;
+  height: 88px;
+}
+.title {
+  display: inline-block;
+  font-family: "Montserrat";
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  font-weight: 700;
+}
+.features__button {
+  width: 180px;
+  height: 50px;
+  font-size: 16px;
+}
+.cards {
+  display: inline-block;
+  width: 1200px;
+  height: 178px;
+}
+.cards__margin {
+  margin: 50px 0 70px;
+}
+.card__text {
+  text-align: start;
+  width: 200px;
+  height: 27px;
+  font-size: 22px;
+  font-weight: 550;
+}
+.card__text_margin {
+  margin: 30px 0 16px;
+}
+.card__item {
+  display: inline-block;
+  width: 270px;
+  height: fit-content;
+}
+.card__item:not(:last-of-type) {
+  margin-right: 30px;
+}
+.card__img {
+  display: block;
+  align-items: start;
+  width: 51px;
+  height: 50px;
+}
+.card__sub-text {
+  font-size: 16px;
+  line-height: 26px;
+  text-align: start;
+}
+.feature__button_margin {
+  margin-top: 70px;
+}
+.footer {
+  width: 1200px;
+  height: 209px;
+}
+.footer__margin {
+  margin: 70px 120px;
+}
+.footer__wrapper {
+  width: 100%;
+  height: 100%;
+}
+.footer__item {
+  display: inline-block;
+}
+.footer__item_width {
+  width: 135px;
+  height: 100%;
+}
+.footer__item_title {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 30px;
+}
+.footer__item_title-margin {
+  margin-bottom: 30px;
+}
+.footer__item_title-size {
+  width: 280px;
+  height: 57px;
+}
+.footer__item_list {
+  width: fit-content;
+  height: fit-content;
+}
+.footer__item_list-item {
+  font-size: 16px;
+  line-height: 26px;
+}
+.footer__list-item_margin-bottom {
+  margin-bottom: 15px;
 }

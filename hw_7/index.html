@@ -9,49 +9,173 @@
   </head>
   <body>
     <header class="header">
-      <div class="header_nav_container">
-        <div class="header_nav_item_blok">
-          <a href="#" class="logo_link">
-            <img src="style/ico/Group 31.svg" alt="product logo" />
-            <img src="style/ico/Productly.png" alt="productly caption logo" />
-          </a>
-        </div>
-        <div class="header_menu_item_blok">
-          <ul class="header_menu">
-            <li class="header_menu_item">
+      <div class="header-container">
+        <a href="#" class="logo">
+          <img src="style/ico/Logo.png" alt="productly caption logo" />
+        </a>
+        <div class="header__menu">
+          <ul class="header__list">
+            <li class="header__item">
               <a id="main_menu_item" href="#">Product</a>
             </li>
-            <li class="header_menu_item"><a href="#">Customers</a></li>
-            <li class="header_menu_item"><a href="#">Pricing</a></li>
-            <li class="header_menu_item"><a href="#">Resources</a></li>
+            <li class="header__item"><a href="#">Customers</a></li>
+            <li class="header__item"><a href="#">Pricing</a></li>
+            <li class="header__item"><a href="#">Resources</a></li>
           </ul>
         </div>
-        <div class="header_nav_button_blok">
-          <button class="header_button">Sign In</button>
-          <button class="header_button">Sign Up</button>
+        <div class="header-button-blok">
+          <button class="button button-header button__white-style">
+            Sign In
+          </button>
+          <button class="button button-header button__yellow-style">
+            Sign Up
+          </button>
         </div>
       </div>
     </header>
     <main>
       <section class="hero">
-        <div class="hero_text_blok">
-          <div><h1>The Design Thinking superpowers</h1></div>
-          <div>
-            <p class="hero_text_item">
-              Tools, tutorials, design and innovation experts, all in one <br />
-              place! The most intuitive way to imagine your next user <br />
-              experience.
-            </p>
-          </div>
-          <button class="button">Get Started</button>
+        <div class="hero__text">
+          <h1>The Design Thinking superpowers</h1>
+          <p class="hero__subtext">
+            Tools, tutorials, design and innovation experts, all in one <br />
+            place! The most intuitive way to imagine your next user <br />
+            experience.
+          </p>
+          <button class="button button__yellow-style button__hero">
+            Get Started
+          </button>
         </div>
-        <div class="hero_img">
+        <div class="hero__img-blok">
           <img
+            class="hero__picture"
             src="image/hero_image.png"
             alt="Three people smile on a purple oval background"
           />
         </div>
       </section>
+      <section class="features">
+        <h1 class="title">
+          We design tools to unveil<br />
+          your superpowers
+        </h1>
+        <div class="cards cards__margin">
+          <div class="card__item">
+            <img
+              class="card__img"
+              src="style/ico/first-click-test.svg"
+              alt="purple square with white arrow inside"
+            />
+            <div class="card__title">
+              <p class="card__text card__text_margin">First click tests</p>
+              <p class="card__sub-text">
+                While most people enjoy casino gambling,
+              </p>
+            </div>
+          </div>
+          <div class="card__item">
+            <img
+              class="card__img"
+              src="style/ico/design-surveys.svg"
+              alt="orange square with white figure tube inside "
+            />
+            <div class="card__title">
+              <p class="card__text card__text_margin">Design surveys</p>
+              <p class="card__sub-text">
+                Sports betting, lottery and bingo playing for the fun
+              </p>
+            </div>
+          </div>
+          <div class="card__item">
+            <img
+              class="card__img"
+              src="style/ico/preference.svg"
+              alt="pink square with white heard inside"
+            />
+            <div class="card__title">
+              <p class="card__text card__text_margin">Preference tests</p>
+              <p class="card__sub-text">
+                The Myspace page defines the individual.
+              </p>
+            </div>
+          </div>
+          <div class="card__item">
+            <img
+              class="card__img"
+              src="style/ico/five-sexonds-test.svg"
+              alt="blue square with sand clock inside"
+            />
+            <div class="card__title">
+              <p class="card__text card__text_margin">Five second tests</p>
+              <p class="card__sub-text">
+                Personal choices and the overall personality of the person.
+              </p>
+            </div>
+          </div>
+        </div>
+        <br />
+        <button
+          class="button features__button button__yellow-style .feature__button_margin"
+        >
+          Sign up Now
+        </button>
+      </section>
     </main>
+    <footer class="footer footer__margin">
+      <section class="footer__wrapper">
+        <div class="footer__item">
+          <img
+            src="style/ico/Logo.png"
+            alt="colourful square and word productly"
+          />
+        </div>
+        <div class="footer__item footer__item_width">
+          <p class="footer__item_title footer__item_title-margin">
+            Quick Links
+          </p>
+          <div class="footer__item_list">
+            <p class="footer__item_list-item footer__list-item_margin-bottom">
+              About Us
+            </p>
+            <p class="footer__item_list-item footer__list-item_margin-bottom">
+              Blog
+            </p>
+            <p class="footer__item_list-item footer__list-item_margin-bottom">
+              Contact
+            </p>
+            <p class="footer__item_list-item">FAQ</p>
+          </div>
+        </div>
+        <div class="footer__item footer__item_width">
+          <p class="footer__item_title footer__item_title-margin">
+            Legal Staff
+          </p>
+          <div class="footer__item_list">
+            <p class="footer__item_list-item footer__list-item_margin-bottom">
+              Disclaimer
+            </p>
+            <p class="footer__item_list-item footer__list-item_margin-bottom">
+              Financing
+            </p>
+            <p class="footer__item_list-item footer__list-item_margin-bottom">
+              Privacy Policy
+            </p>
+            <p class="footer__item_list-item">Terms of Service</p>
+          </div>
+        </div>
+        <div class="footer__item">
+          <p
+            class="footer__item_title footer__item_title-margin footer__item_title-size"
+          >
+            Knowing you're alway on the best energy deal
+          </p>
+          <div class="footer__item_list">
+            <p class="footer__item_list-item footer__list-item_margin-bottom">
+              Disclaimer
+            </p>
+          </div>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>
