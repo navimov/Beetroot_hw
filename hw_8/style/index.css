@@ -180,6 +180,7 @@
 }
 .cards__social-item {
   text-decoration: none;
+  transition: filter 0.3s;
 }
 .footer {
   display: flex;

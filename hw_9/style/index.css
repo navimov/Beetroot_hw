@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Delius+Unicase&display=swap");
+/*.delius-unicase-regular {
+  font-family: "Delius Unicase", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+*/
+@import url("https://fonts.googleapis.com/css2?family=Delius+Unicase&family=Roboto:wght@400;500&display=swap");
+/*.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}*/
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+.heading {
+  font-family: "Delius Unicase", cursive;
+  font-weight: 400;
+  font-size: 36px;
+  letter-spacing: 5%;
+  text-align: center;
+}
+.section__text_author {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+.section__text_date {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+.section {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 1170px;
+  margin: 0 auto;
+  grid-template-areas: "first second second" "third third fourth" "fivth six six";
+}
+.section__element:nth-child(1) {
+  grid-area: first;
+}
+.section__element:nth-child(2) {
+  grid-area: second;
+}
+.section__element:nth-child(3) {
+  grid-area: third;
+}
+.section__element:nth-child(4) {
+  grid-area: fourth;
+}
+.section__element:nth-child(5) {
+  grid-area: fivth;
+}
+.section__element:nth-child(6) {
+  grid-area: six;
+}
