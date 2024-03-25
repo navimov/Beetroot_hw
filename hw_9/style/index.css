@@ -26,8 +26,9 @@ body {
   font-family: "Delius Unicase", cursive;
   font-weight: 400;
   font-size: 36px;
-  letter-spacing: 5%;
+  letter-spacing: 2px;
   text-align: center;
+  margin-bottom: 80px;
 }
 .section__text_author {
   font-family: "Roboto", sans-serif;
@@ -37,7 +38,10 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
-.section {
+.blok__wrapper_item-margin {
+  margin: 120px 135px;
+}
+.section1 {
   display: grid;
   grid-gap: 30px;
   grid-template-columns: 1fr 1fr 1fr;
@@ -46,21 +50,188 @@ body {
   margin: 0 auto;
   grid-template-areas: "first second second" "third third fourth" "fivth six six";
 }
-.section__element:nth-child(1) {
+.section1__element {
+  position: relative;
+}
+.section2__element {
+  position: relative;
+}
+.section3__element {
+  position: relative;
+}
+.section__img {
+  border-radius: 20px;
+  background: linear-gradient(
+    360deg,
+    #241f24 0%,
+    rgba(91, 91, 91, 0.447552) 34.11%,
+    rgba(187, 186, 192, 0.26) 62.5%
+  );
+}
+.section__text {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  height: 100%;
+  padding: 20px;
+}
+.section__icon {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  height: 80px;
+  padding: 20px;
+  opacity: 0;
+  z-index: 10;
+}
+.section1__element:nth-child(1) {
   grid-area: first;
 }
-.section__element:nth-child(2) {
+.section1__element:nth-child(2) {
   grid-area: second;
 }
-.section__element:nth-child(3) {
+.section1__element:nth-child(3) {
   grid-area: third;
 }
-.section__element:nth-child(4) {
+.section1__element:nth-child(4) {
   grid-area: fourth;
 }
-.section__element:nth-child(5) {
+.section1__element:nth-child(5) {
   grid-area: fivth;
 }
-.section__element:nth-child(6) {
+.section1__element:nth-child(6) {
   grid-area: six;
+}
+.section2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 30px;
+  width: 1170px;
+  height: 100%;
+  margin: 0 auto;
+  grid-template-areas: "first second second" "third third fourth" "third third fourth" "fivth fivth six";
+}
+.section2__element:nth-child(1) {
+  grid-area: first;
+}
+.section2__element:nth-child(2) {
+  grid-area: second;
+}
+.section2__element:nth-child(3) {
+  grid-area: third;
+}
+.section2__element:nth-child(4) {
+  grid-area: fourth;
+}
+.section2__element:nth-child(5) {
+  grid-area: fivth;
+}
+.section2__element:nth-child(6) {
+  grid-area: six;
+}
+
+.section3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 30px;
+  width: 1170px;
+  height: 100%;
+  margin: 0 auto;
+  grid-template-areas:
+    "s3first s3second s3third"
+    "s3fourth s3second s3fivth"
+    "s3six s3seven s3fivth"
+    "s3six s3eight s3eight"
+    "s3nine s3nine s3ten";
+}
+.section3__element:nth-child(1) {
+  grid-area: s3first;
+}
+.section3__element:nth-child(2) {
+  grid-area: s3second;
+}
+.section3__element:nth-child(3) {
+  grid-area: s3third;
+}
+.section3__element:nth-child(4) {
+  grid-area: s3fourth;
+}
+.section3__element:nth-child(5) {
+  grid-area: s3fivth;
+}
+.section3__element:nth-child(6) {
+  grid-area: s3six;
+}
+.section3__element:nth-child(7) {
+  grid-area: s3seven;
+}
+.section3__element:nth-child(8) {
+  grid-area: s3eight;
+}
+.section3__element:nth-child(9) {
+  grid-area: s3nine;
+}
+.section3__element:nth-child(10) {
+  grid-area: s3ten;
+}
+.section3__element:hover {
+  cursor: pointer;
+}
+.section2__element:hover {
+  cursor: pointer;
+}
+.section1__element:hover {
+  cursor: pointer;
+  .section__icon {
+    opacity: 1;
+  }
+  .section__img_overlay {
+    background-color: rgba(36, 31, 36, 0);
+  }
+}
+.section2__element:hover {
+  cursor: pointer;
+  .section__icon {
+    opacity: 1;
+  }
+  .section__img_overlay {
+    background-color: rgba(36, 31, 36, 0);
+  }
+}
+.section3__element:hover {
+  cursor: pointer;
+  .section__icon {
+    opacity: 1;
+  }
+  .section__img_overlay {
+    background-color: rgba(36, 31, 36, 0);
+  }
+}
+.section__img_overlay {
+  position: absolute;
+  border-radius: 20px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(36, 31, 36, 0.5);
+}
+.section__icon > img {
+  background-color: rgba(224, 224, 224, 50%);
+  border-radius: 8px;
+}
+
+.section__icon > img:hover {
+  background-color: rgba(224, 224, 224, 100%);
 }
