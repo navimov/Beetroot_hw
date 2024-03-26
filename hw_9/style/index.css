@@ -43,6 +43,13 @@ body {
 }
 .section3__element {
   position: relative;
+  overflow: hidden;
+}
+.section1__element:hover {
+  border-radius: 20px;
+  .section__img {
+    scale: 1.2;
+  }
 }
 .section__img {
   border-radius: 20px;
@@ -187,7 +194,6 @@ body {
 }
 .section2__element:hover {
   cursor: pointer;
-  scale: 1.2;
   .section__icon {
     opacity: 1;
   }
