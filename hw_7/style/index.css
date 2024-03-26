@@ -105,6 +105,9 @@ h1 {
   width: 1440px;
   text-align: center;
   height: 510px;
+  background-image: url(../image/bg.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
 }
 
 .title__blok {

@@ -35,9 +35,11 @@ body {
 }
 .section1__element {
   position: relative;
+  overflow: hidden;
 }
 .section2__element {
   position: relative;
+  overflow: hidden;
 }
 .section3__element {
   position: relative;
@@ -185,6 +187,7 @@ body {
 }
 .section2__element:hover {
   cursor: pointer;
+  scale: 1.2;
   .section__icon {
     opacity: 1;
   }
