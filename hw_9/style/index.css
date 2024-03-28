@@ -51,6 +51,18 @@ body {
     scale: 1.2;
   }
 }
+.section3__element:hover {
+  border-radius: 20px;
+  .section__img {
+    scale: 1.2;
+  }
+}
+.section2__element:hover {
+  border-radius: 20px;
+  .section__img {
+    scale: 1.2;
+  }
+}
 .section__img {
   border-radius: 20px;
   background: linear-gradient(
