@@ -32,6 +32,9 @@
 .nav__link {
   text-decoration: none;
 }
+.nav__link:hover {
+  color: rgba(24, 181, 220, 1);
+}
 .nav__link_font {
   font-family: "Lato", sans-serif;
   font-size: 20px;
@@ -56,6 +59,11 @@
   height: 42px;
   font-family: "Lato", sans-serif;
   font-weight: 400;
+}
+.button:hover {
+  background-color: #18b5dc;
+  border: none;
+  color: #fff;
 }
 .button__header-margin {
   margin: 19px 136px 19px 246px;
@@ -202,3 +210,67 @@
 .footer__social-network_item {
   text-decoration: none;
 }
+.facebook-ico {
+  max-width: 100%;
+  background-size: 100%;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqAQMAAAD/DVsYAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAA1JREFUeNpjYBgFhAEAASYAARfcVj8AAAAASUVORK5CYII=");
+  background-position: 0 0%;
+  background-size: 100%;
+}
+/*
+.facebook-blue,
+.facebook,
+.instagram-blue,
+.instagram,
+.linkedin-blue,
+.linkedin,
+.telegram-blue,
+.telegram,
+.twitter-blue,
+.twitter {
+  max-width: 100%;
+  background-size: 100%;
+  background-image: url("png.png");
+}
+
+.facebook-blue {
+  background-position: 0 0%;
+  background-size: 100%;
+}
+.facebook {
+  background-position: 0 11.111111%;
+  background-size: 100%;
+}
+.instagram-blue {
+  background-position: 0 22.222222%;
+  background-size: 100%;
+}
+.instagram {
+  background-position: 0 33.333333%;
+  background-size: 100%;
+}
+.linkedin-blue {
+  background-position: 0 44.444444%;
+  background-size: 100%;
+}
+.linkedin {
+  background-position: 0 55.555556%;
+  background-size: 100%;
+}
+.telegram-blue {
+  background-position: 0 66.666667%;
+  background-size: 100%;
+}
+.telegram {
+  background-position: 0 77.777778%;
+  background-size: 100%;
+}
+.twitter-blue {
+  background-position: 0 88.888889%;
+  background-size: 100%;
+}
+.twitter {
+  background-position: 0 100%;
+  background-size: 100%;
+}
+*/

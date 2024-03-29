@@ -3,18 +3,154 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/reset.css" />
-    <link rel="stylesheet" href="style/index.css" />
+    <!--connect font Francois One Regular-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      href="https://fonts.googleapis.com/css2?family=Francois+One&family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <!--connect font Farro Light-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Farro:wght@300&family=Francois+One&family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="style/index.css" />
     <title>Document</title>
   </head>
   <body>
-    <p>
-      <span class="material-icons"> volunteer_activism </span
-      ><i class="fa-sharp fa-thin fa-house"></i>
-    </p>
+    <header class="header header-margin">
+      <div class="navigation">
+        <div class="lang-switcher">
+          <p class="lang-switcher__item">eng</p>
+        </div>
+        <div class="header-navigation">
+          <ul class="header-navigation__list header-navigation__list_margin">
+            <li class="header-navigation__list_item">DOCUMENTATION</li>
+            <li class="header-navigation__list_item">/</li>
+            <li class="header-navigation__list_item">WHO'S USING</li>
+          </ul>
+        </div>
+      </div>
+      <div class="logo">
+        <img
+          src="style/img/company-logo-black.svg"
+          alt="logo"
+          class="logo__item"
+        />
+      </div>
+    </header>
+    <main class="main">
+      <div class="main-container main-container_margin">
+        <article class="introduction">
+          <div class="title">
+            <h2 class="title__item title__item_margin">Introduction</h2>
+            <span class="title__idx">Chapter 1</span>
+          </div>
+          <div class="article__desc article__desc_margin">
+            <p class="article__desc-item">
+              Welcome to the very start of your React Native journey! If you're
+              looking for environment setup instructions, they've moved to
+              <a href="#" class="link">their own section</a>. Continue reading
+              for an introduction to the documentation, Native Components,
+              React, and more!
+            </p>
+          </div>
+        </article>
+        <article class="core-components">
+          <div class="title">
+            <h2 class="title__item title__item_margin">core components</h2>
+            <span class="title__idx">Chapter 2</span>
+          </div>
+          <div class="article__desc article__desc_margin">
+            <p class="article__desc-item">
+              React Native is an open source framework for building Android and
+              iOS applications using React and the app platform’s native
+              capabiles. With React Native, you use JavaScript to access your
+              platform’s APIs as well as to describe the appearance and behavior
+              of your UI using React components:
+              <span class="text_font_pt-sans-italic"
+                >bundles of reusable, nestable code</span
+              >. You can learn more about React in the next section. But first,
+              let’s cover how components work in React Native.
+            </p>
+          </div>
+        </article>
+        <article class="react-fundamentals">
+          <div class="title">
+            <h2 class="title__item title__item_margin">react fundamentals</h2>
+            <span class="title__idx">Chapter 3</span>
+          </div>
+          <div class="article__desc article__desc_margin">
+            <p class="article__desc-item">
+              React Native runs on <a href="#" class="link">React</a>, a popular
+              open source library for building user interfaces with JavaScript.
+              To make the most of React Native, it helps to understand React
+              itself. This section can get you started or can serve as a
+              refresher course.
+            </p>
+            <p class="article__desc-item chapter3__second-paragraf_margin">
+              We’re going to cover the core concepts behind React:
+            </p>
+            <p class="article__desc-item">
+              <span class="text_font_pt-sans-bold">+ components.</span> The rest
+              of this introduction to React uses cats in its examples: friendly,
+              approachable creatures that need names and a cafe to work in.
+            </p>
+            <p class="article__desc-item chapter3__fourth-paragraf_margin">
+              <span class="text_font_pt-sans-bold">+ JSX.</span> React and React
+              Native use JSX, a syntax that lets you write elements inside
+              JavaScript like so:<span class="text_background-color_grey"
+                >&lt;Text&gt;Hello, I am your cat!&lt;/Text&gt;</span
+              >.
+            </p>
+            <p class="article__desc-item">
+              The React docs have
+              <a href="#" class="link">a comprehensive guide to JSX</a> you can
+              refer to learn even more. Because JSX is JavaScript, you can use
+              variables inside it. Here you are declaring a
+              <span class="text_background-color_grey">name</span> for the cat,
+              name, and embedding it with curly braces inside
+              <span class="text_background-color_grey">&lt;Text&gt;</span>
+            </p>
+            <p class="article__desc-item chapter3__sixth-paragraf_margin">
+              <span class="text_font_pt-sans-bold">+ props.</span> Props is
+              short for &ldquo;properties&rdquo;.
+            </p>
+            <p class="article__desc-item">
+              <span class="text_font_pt-sans-bold">+ state.</span> While you can
+              think of props as arguments you use to configure how components
+              render, state is like a component’s personal data storage. State
+              is useful for handling data that changes over time or that comes
+              from user interaction. State gives your components memory!
+            </p>
+          </div>
+        </article>
+        <article class="handling-text-input">
+          <div class="title">
+            <h2 class="title__item title__item_margin">handling text input</h2>
+            <span class="title__idx">Chapter 4</span>
+          </div>
+          <div class="article__desc article__desc_margin">
+            <p class="article__desc-item">
+              TextInput is a Core Component that allows the user to enter text.
+              It has an
+              <span class="text_font_pt-sans-italic">onChangeText</span> prop
+              that takes a function to be called every time the text changed,
+              and an onSubmitEditing prop that takes a function to be called
+              when the text is submitted.
+            </p>
+            <p class="article__desc-item chapter4__second-paragraf_margin">
+              For example, let's say that as the user types, you're translating
+              their words into a different language. In this new language, every
+              single word is written the same way: &#127829;. So the sentence
+              "Hello there Bob" would be translated as "🍕 🍕".
+            </p>
+          </div>
+        </article>
+      </div>
+    </main>
   </body>
 </html>

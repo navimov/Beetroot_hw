@@ -1,4 +1,139 @@
-.material-icons {
-  color: rgb(166, 14, 14);
-  background-color: aqua;
+/*connect fonts "PT Sans Regular", "PT Sans Bold", "PT Sans italic"*/
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/*connect downloaded font "Staatliches"*/
+@font-face {
+  font-family: "Staatliches-Regular";
+  src: url(font/Staatliches/Staatliches-Regular.woff2) format("woff2");
+}
+/*connect converted font "Tourney_Condensed-SemiBold.woff2". Convert ttf->woff2   */
+@font-face {
+  font-family: "Tourney";
+  src: url(font/Tourney/converted-tourney-semibold/Tourney_Condensed-SemiBold.woff2)
+    format("woff2");
+} /*
+p {
+  margin: 50px;
+  font-size: 1.5rem;
+}
+
+
+.sansR {
+  font-family: "PT sans";
+  font-weight: 400;
+}
+.sansB {
+  font-family: "PT sans";
+  font-weight: 700;
+}
+.sansI {
+  font-family: "PT sans";
+  font-style: italic;
+}
+.Francois-One {
+  font-family: "Francois one";
+}
+.Farro-Light {
+  font-family: "Farro";
+}
+.Staatliches-Regular {
+  font-family: "Staatliches-Regular";
+}
+.Tourney-SemiBold {
+  font-family: "Tourney";
+}
+*/
+.header {
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-margin {
+  margin: 10px auto 85px;
+}
+.lang-switcher__item {
+  font-family: "Tourney";
+  text-transform: uppercase;
+  font-size: 24px;
+  letter-spacing: 5px;
+}
+.navigation {
+  display: flex;
+}
+.header-navigation__list {
+  display: flex;
+}
+.header-navigation__list_margin {
+  margin-left: 55px;
+}
+.header-navigation__list_item {
+  font-family: "Staatliches-Regular";
+  font-size: 1.5rem;
+}
+.header-navigation__list .header-navigation__list_item:not(:first-child) {
+  margin-left: 10px;
+}
+.main-container {
+  width: 1200px;
+}
+.main-container article:not(:first-child) {
+  margin-top: 58px;
+}
+.main-container_margin {
+  margin: 70px auto 0;
+}
+.title__item_margin {
+  margin-right: 10px;
+}
+.title {
+  display: flex;
+}
+.title__item {
+  font-family: "Francois one";
+  font-size: 36px;
+  letter-spacing: 1.44px;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+.title__idx {
+  font-family: "Farro";
+  font-size: 19px;
+}
+.article__desc-item {
+  font-family: "PT sans";
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 48px;
+}
+.article__desc_margin {
+  margin-top: 40px;
+}
+.link {
+  color: #000;
+}
+.text_font_pt-sans-italic {
+  font-family: "PT sans";
+  font-style: italic;
+}
+.text_font_pt-sans-bold {
+  font-family: "PT sans";
+  font-weight: bold;
+}
+.chapter3__second-paragraf_margin {
+  margin: 28px 0 31px;
+}
+.chapter3__fourth-paragraf_margin {
+  margin: 30px 0 40px;
+}
+.chapter3__sixth-paragraf_margin {
+  margin: 38px 0 28px;
+}
+.text_background-color_grey {
+  background-color: lightgray;
+}
+.chapter4__second-paragraf_margin {
+  margin-top: 30px;
+}
+.emoji {
+  font-family: "Lucida Sans Unicode";
 }
