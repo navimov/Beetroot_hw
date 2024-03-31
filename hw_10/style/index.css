@@ -5,12 +5,14 @@
   font-family: "Staatliches-Regular";
   src: url(font/Staatliches/Staatliches-Regular.woff2) format("woff2");
 }
-/*connect converted font "Tourney_Condensed-SemiBold.woff2". Convert ttf->woff2   */
+@import url("https://fonts.googleapis.com/css2?family=Francois+One&family=Homemade+Apple&family=PT+Sans&family=Staatliches&family=Tourney:ital,wght@0,600;1,600&display=swap");
+/*connect converted font "Tourney_Condensed-SemiBold.woff2". Convert ttf->woff2  
 @font-face {
   font-family: "Tourney";
   src: url(font/Tourney/converted-tourney-semibold/Tourney_Condensed-SemiBold.woff2)
     format("woff2");
-} /*
+} */
+/*
 p {
   margin: 50px;
   font-size: 1.5rem;
@@ -54,17 +56,20 @@ p {
 .lang-switcher__item {
   font-family: "Tourney";
   text-transform: uppercase;
-  font-size: 24px;
-  letter-spacing: 5px;
+  line-height: 18px;
+  font-size: 22px;
 }
 .navigation {
   display: flex;
+}
+.navigation_margin {
+  margin: 1px 0 0 3px;
 }
 .header-navigation__list {
   display: flex;
 }
 .header-navigation__list_margin {
-  margin-left: 55px;
+  margin-left: 51px;
 }
 .header-navigation__list_item {
   font-family: "Staatliches-Regular";
@@ -133,7 +138,4 @@ p {
 }
 .chapter4__second-paragraf_margin {
   margin-top: 30px;
-}
-.emoji {
-  font-family: "Lucida Sans Unicode";
 }
