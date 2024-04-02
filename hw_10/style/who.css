@@ -1,0 +1,142 @@
+/*connect font "roboto medium"*/
+@import url("https://fonts.googleapis.com/css2?family=Francois+One&family=Homemade+Apple&family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:wght@500&family=Staatliches&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap");
+@font-face {
+  font-family: "Staatliches-Regular";
+  src: url(font/Staatliches/Staatliches-Regular.woff2) format("woff2");
+}
+.header {
+  width: 1200px;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  left: 163px;
+  top: 0px;
+  padding-top: 10px;
+}
+.header-margin {
+  margin: 0 auto 85px;
+}
+.lang-switcher__item {
+  font-family: "Tourney";
+  text-transform: uppercase;
+  line-height: 18px;
+  font-size: 22px;
+}
+.navigation {
+  display: flex;
+}
+.navigation_margin {
+  margin: 1px 0 0 3px;
+}
+.header-navigation__list {
+  display: flex;
+}
+.header-navigation__list_margin {
+  margin-left: 51px;
+}
+.header-navigation__list_item {
+  font-family: "Staatliches-Regular";
+  font-size: 1.5rem;
+}
+.header-navigation__list .header-navigation__list_item:not(:first-child) {
+  margin-left: 10px;
+}
+.title-advert-container {
+  position: relative;
+  border-bottom: 2px solid #bdbdbd;
+}
+.title-advert-item::before {
+  content: "";
+  position: absolute;
+  top: 23px;
+  left: -120px;
+  width: 100px;
+  height: 8px;
+  background-color: #000;
+}
+.companies-logo-wrapper {
+  border-top: 2px solid #bdbdbd;
+  padding: 20px 15px;
+}
+.companies-logo-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 30px;
+  grid-template-areas: "first second third fourth" "fivth sixth seventh eighth";
+}
+.companies-logo-container:nth-child(1) {
+  grid-area: first;
+}
+.companies-logo-container:nth-child(2) {
+  grid-area: second;
+}
+.companies-logo-container:nth-child(3) {
+  grid-area: third;
+}
+.companies-logo-container:nth-child(4) {
+  grid-area: fourth;
+}
+.companies-logo-container:nth-child(5) {
+  grid-area: fivth;
+}
+.companies-logo-container:nth-child(6) {
+  grid-area: sixth;
+}
+.companies-logo-container:nth-child(7) {
+  grid-area: seventh;
+}
+.companies-logo-container:nth-child(8) {
+  grid-area: eighth;
+}
+.title-advert-item {
+  position: relative;
+  left: 120px;
+  font-family: "Roboto";
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 500;
+  word-spacing: 10px;
+}
+.title-advert-item_margin {
+  margin: 70px 0 40px;
+}
+.logo-wrapper {
+  background-color: transparent;
+  width: 270px;
+  height: 180px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+.logo-wrapper-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.logo-wrapper:hover .logo-wrapper-inner {
+  transform: rotateY(180deg);
+}
+.logo-wrapper-front,
+.logo-wrapper-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+.logo-wrapper-back {
+  transform: rotateY(180deg);
+}
+.advert-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.header-navigation__list-link {
+  text-decoration: none;
+  color: #000;
+}
