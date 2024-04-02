@@ -139,3 +139,67 @@
   text-decoration: none;
   color: #000;
 }
+.facebook {
+  background-image: url(../style/img/sprite.png);
+  background-position: 0 0;
+}
+.facebook-black {
+  background-image: url(../style/img/sprite.png);
+  background-position: 0 -181px;
+}
+.instagram {
+  background-image: url(../style/img/sprite.png);
+  background-position: -271px 0;
+}
+.instagram-black {
+  background-image: url(../style/img/sprite.png);
+  background-position: -271px -181px;
+}
+.shopify {
+  background-image: url(../style/img/sprite.png);
+  background-position: 0 -361px;
+}
+.shopify-black {
+  background-image: url(../style/img/sprite.png);
+  background-position: 0 -541px;
+}
+.skype {
+  background-image: url(../style/img/sprite.png);
+  background-position: -271px -361px;
+}
+.skype-black {
+  background-image: url(../style/img/sprite.png);
+  background-position: -271px -541px;
+}
+.pinterest {
+  background-image: url(../style/img/sprite.png);
+  background-position: -541px 0;
+}
+.pinterest-black {
+  background-image: url(../style/img/sprite.png);
+  background-position: -541px -181px;
+}
+.wix {
+  background-image: url(../style/img/sprite.png);
+  background-position: -811px -361px;
+}
+.wix-black {
+  background-image: url(../style/img/sprite.png);
+  background-position: -811px -541px;
+}
+.saleforce {
+  background-image: url(../style/img/sprite.png);
+  background-position: -811px 0;
+}
+.saleforce-black {
+  background-image: url(../style/img/sprite.png);
+  background-position: -811px -181px;
+}
+.soundcloud {
+  background-image: url(../style/img/sprite.png);
+  background-position: -541px -361px;
+}
+.soundcloud-black {
+  background-image: url(../style/img/sprite.png);
+  background-position: -541px -541px;
+}
