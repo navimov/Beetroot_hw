@@ -30,6 +30,9 @@
 .form-inner {
   padding: 35px 34px 16px 36px;
 }
+.form-inner > * {
+  margin-bottom: 20px;
+}
 .form-title {
   font-family: "Roboto";
   font-size: 24px;
@@ -43,6 +46,12 @@
   font-weight: 400;
   color: #545454;
 }
+.field-caption_label-padding {
+  padding-bottom: 7px;
+}
+.field-caption_label-radio-padding {
+  padding-bottom: 8px;
+}
 .form__name,
 .form__lastname,
 .form__email {
@@ -50,10 +59,15 @@
   flex-direction: column;
 }
 
+.form__email {
+  width: 100%;
+}
+
 .form__address {
   display: inline-flex;
 }
 .form_sub-text {
+  padding-top: 7px;
   color: #969696;
   font-family: "Roboto";
   font-weight: 400;
@@ -67,7 +81,7 @@
   display: flex;
   flex-direction: column;
 }
-.blue-button_big {
+.blue-button {
   color: #fff;
   font-family: "Roboto";
   font-weight: 500;
@@ -78,4 +92,93 @@
   background-color: #007bff;
   border: none;
   border-radius: 4px;
+  margin-top: -4px;
+}
+.form__name,
+.form__lastname {
+  width: 245px;
+  height: 67px;
+}
+.form__lastname {
+  padding-left: 9px;
+}
+.form__text-field_size {
+  height: 40px;
+}
+.form__gender .form__gender_item:first-child {
+  margin-right: 40px;
+}
+.form__rights {
+  font-family: "Roboto";
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  padding-top: 2px;
+}
+.form__rights_link {
+  font-family: "Inter";
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+}
+.form__rights_link {
+  text-decoration: none;
+  color: #007bff;
+}
+.form__link-login {
+  display: flex;
+  width: 185px;
+  height: 22px;
+}
+.form__link-login_margin {
+  margin: 0 auto;
+}
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #e4e4e4;
+}
+.divider_margin {
+  margin-top: 16px;
+}
+.login {
+  border: none;
+  background-color: #fff;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 15px;
+  color: #007bff;
+  letter-spacing: -0.1px;
+}
+.login_margin {
+  margin-left: 15px;
+}
+/*Blok profile*/
+.form__inner-profile_margin {
+  margin: 35px 35px 104px;
+}
+.user-photo {
+  display: flex;
+}
+.user__blok {
+  display: flex;
+}
+.user__item {
+  display: flex;
+  flex-direction: column;
+  width: 245px;
+  height: 67px;
+}
+.user__blok .user__item:first-child {
+  margin-right: 10px;
+}
+.form__inner-profile > *:not(:last-child) {
+  margin-bottom: 20px;
+}
+.blue-button_small {
+  width: 150px;
+  margin-top: 0;
 }

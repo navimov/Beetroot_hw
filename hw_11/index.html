@@ -18,19 +18,44 @@
 
                 <div class="form__name-lastname">
                   <div class="form__name">
-                    <label for="name" class="field-caption">First Name</label>
-                    <input id="name" type="text" name="name" />
+                    <label
+                      for="name"
+                      class="field-caption field-caption_label-padding"
+                      >First Name</label
+                    >
+                    <input
+                      id="name"
+                      type="text"
+                      name="name"
+                      class="form__text-field_size"
+                    />
                   </div>
                   <div class="form__lastname">
-                    <label for="lastname" class="field-caption"
+                    <label
+                      for="lastname"
+                      class="field-caption field-caption_label-padding"
                       >Last Name</label
                     >
-                    <input id="lastname" type="text" name="lastname" />
+                    <input
+                      id="lastname"
+                      type="text"
+                      name="lastname"
+                      class="form__text-field_size"
+                    />
                   </div>
                 </div>
                 <div class="form__email">
-                  <label for="email" class="field-caption">E-mail</label>
-                  <input id="email" type="email" name="email" />
+                  <label
+                    for="email"
+                    class="field-caption field-caption_label-padding"
+                    >E-mail</label
+                  >
+                  <input
+                    id="email"
+                    type="email"
+                    name="email"
+                    class="form__text-field_size"
+                  />
                   <p class="form_sub-text">
                     We'll never share your email with anyone else.
                   </p>
@@ -38,21 +63,34 @@
                 <div class="form__gender">
                   <div class="form__gender_item">
                     <input type="radio" id="male-gender" name="gender" />
-                    <label for="male-gender" class="field-caption">Male</label>
+                    <label
+                      for="male-gender"
+                      class="field-caption field-caption_label-radio-padding"
+                      >Male</label
+                    >
                   </div>
                   <div class="form__gender_item">
                     <input type="radio" id="femail-gender" name="gender" />
-                    <label for="femail-gender" class="field-caption"
+                    <label
+                      for="femail-gender"
+                      class="field-caption field-caption_label-radio-padding"
                       >Female</label
                     >
                   </div>
                 </div>
                 <div class="form__address">
                   <div class="form__address_item">
-                    <label for="chose-country" class="field-caption"
+                    <label
+                      for="chose-country"
+                      class="field-caption field-caption_label-padding"
                       >Country</label
                     >
-                    <select id="chose-country" name="country" required>
+                    <select
+                      id="chose-country"
+                      name="country"
+                      required
+                      class="form__text-field_size"
+                    >
                       <option value="" disabled selected>Select</option>
                       <option value="Ukraine">Ukraine</option>
                       <option value="Belgium">Belgium</option>
@@ -60,25 +98,136 @@
                     </select>
                   </div>
                   <div class="form__address_item">
-                    <label for="city" class="field-caption">City</label>
-                    <input id="city" type="text" name="city" />
+                    <label
+                      for="city"
+                      class="field-caption field-caption_label-padding"
+                      >City</label
+                    >
+                    <input
+                      id="city"
+                      type="text"
+                      name="city"
+                      class="form__text-field_size"
+                    />
                   </div>
                 </div>
                 <div class="form__button">
-                  <button class="blue-button_big">Sign Up</button>
+                  <button class="blue-button">Sign Up</button>
                 </div>
                 <p class="form__rights">
                   By clicking the 'Sign Up' button, you confirm that you accept
-                  our and .
+                  our <a href="#" class="form__rights_link">Terms of Use</a> and
+                  <a href="#" class="form__rights_link">Terms of Use</a>.
                 </p>
-                <div class="divider"></div>
-                <p class="form__link-login">
-                  Have an account?
-                  <button class="login">Login</button>
-                </p>
+                <div class="divider divider_margin"></div>
+                <div class="form__link-login form__link-login_margin">
+                  <p class="field-caption">Have an account?</p>
+                  <button class="login login_margin">Login</button>
+                </div>
               </div>
             </div>
-            <div class="form-item">dsfsdfsd</div>
+            <!--second form-->
+            <div class="form-item">
+              <div class="form__inner-profile form__inner-profile_margin">
+                <h2 class="form-title">Profile</h2>
+                <div class="user-photo">
+                  <img
+                    src="style/images/📷photo.png"
+                    alt="user photo"
+                    class="user-photo__item"
+                  />
+                  <div class="user-photo__open-blok">
+                    <input
+                      type="file"
+                      capture="camera"
+                      name="user-photo"
+                      class="user-photo__open-button"
+                    />
+                    <p class="form_sub-text">Up to 1 MB (300x300 px)</p>
+                  </div>
+                  <div class="user-photo__reset-button">8888</div>
+                </div>
+                <div class="user__blok">
+                  <div class="user__item">
+                    <label
+                      for="profile-name"
+                      class="field-caption field-caption_label-padding"
+                      >Name</label
+                    >
+                    <input
+                      type="text"
+                      id="profile-name"
+                      class="form__text-field_size"
+                    />
+                  </div>
+                  <div class="user__item">
+                    <label
+                      for="profile-email"
+                      class="field-caption field-caption_label-padding"
+                      >E-mail</label
+                    >
+                    <input
+                      type="email"
+                      id="profile-email"
+                      class="form__text-field_size"
+                    />
+                  </div>
+                </div>
+                <div class="user__blok">
+                  <div class="user__item">
+                    <label
+                      for="profile-country"
+                      class="field-caption field-caption_label-padding"
+                      >Country</label
+                    >
+                    <input
+                      type="text"
+                      id="profile-country"
+                      class="form__text-field_size"
+                    />
+                  </div>
+                  <div class="user__item">
+                    <label
+                      for="profile-city"
+                      class="field-caption field-caption_label-padding"
+                      >City</label
+                    >
+                    <input
+                      type="text"
+                      id="profile-city"
+                      class="form__text-field_size"
+                    />
+                  </div>
+                </div>
+                <div class="user__blok">
+                  <div class="user__item">
+                    <label
+                      for="profile-zip"
+                      class="field-caption field-caption_label-padding"
+                      >Zip Code</label
+                    >
+                    <input
+                      type="text"
+                      id="profile-zip"
+                      class="form__text-field_size"
+                    />
+                  </div>
+                  <div class="user__item">
+                    <label
+                      for="profile-tel"
+                      class="field-caption field-caption_label-padding"
+                      >Phone Number</label
+                    >
+                    <input
+                      type="tel"
+                      id="profile-tel"
+                      class="form__text-field_size"
+                    />
+                  </div>
+                </div>
+                <button class="blue-button blue-button_small">Update</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
