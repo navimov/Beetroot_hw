@@ -1,0 +1,81 @@
+/*Font roboto regular and medium*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+.form-wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: #e5e5e5;
+}
+.form-blok {
+  width: 1170px;
+  height: 590px;
+  background-color: #e5e5e5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+
+.form-item {
+  width: 570px;
+  height: 590px;
+  background-color: #fff;
+}
+
+.form-blok .form-item:first-child {
+  margin-right: 30px;
+}
+.form-inner {
+  padding: 35px 34px 16px 36px;
+}
+.form-title {
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+}
+.field-caption {
+  font-family: "Roboto";
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #545454;
+}
+.form__name,
+.form__lastname,
+.form__email {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.form__address {
+  display: inline-flex;
+}
+.form_sub-text {
+  color: #969696;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 18px;
+  font-size: 13px;
+}
+.form__gender {
+  display: flex;
+}
+.form__address_item {
+  display: flex;
+  flex-direction: column;
+}
+.blue-button_big {
+  color: #fff;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  width: 100%;
+  height: 38px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+}

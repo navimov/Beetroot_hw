@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="style/index.css" />
+    <title>web forms</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="container">
+        <div class="form-wrapper">
+          <div class="form-blok">
+            <div class="form-item">
+              <div class="form-inner">
+                <h2 class="form-title">Create an Account</h2>
+
+                <div class="form__name-lastname">
+                  <div class="form__name">
+                    <label for="name" class="field-caption">First Name</label>
+                    <input id="name" type="text" name="name" />
+                  </div>
+                  <div class="form__lastname">
+                    <label for="lastname" class="field-caption"
+                      >Last Name</label
+                    >
+                    <input id="lastname" type="text" name="lastname" />
+                  </div>
+                </div>
+                <div class="form__email">
+                  <label for="email" class="field-caption">E-mail</label>
+                  <input id="email" type="email" name="email" />
+                  <p class="form_sub-text">
+                    We'll never share your email with anyone else.
+                  </p>
+                </div>
+                <div class="form__gender">
+                  <div class="form__gender_item">
+                    <input type="radio" id="male-gender" name="gender" />
+                    <label for="male-gender" class="field-caption">Male</label>
+                  </div>
+                  <div class="form__gender_item">
+                    <input type="radio" id="femail-gender" name="gender" />
+                    <label for="femail-gender" class="field-caption"
+                      >Female</label
+                    >
+                  </div>
+                </div>
+                <div class="form__address">
+                  <div class="form__address_item">
+                    <label for="chose-country" class="field-caption"
+                      >Country</label
+                    >
+                    <select id="chose-country" name="country" required>
+                      <option value="" disabled selected>Select</option>
+                      <option value="Ukraine">Ukraine</option>
+                      <option value="Belgium">Belgium</option>
+                      <option value="Italy">Italy</option>
+                    </select>
+                  </div>
+                  <div class="form__address_item">
+                    <label for="city" class="field-caption">City</label>
+                    <input id="city" type="text" name="city" />
+                  </div>
+                </div>
+                <div class="form__button">
+                  <button class="blue-button_big">Sign Up</button>
+                </div>
+                <p class="form__rights">
+                  By clicking the 'Sign Up' button, you confirm that you accept
+                  our and .
+                </p>
+                <div class="divider"></div>
+                <p class="form__link-login">
+                  Have an account?
+                  <button class="login">Login</button>
+                </p>
+              </div>
+            </div>
+            <div class="form-item">dsfsdfsd</div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
