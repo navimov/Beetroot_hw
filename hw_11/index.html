@@ -137,17 +137,32 @@
                     class="user-photo__item"
                   />
                   <div class="user-photo__open-blok">
-                    <input
-                      type="file"
-                      capture="camera"
-                      name="user-photo"
-                      class="user-photo__open-button"
-                    />
+                    <div class="button-open">
+                      <input
+                        type="file"
+                        capture="camera"
+                        name="user-photo"
+                        id="file-input"
+                        class="user-photo__open-button"
+                      />
+                      <label for="file-input">
+                        <img
+                          class="file-load-icon"
+                          src="style/images/Camera.svg"
+                          alt="camera ico"
+                        />
+                      </label>
+                    </div>
                     <p class="form_sub-text user-photo__subtext">
                       Up to 1 MB (300x300 px)
                     </p>
                   </div>
-                  <div class="user-photo__reset-button"></div>
+                  <div class="user-photo__reset-blok">
+                    <button
+                      onclick="clearFile()"
+                      class="user-photo__reset-button"
+                    ></button>
+                  </div>
                 </div>
                 <div class="user__blok">
                   <div class="user__item">
@@ -242,5 +257,11 @@
         </div>
       </div>
     </main>
+
+    <script>
+      function clearFile() {
+        document.getElementById("file-input").value = "";
+      }
+    </script>
   </body>
 </html>

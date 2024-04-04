@@ -113,7 +113,7 @@
   height: 40px;
 }
 .form__gender .form__gender_item:first-child {
-  margin-right: 40px;
+  margin-right: 27gitpx;
 }
 
 .form__rights {
@@ -170,6 +170,7 @@
 }
 .user-photo {
   display: flex;
+  position: relative;
 }
 .user__blok {
   display: flex;
@@ -244,41 +245,52 @@ input[type="radio"]:checked + label::after {
   border-color: #007bff;
   box-shadow: 0.5px 0.5px 0.5px 0.5px #007bff;
 }
+/*8888888888888888888888888888888888888888888888888888888*/
+.user-photo__open-blok {
+  width: 178px;
+  position: relative;
+  margin-left: 25px;
+}
+.user-photo__subtext {
+  position: absolute;
+  top: 43px;
+  left: -2px;
+}
+.file-load-icon {
+  position: relative;
+  top: 15px;
+  left: 110px;
+}
 .user-photo__open-button {
   display: none;
 }
-.user-photo__open-blok {
+input[type="file"] + label {
+  display: inline-block;
   position: relative;
+  cursor: pointer;
 }
-.user-photo__subtext::before {
+input[type="file"] + label::before {
   content: "";
   position: absolute;
   width: 138px;
   height: 30px;
-  left: 22px;
-  top: 10px;
+  left: -3px;
+  top: 8px;
   border: 1px solid black;
-  border-radius: 5%;
-  background-image: url(../style/images/Camera.svg);
-  background-repeat: no-repeat;
-  background-position: calc(100% - 10px) 50%;
+  border-radius: 5px;
 }
+/*888888888888888888888888888888888888888888888888888888888888888*/
 
-.user-photo__subtext {
-  margin: 40px 20px 0 20px;
-}
-.user-photo {
-  position: relative;
-}
 .user-photo__reset-button {
   width: 30px;
   height: 30px;
-  border: 1px solid black;
-  border-radius: 5%;
-  position: absolute;
-  top: 10px;
-  left: 250px;
   background-image: url(../style/images/Trash.svg);
   background-repeat: no-repeat;
   background-position: center;
+  background-color: #fff;
+  border: 1px solid #969696;
+  border-radius: 5px;
+  position: absolute;
+  top: 9px;
+  right: 220px;
 }
