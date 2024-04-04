@@ -244,3 +244,41 @@ input[type="radio"]:checked + label::after {
   border-color: #007bff;
   box-shadow: 0.5px 0.5px 0.5px 0.5px #007bff;
 }
+.user-photo__open-button {
+  display: none;
+}
+.user-photo__open-blok {
+  position: relative;
+}
+.user-photo__subtext::before {
+  content: "";
+  position: absolute;
+  width: 138px;
+  height: 30px;
+  left: 22px;
+  top: 10px;
+  border: 1px solid black;
+  border-radius: 5%;
+  background-image: url(../style/images/Camera.svg);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px) 50%;
+}
+
+.user-photo__subtext {
+  margin: 40px 20px 0 20px;
+}
+.user-photo {
+  position: relative;
+}
+.user-photo__reset-button {
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 5%;
+  position: absolute;
+  top: 10px;
+  left: 250px;
+  background-image: url(../style/images/Trash.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
