@@ -113,7 +113,7 @@
   height: 40px;
 }
 .form__gender .form__gender_item:first-child {
-  margin-right: 27gitpx;
+  margin-right: 27px;
 }
 
 .form__rights {
@@ -278,6 +278,10 @@ input[type="file"] + label::before {
   top: 8px;
   border: 1px solid black;
   border-radius: 5px;
+}
+input[type="file"]:hover + label::before {
+  border-color: #007bff;
+  box-shadow: 0.5px 0.5px 0.5px 0.5px #007bff;
 }
 /*888888888888888888888888888888888888888888888888888888888888888*/
 
