@@ -194,7 +194,6 @@
 input:hover,
 input:focus {
   border-color: #007bff;
-  box-shadow: 0.5px 0.5px 0.5px 0.5px #007bff;
 }
 input[type="radio"] {
   display: none;
@@ -224,7 +223,7 @@ input[type="radio"] + label::after {
   height: 20px;
   background-color: #fff;
   border-radius: 50%;
-  border: 6px solid #007bff;
+  border: 1px solid #007bff;
   opacity: 0;
   transition: all 0.3s ease-in-out;
 }
@@ -243,9 +242,7 @@ input[type="radio"]:checked + label::after {
 .select:hover,
 .select:focus {
   border-color: #007bff;
-  box-shadow: 0.5px 0.5px 0.5px 0.5px #007bff;
 }
-/*8888888888888888888888888888888888888888888888888888888*/
 .user-photo__open-blok {
   width: 178px;
   position: relative;
@@ -281,9 +278,7 @@ input[type="file"] + label::before {
 }
 input[type="file"]:hover + label::before {
   border-color: #007bff;
-  box-shadow: 0.5px 0.5px 0.5px 0.5px #007bff;
 }
-/*888888888888888888888888888888888888888888888888888888888888888*/
 
 .user-photo__reset-button {
   width: 30px;
