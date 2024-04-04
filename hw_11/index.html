@@ -89,7 +89,7 @@
                       id="chose-country"
                       name="country"
                       required
-                      class="form__text-field_size"
+                      class="form__text-field_size select"
                     >
                       <option value="" disabled selected>Select</option>
                       <option value="Ukraine">Ukraine</option>
@@ -112,7 +112,7 @@
                   </div>
                 </div>
                 <div class="form__button">
-                  <button class="blue-button">Sign Up</button>
+                  <button type="submit" class="blue-button">Sign Up</button>
                 </div>
                 <p class="form__rights">
                   By clicking the 'Sign Up' button, you confirm that you accept
@@ -176,15 +176,21 @@
                 <div class="user__blok">
                   <div class="user__item">
                     <label
-                      for="profile-country"
+                      for="chose-country"
                       class="field-caption field-caption_label-padding"
                       >Country</label
                     >
-                    <input
-                      type="text"
-                      id="profile-country"
-                      class="form__text-field_size"
-                    />
+                    <select
+                      id="chose-country"
+                      name="country"
+                      required
+                      class="form__text-field_size select"
+                    >
+                      <option value="" disabled selected>Select</option>
+                      <option value="Ukraine">Ukraine</option>
+                      <option value="Belgium">Belgium</option>
+                      <option value="Italy">Italy</option>
+                    </select>
                   </div>
                   <div class="user__item">
                     <label
@@ -225,7 +231,9 @@
                     />
                   </div>
                 </div>
-                <button class="blue-button blue-button_small">Update</button>
+                <button type="submit" class="blue-button blue-button_small">
+                  Update
+                </button>
               </div>
             </div>
           </div>
