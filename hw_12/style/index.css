@@ -43,7 +43,7 @@
   height: 461px;
 }
 .main__container_margin {
-  margin: 100px auto;
+  margin: 100px auto 100px;
 }
 .main__header_margin {
   margin-bottom: 40px;
@@ -54,7 +54,7 @@
 .main__service_container {
   width: 370px;
   height: 340px;
-  padding: 40px;
+  padding: 31px 40px 49px;
   border: 1px solid #e8f3ff;
   border-radius: 8px;
 }
@@ -112,6 +112,7 @@
   color: #7690a8;
   font-size: 16px;
   line-height: 21px;
+  padding-bottom: 15px;
 }
 .service__text-desc {
   font-family: "Roboto";
@@ -166,4 +167,11 @@
 .footer__item_style {
   width: 38px;
   height: 38px;
+}
+.colorfill {
+  fill: #0d0d0d;
+}
+.footer__item_style:hover .colorfill {
+  cursor: pointer;
+  fill: #3db370;
 }
