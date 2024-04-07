@@ -1,26 +1,111 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,600;1,6..12,600&family=Quicksand:wght@500&family=Roboto:wght@400;500&display=swap");
 .wrapper {
-  position: relative;
-  width: 100%;
+  width: 1440px;
+  height: 934px;
 }
-.header-container {
-  position: absolute;
-  width: 100%;
+.header {
+  width: 1440px;
   height: 80px;
   border-bottom: 1px solid #efeef3;
-  align-content: center;
 }
-.header-wrapper_margin {
-  margin: 0 135px;
-}
-.logo {
+.header__wrapper {
+  width: 1170px;
+  height: 100%;
+  margin: 0 auto;
   display: flex;
+  align-items: center;
+}
+.logo__container {
+  display: flex;
+
+  width: 200px;
+  height: 35px;
 }
 .logo__text {
+  display: inline-block;
   font-family: "Quicksand";
+  font-weight: 500;
   font-size: 35px;
   line-height: 35px;
+  color: black;
+  padding-left: 13px;
 }
-.logo__text_margin {
-  margin-left: 13px;
+.main__container {
+  width: 1170px;
+  height: 461px;
+}
+.main__container_margin {
+  margin: 100px 135px;
+}
+.main__header_margin {
+  margin-bottom: 40px;
+}
+.main__services-block {
+  display: flex;
+}
+.main__service_container {
+  width: 370px;
+  height: 340px;
+  padding: 40px;
+}
+.main__service_inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 290px;
+  height: 260px;
+}
+.main__services_item {
+  width: 370px;
+  height: 340px;
+}
+.service__text-caption {
+  font-family: "Roboto";
+  font-size: 24px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+}
+.section__caption {
+  font-family: "Roboto";
+  color: #7690a8;
+  font-size: 16px;
+  line-height: 21px;
+}
+.service__text-desc {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+}
+.service__link {
+  color: #3db370;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 500;
+}
+.section__our-goal-text {
+  font-family: "Nunito sans";
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+.main__services {
+  width: 1170px;
+  height: 340px;
+}
+.footer {
+  width: 1440px;
+  height: 193px;
+  background-color: #16133d;
+  padding: 40px 135px;
+}
+
+.footer__wrapper {
+  height: 113px;
+  width: 1170px;
+}
+.logo__text_footer-color {
+  color: white;
 }
