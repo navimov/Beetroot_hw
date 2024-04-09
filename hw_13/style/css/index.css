@@ -84,13 +84,7 @@
   margin: 15px 0 36px;
 }
 
-.container {
-  width: 1170px;
-  height: 757px;
-}
-.container .wrapper {
-  width: 1170px;
-  height: 757px;
+.text-container__header_item, .text-container, .container .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,6 +95,15 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.container {
+  width: 1170px;
+  height: 757px;
+}
+.container .wrapper {
+  width: 1170px;
+  height: 757px;
 }
 
 .main-wrapper {
@@ -116,14 +119,12 @@
           flex-direction: row;
   margin: 0 auto;
 }
-
 .main-wrapper__left {
   padding-top: 65px;
   width: 50%;
   height: 100%;
   border-right: 1px solid #ffcc00;
 }
-
 .main-wrapper__right {
   padding-top: 35px;
   width: 50%;
@@ -134,19 +135,10 @@
   width: 100px;
   height: 1px;
   background-color: #ffcc00;
+  margin: -18px auto;
 }
 
 .text-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -154,8 +146,7 @@
   width: 430px;
   height: 455px;
 }
-
-.description__text {
+.text-container__header_item {
   text-align: center;
 }
 
@@ -164,24 +155,6 @@
   font-weight: 900;
   font-size: 36px;
   color: #666666;
-}
-
-.text-container__header_item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  text-align: center;
-}
-
-.divider-container {
-  margin: -18px auto;
 }
 
 .specialization {
@@ -196,13 +169,13 @@
   width: 420px;
   height: 116px;
 }
-
 .description__text {
   color: #333333;
   font-family: "Railway";
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.5rem;
+  text-align: center;
 }
 
 .button {
@@ -221,7 +194,6 @@
   width: 200px;
   height: 30px;
 }
-
 .social-link-style {
   width: 30px;
   height: 30px;
