@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.container {
+  width: 1170px;
+  height: 757px;
+  .wrapper {
+    width: 1170px;
+    height: 757px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}
+.main-wrapper {
+  position: relative;
+  width: 1030px;
+  height: 560px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+.main-wrapper__left {
+  padding-top: 65px;
+  width: 50%;
+  height: 100%;
+  border-right: 1px solid #ffcc00;
+}
+.main-wrapper__right {
+  padding-top: 35px;
+  width: 50%;
+  height: 100%;
+}
+.divider-container {
+  width: 100px;
+  height: 1px;
+  background-color: #ffcc00;
+}
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 85px;
+  width: 430px;
+  height: 455px;
+}
+.description__text {
+  text-align: center;
+}
+.profile-name {
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 36px;
+  color: #666666;
+}
+.text-container__header_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+.divider-container {
+  margin: -18px auto;
+}
+.specialization {
+  margin: 50px 0 0px;
+  font-family: "Railway";
+  font-size: 1.75rem;
+  line-height: 2rem;
+  color: #666666;
+}
+.description {
+  width: 420px;
+  height: 116px;
+}
+.description__text {
+  color: #333333;
+  font-family: "Railway";
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+.button {
+  font-family: "Open sans";
+  font-weight: 700;
+  font-size: 0.825rem;
+  color: #666666;
+  background-color: #fff;
+  border: 1px solid #ffcc00;
+  padding: 2px 10px;
+  text-transform: uppercase;
+}
+.social-icons {
+  display: block;
+  width: 200px;
+  height: 30px;
+}
+.social-link-style {
+  width: 30px;
+  height: 30px;
+}

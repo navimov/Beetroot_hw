@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+$line-width: 100px;
+$line-color: #ffcc00;
+%container-size {
+  content: "";
+  position: absolute;
+  width: $line-width;
+  height: $line-width;
+}
+@mixin border-position($position) {
+  border-#{$position}: 1px solid $line-color;
+  #{$position}: 0;
+}
+.photo {
+  width: 430px;
+  height: 430px;
+  &__wrapper {
+    position: relative;
+    &::before,
+    &::after {
+      @extend %container-size;
+      @include border-position(top);
+    }
+    &::before {
+      @include border-position(left);
+    }
+    &::after {
+      @include border-position(right);
+    }
+  }
+  &__inner {
+    padding: 15px;
+    &::before,
+    &::after {
+      @extend %container-size;
+      @include border-position(bottom);
+    }
+    &::before {
+      @include border-position(left);
+    }
+    &::after {
+      @include border-position(right);
+    }
+  }
+}
