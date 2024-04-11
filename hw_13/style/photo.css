@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.photo__inner::before, .photo__inner::after, .photo__wrapper::before, .photo__wrapper::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+
+.photo {
+  width: 430px;
+  height: 430px;
+}
+.photo__wrapper {
+  position: relative;
+}
+.photo__wrapper::before, .photo__wrapper::after {
+  border-top: 1px solid #ffcc00;
+  top: 0;
+}
+.photo__wrapper::before {
+  border-left: 1px solid #ffcc00;
+  left: 0;
+}
+.photo__wrapper::after {
+  border-right: 1px solid #ffcc00;
+  right: 0;
+}
+.photo__inner {
+  padding: 15px;
+}
+.photo__inner::before, .photo__inner::after {
+  border-bottom: 1px solid #ffcc00;
+  bottom: 0;
+}
+.photo__inner::before {
+  border-left: 1px solid #ffcc00;
+  left: 0;
+}
+.photo__inner::after {
+  border-right: 1px solid #ffcc00;
+  right: 0;
+}
