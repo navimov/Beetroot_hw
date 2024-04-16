@@ -1,4 +1,5 @@
 @import "variables.css";
 @import "general.css";
-@import "pc.css";
+@import "main.css";
 @import "fonts.css";
+@import "media-queries.css";
