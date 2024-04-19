@@ -380,7 +380,7 @@
           <div class="contacts">
             <h1 class="contacts__title">Need a project?</h1>
             <div class="contacts__desc">
-              <a class="contacts__item" href="tel:(239) 555-0108"
+              <a class="contacts__item" href="tel:(239)-555-0108"
                 >(239) 555-0108</a
               >
               <a class="contacts__item" href="mailto:tanya.hill@example.com"
@@ -493,6 +493,7 @@
         this.classList.toggle("active");
         document.querySelector(".nav__list").classList.toggle("open");
         if (document.querySelector(".nav__list").classList.contains("open")) {
+          document.querySelector("body").style.overflow = "hidden";
           document.querySelector(".hero").style.display = "none";
         } else {
           document.querySelector(".hero").style.display = "block";

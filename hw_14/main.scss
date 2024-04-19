@@ -255,7 +255,7 @@ $f-size-rights: clamp(1rem, 1.0714rem + -0.3571vw, 0.75rem);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 40px;
+    padding-bottom: 0px;
   }
   &__header_link {
     @include font-param($f-lato, 16px, 400, 10, 166, #7b7b7b);

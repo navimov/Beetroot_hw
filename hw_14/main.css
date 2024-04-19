@@ -283,7 +283,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 40px;
+  padding-bottom: 0px;
 }
 .post__header_link {
   font-family: "lato";
