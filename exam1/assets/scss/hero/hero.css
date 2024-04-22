@@ -1,0 +1,15 @@
+@import url(../variables.css);
+body {
+  font-family: "lato";
+  font-size: 18px;
+  font-weight: 300;
+  background-color: var(--theme-color);
+  margin: 0;
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../../image/pc/hero/hero.jpg);
+  padding: 0 135px 0;
+}

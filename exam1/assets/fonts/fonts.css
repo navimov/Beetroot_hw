@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "lato";
+  src: url(./Lato-Bold.woff2) format("woff2"), url(./Lato-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "lato";
+  src: url(./Lato-Light.woff2) format("woff2"), url(./Lato-Light.ttf) format("truetype");
+}
+@font-face {
+  font-family: "lato";
+  src: url(./woff2/Lato-Regular.woff2) format("woff2"), url(./Lato/Lato-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url(./PlayfairDisplay-Italic.woff2) format("woff2"), url(./PlayfairDisplay-Italic.ttf) format("truetype");
+}
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url(./PlayfairDisplay-Regular.woff2) format("woff2"), url(./PlayfairDisplay-Regular.ttf) format("truetype");
+}
+body {
+  font-family: "lato";
+  font-weight: 300;
+  font-size: 18px;
+}
