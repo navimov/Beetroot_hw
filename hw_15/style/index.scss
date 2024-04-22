@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap");
+body {
+  background-color: rgb(70, 91, 96);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 200px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  &-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  &-front {
+    background-color: #bbb;
+    color: black;
+  }
+  &-back {
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+    font-family: "platupi";
+    font-weight: 700;
+    font-size: 40px;
+    width: 100%;
+    height: 100%;
+    padding: 3% 10%;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+body .cards-container:nth-child(2) .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.front-side-img {
+  width: 100%;
+  height: 100%;
+}
+.card-suit {
+  width: 20px;
+  height: 20px;
+  &-bottom {
+    width: 20px;
+    height: 20px;
+    rotate: 180deg;
+  }
+}
+.middle-suit {
+  width: 50px;
+  height: 50px;
+  align-self: center;
+}
+.flip-card-back .quality-card:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.flip-card-back .quality-card:last-child {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+}
+.quality-bottom {
+  rotate: 180deg;
+}
+.cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 30px;
+  grid-template-areas: "first second third fourth";
+  margin-bottom: 30px;
+}
+.cards-container:nth-child(1) {
+  grid-area: first;
+}
+.cards-container:nth-child(2) {
+  grid-area: second;
+}
+.cards-container:nth-child(3) {
+  grid-area: third;
+}
+.cards-container:nth-child(4) {
+  grid-area: fourth;
+}
+.red-color .flip-card-back {
+  color: red;
+}
