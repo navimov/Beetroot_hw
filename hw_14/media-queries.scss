@@ -133,7 +133,7 @@ $f-size-rights: clamp(1rem, 1.2206rem + -0.9804vw, 0.75rem);
     &__container {
       width: 71%;
     }
-    &__list.open {
+    &__list .open {
       display: flex;
       flex-direction: column;
       align-items: center;

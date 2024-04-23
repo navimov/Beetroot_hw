@@ -62,7 +62,7 @@
               <nav class="nav__wrapper">
                 <ul class="nav__list">
                   <li class="nav__item">
-                    <a href="#" class="nav__link">Home</a>
+                    <a href="#" class="nav__link active_page">Home</a>
                     <!-- <div class="underscore"></div> -->
                   </li>
                   <li class="nav__item">
@@ -82,10 +82,19 @@
                   </li>
                 </ul>
               </nav>
+              <div class="burger">
+                <span></span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <script>
+      document.querySelector(".burger").addEventListener("click", function () {
+        this.classList.toggle("active");
+        document.querySelector(".nav__list").classList.toggle("open");
+      });
+    </script>
   </body>
 </html>
