@@ -1,0 +1,47 @@
+.promises {
+  position: relative;
+  height: 540px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  &__text {
+    position: relative;
+    width: 770px;
+    height: 450px;
+    right: 15%;
+    padding-left: 70px;
+    background-color: rgba(12, 16, 35, 0.8);
+    display: flex;
+    align-items: center;
+  }
+  &__text_title {
+    font-family: "PlayfairDisplay";
+    font-size: 24px;
+    line-height: 48px;
+  }
+  &__text_button-container {
+    position: relative;
+    width: 300px;
+    height: 90px;
+    border: 1px solid #fff;
+  }
+
+  &__text-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 83px 100px;
+    width: 700px;
+    height: 300px;
+  }
+  &__description_margin {
+    margin-top: 7px;
+    line-height: 33px;
+  }
+}
+.link__promises {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
