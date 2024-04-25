@@ -1,0 +1,27 @@
+@import url(../variables.css);
+body {
+  font-family: "lato";
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--text-color);
+  background-color: var(--theme-color);
+  margin: 0;
+  background-image: url(../../image/pc/hero/hero.jpg);
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 100%;
+}
+
+.content__container {
+  margin: 150px 135px 0;
+}
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 120px;
+  &__margin {
+    margin: 150px 0 100px;
+  }
+}

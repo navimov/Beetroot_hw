@@ -1,0 +1,16 @@
+@media screen and (max-width: 1200px) {
+  .content__container {
+    margin: 150px 9vw 0;
+  }
+}
+@media screen and (max-width: 900px) {
+  body {
+    background-image: url(../../image/tablet/hero/hero.webp);
+  }
+}
+
+@media screen and(max-width: 400px) {
+  .content__container {
+    margin: 150px 16px 0;
+  }
+}

@@ -1,15 +1,44 @@
-@import url(../variables.css);
-body {
-  font-family: "lato";
-  font-size: 18px;
-  font-weight: 300;
-  background-color: var(--theme-color);
-  margin: 0;
+.hero {
+  width: 521px;
+  height: auto;
+}
+.hero .description_margin {
+  margin: 20px 0 50px;
 }
 
-.hero {
-  width: 100vw;
-  height: 100vh;
-  background-image: url(../../image/pc/hero/hero.jpg);
-  padding: 0 135px 0;
+.description {
+  line-height: 26px;
+}
+
+.h1 {
+  font-family: "PlayfairDisplay";
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 52px;
+}
+
+.text-italic {
+  font-style: italic;
+  color: var(--text-italic-color);
+}
+
+.link {
+  position: relative;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #53f3cd;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.link::after {
+  position: absolute;
+  content: "";
+  width: 98%;
+  height: 13px;
+  background-color: rgba(83, 243, 205, 0.3);
+  bottom: -2px;
+  left: 8%;
 }
