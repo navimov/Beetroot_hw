@@ -18,10 +18,12 @@ body {
   margin: 150px 135px 0;
 }
 .main {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 120px;
+  display: flex;
+  flex-direction: column;
   &__margin {
     margin: 150px 0 100px;
   }
+}
+.main > section:not(:last-child) {
+  margin-bottom: 120px;
 }

@@ -1,0 +1,68 @@
+.reviews {
+  width: 100%;
+  height: 510px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.reviews__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.reviews__author {
+  position: absolute;
+  left: 40px;
+  bottom: 30px;
+}
+.reviews__description {
+  position: relative;
+  font-family: "lato";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.reviews__title_item {
+  font-family: "PlayfairDisplay";
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+.reviews__title {
+  width: 400px;
+}
+.reviews__content_block {
+  position: relative;
+  width: 370px;
+  height: 340px;
+  padding: 30px 40px;
+}
+.reviews__content_block:not(:last-child) {
+  margin-right: 30px;
+}
+.reviews-jamika {
+  background-image: url(../../image/pc/main-content/jamika-bg-min.png);
+}
+.reviews-evie {
+  background-image: url(../../image/pc/main-content/evie-bg-min.png);
+}
+.reviews-elvis {
+  background-image: url(../../image/pc/main-content/elvis-bg-min.png);
+}
+.reviews__author_item {
+  font-family: "PlayfairDisplay";
+  font-size: 20px;
+  font-style: italic;
+  letter-spacing: 1.6px;
+}
