@@ -1,0 +1,32 @@
+.rights {
+  width: 100%;
+  height: 86px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--divider-color);
+  &__agree-block {
+    display: flex;
+  }
+  &__agree-block .rights__text:first-child {
+    padding-right: 32px;
+  }
+  &__margin {
+    margin-top: 100px;
+  }
+  &__sub-text {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 300;
+  }
+  &__text {
+    font-family: "lato";
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: calc(14px / 100 * 8);
+  }
+}
+span.rights__sub-text {
+  padding-right: 12px;
+}

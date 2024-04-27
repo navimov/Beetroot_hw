@@ -46,6 +46,10 @@
   margin-top: 7px;
   line-height: 33px;
 }
+.promises__text_container:nth-child(3) {
+  position: relative;
+  top: -17px;
+}
 
 .link__promises {
   position: absolute;

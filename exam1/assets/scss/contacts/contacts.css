@@ -31,4 +31,91 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
+  height: 240px;
+}
+
+.form-container {
+  width: 420px;
+  height: 240;
+}
+
+form > input:not(:last-child),
+form > textarea {
+  display: block;
+  border: none;
+  background-color: var(--theme-color);
+  width: 100%;
+  border-bottom: 1px solid var(--divider-color);
+  height: 32px;
+}
+
+form > input:last-child {
+  width: 173px;
+  height: 24px;
+}
+
+#user-name::-webkit-input-placeholder, #user-email::-webkit-input-placeholder, #tell-more::-webkit-input-placeholder {
+  font-style: italic;
+  font-family: "PlayfairDisplay";
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 1.44px;
+}
+
+#user-name::-moz-placeholder, #user-email::-moz-placeholder, #tell-more::-moz-placeholder {
+  font-style: italic;
+  font-family: "PlayfairDisplay";
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 1.44px;
+}
+
+#user-name:-ms-input-placeholder, #user-email:-ms-input-placeholder, #tell-more:-ms-input-placeholder {
+  font-style: italic;
+  font-family: "PlayfairDisplay";
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 1.44px;
+}
+
+#user-name::-ms-input-placeholder, #user-email::-ms-input-placeholder, #tell-more::-ms-input-placeholder {
+  font-style: italic;
+  font-family: "PlayfairDisplay";
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 1.44px;
+}
+
+#user-name::placeholder,
+#user-email::placeholder,
+#tell-more::placeholder {
+  font-style: italic;
+  font-family: "PlayfairDisplay";
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 1.44px;
+}
+
+.form-container form {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.submit-link {
+  width: 190px;
+  height: 24px;
+  border: none;
+  background-color: var(--theme-color);
+  font-weight: 700;
 }

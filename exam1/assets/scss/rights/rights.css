@@ -1,0 +1,41 @@
+.rights {
+  width: 100%;
+  height: 86px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid var(--divider-color);
+}
+.rights__agree-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.rights__agree-block .rights__text:first-child {
+  padding-right: 32px;
+}
+.rights__margin {
+  margin-top: 100px;
+}
+.rights__sub-text {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 300;
+}
+.rights__text {
+  font-family: "lato";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 1.12px;
+}
+
+span.rights__sub-text {
+  padding-right: 12px;
+}

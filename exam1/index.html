@@ -233,7 +233,22 @@
             </blockquote>
           </section>
           <section class="video">
-            <section class="video__container"></section>
+            <section class="video__wrapper">
+              <div class="video__container">
+                <input type="checkbox" id="video-checkbox" />
+                <label for="video-checkbox" class="play-button"></label>
+
+                <video
+                  class="video-item"
+                  width="870"
+                  height="539"
+                  src="assets/video/abstract.mp4"
+                  autoplay
+                  controls
+                  poster="assets/image/pc/main-content/screensaver-video.png"
+                ></video>
+              </div>
+            </section>
             <section class="video__text-container">
               <h2 class="video__text-container_title">
                 A <span class="text-italic">powerful API</span> , easy to use
@@ -362,7 +377,48 @@
                   </p>
                 </div>
               </div>
-              <form action=""></form>
+              <div class="form-container">
+                <form action="" method="post">
+                  <input
+                    id="user-name"
+                    type="text"
+                    name="name"
+                    placeholder="Your name"
+                    required
+                  />
+
+                  <input
+                    id="user-email"
+                    type="email"
+                    name="user-email"
+                    placeholder="Email"
+                    required
+                  />
+
+                  <textarea
+                    id="tell-more"
+                    name="tell-more"
+                    rows="1"
+                    cols="36"
+                    placeholder="Tell more"
+                  ></textarea>
+                  <button type="submit" class="link submit-link">
+                    Send request
+                  </button>
+                </form>
+              </div>
+            </div>
+          </section>
+          <section class="rights rights__margin">
+            <p class="rights__sub-text">
+              © 2020 Solisgroup. All Rights Reserved.
+            </p>
+            <p class="rights__text">
+              <span class="rights__sub-text">made by</span>Zgraya.digital
+            </p>
+            <div class="rights__agree-block">
+              <p class="rights__text">User Agreement</p>
+              <p class="rights__text">Privacy Policy</p>
             </div>
           </section>
         </footer>
