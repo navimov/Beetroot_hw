@@ -5,9 +5,9 @@ body {
   font-weight: 300;
   color: var(--text-color);
   background-color: var(--theme-color);
-  margin: 0;
   background-image: url(../../image/pc/hero/hero.jpg);
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .container {
@@ -16,6 +16,16 @@ body {
 
 .content__container {
   margin: 150px 135px 0;
+}
+@media only screen and (min-width: 1200px) {
+  .content__container {
+    margin: 10vw var(--content-margin) 0;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .content__container {
+    margin: 5vw var(--content-margin) 0;
+  }
 }
 
 .main {
@@ -30,7 +40,27 @@ body {
 .main__margin {
   margin: 150px 0 100px;
 }
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  .main__margin {
+    margin: 100px 0 70px;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .main__margin {
+    margin: 50px 0 40px;
+  }
+}
 
 .main > section:not(:last-child) {
   margin-bottom: 120px;
+}
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  .main > section:not(:last-child) {
+    margin-bottom: 80px;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  .main > section:not(:last-child) {
+    margin-bottom: 40px;
+  }
 }

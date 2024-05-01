@@ -1,4 +1,3 @@
-@import url(../scss/header/header-media.css);
 .nav__link {
   font-weight: 400;
   font-size: 14px;
@@ -17,6 +16,16 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  .header {
+    padding: 0 var(--content-margin);
+  }
+}
+@media only screen and (max-width: 599px) {
+  .header {
+    padding: 0 var(--content-margin);
+  }
 }
 .header__margin {
   margin-top: 30px;
@@ -52,6 +61,43 @@
           align-items: center;
 }
 
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  .nav__list.open {
+    z-index: 10;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 40px;
+  }
+}
+
+.nav__list.open {
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 40px;
+}
 .nav__wrapper {
   width: 490px;
   padding-top: 5px;
@@ -64,6 +110,30 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  .nav__list {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #262a3f;
+    padding: 100px;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .nav__list {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #262a3f;
+    padding: 100px;
+  }
 }
 .nav__link {
   text-decoration: none;
@@ -115,6 +185,22 @@
   -webkit-transform: translateY(50%);
           transform: translateY(50%);
   cursor: pointer;
+}
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  .burger {
+    display: block;
+    right: 10vw;
+    top: 45px;
+    z-index: 10;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .burger {
+    display: block;
+    right: 10vw;
+    top: 45px;
+    z-index: 10;
+  }
 }
 .burger span {
   display: inline-block;

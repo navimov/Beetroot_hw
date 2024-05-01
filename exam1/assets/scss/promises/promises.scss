@@ -8,7 +8,7 @@
     position: relative;
     width: 770px;
     height: 450px;
-    right: 18%;
+    right: 16%;
     padding-left: 70px;
     background-color: rgba(12, 16, 35, 0.8);
     display: flex;
@@ -48,4 +48,7 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+.promises__text_button-container:hover {
+  border-color: var(--button-hover-color);
 }

@@ -1,13 +1,32 @@
 @import url(../variables.css);
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 599px) {
+      @content;
+    }
+  } @else if $breakpoint == tablet {
+    @media only screen and (min-width: 600px) and (max-width: 899px) {
+      @content;
+    }
+  } @else if $breakpoint == desktop {
+    @media only screen and (min-width: 900px) {
+      @content;
+    }
+  } @else if $breakpoint == minipc {
+    @media only screen and (min-width: 1200px) {
+      @content;
+    }
+  }
+}
 body {
   font-family: "lato";
   font-size: 18px;
   font-weight: 300;
   color: var(--text-color);
   background-color: var(--theme-color);
-  margin: 0;
   background-image: url(../../image/pc/hero/hero.jpg);
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .container {
@@ -16,14 +35,33 @@ body {
 
 .content__container {
   margin: 150px 135px 0;
+  @include respond-to(minipc) {
+    margin: 10vw var(--content-margin) 0;
+  }
+
+  @include respond-to(phone) {
+    margin: 5vw var(--content-margin) 0;
+  }
 }
 .main {
   display: flex;
   flex-direction: column;
   &__margin {
     margin: 150px 0 100px;
+    @include respond-to(tablet) {
+      margin: 100px 0 70px;
+    }
+    @include respond-to(phone) {
+      margin: 50px 0 40px;
+    }
   }
 }
 .main > section:not(:last-child) {
   margin-bottom: 120px;
+  @include respond-to(tablet) {
+    margin-bottom: 80px;
+  }
+  @include respond-to(tablet) {
+    margin-bottom: 40px;
+  }
 }

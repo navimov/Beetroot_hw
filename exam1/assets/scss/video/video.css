@@ -11,6 +11,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0 100px;
 }
 .video__text-container_title {
   padding-bottom: 20px;
@@ -61,26 +62,13 @@
   border-radius: 50%;
 }
 
-.play-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 80px;
-  height: 80px;
-  background: url("../../image/ico/play.png") no-repeat center center;
-  background-size: contain;
-  z-index: 10;
+video {
+  width: 100%;
+  height: 100%;
+}
+
+.video__container:hover {
   cursor: pointer;
-}
-
-#video-checkbox {
-  display: none;
-}
-
-#video-checkbox:checked + .play-button {
-  display: none;
 }
 
 video::-webkit-media-controls {

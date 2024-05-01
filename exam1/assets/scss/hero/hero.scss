@@ -1,4 +1,26 @@
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 599px) {
+      @content;
+    }
+  } @else if $breakpoint == tablet {
+    @media only screen and (min-width: 600px) and (max-width: 899px) {
+      @content;
+    }
+  } @else if $breakpoint == desktop {
+    @media only screen and (min-width: 900px) {
+      @content;
+    }
+  }
+}
 .hero {
+  @include respond-to(phone) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
   width: 521px;
   height: auto;
   .description_margin {
@@ -7,26 +29,40 @@
 }
 .description {
   line-height: 26px;
+  @include respond-to(phone) {
+    text-align: center;
+  }
 }
 .h1 {
   font-family: "PlayfairDisplay";
   font-weight: 400;
-  font-size: 44px;
-  line-height: 52px;
+  font-size: var(--h1-font-size);
+  line-height: calc(1.18px * --h1-font-size);
+  @include respond-to(phone) {
+    text-align: center;
+  }
 }
 .text-italic {
   font-style: italic;
   color: var(--text-italic-color);
 }
 .link {
+  @include respond-to(phone) {
+    margin: 0 auto;
+  }
+  width: fit-content;
+  font-weight: 700;
   position: relative;
   font-size: 20px;
   line-height: 20px;
   font-weight: 700;
-  color: #53f3cd;
+  color: var(--big-link-color);
   letter-spacing: calc(20px / 100 * 8);
   text-transform: uppercase;
   text-decoration: none;
+  &:hover {
+    color: var(--big-link-hover-color);
+  }
 }
 .link::after {
   position: absolute;

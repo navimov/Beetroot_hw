@@ -1,6 +1,12 @@
 :root {
+  --h1-font-size: clamp(1.875rem, 1.5669rem + 1.3146vw, 2.75rem);
   --theme-color: #0c1023;
   --text-color: #fff;
   --text-italic-color: #689ff2;
   --divider-color: #515773;
+  --big-link-color: #53f3cd;
+  --big-link-hover-color: #02e0ab;
+  --button-color: #53f3cd;
+  --button-hover-color: #02e0ab;
+  --content-margin: 9vw;
 }

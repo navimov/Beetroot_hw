@@ -10,3 +10,6 @@ console.log(
 let distance = prompt("Введіть відстань між містами");
 let time = prompt("Введіть тривалість подорожі");
 alert(`Вам потрібно рухатись зі швидкістю ${distance / time} км/год`);
+let s = "super";
+s.length = 4;
+console.log(s);
