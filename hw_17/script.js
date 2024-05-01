@@ -39,7 +39,7 @@ alert(
   )} гривень`
 );
 /*TASK 2*/
-let threeCyberNum = prompt("Введіть число в діапазоні від 100 до 1000");
+let threeCyberNum = prompt("Введіть число в діапазоні від 100 до 999");
 alert(
   `Введене Вами число ${threeCyberNum} в зворотньому порядку матиме вигляд ${
     threeCyberNum[2] + threeCyberNum[1] + threeCyberNum[0]
