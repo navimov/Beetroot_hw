@@ -40,10 +40,19 @@ alert(
 );
 /*TASK 2*/
 let threeCyberNum = prompt("Введіть число в діапазоні від 100 до 999");
+//Рішення 1
 alert(
   `Введене Вами число ${threeCyberNum} в зворотньому порядку матиме вигляд ${
     threeCyberNum[2] + threeCyberNum[1] + threeCyberNum[0]
   }`
+);
+//Рішення 2
+let hundreds = Math.floor(threeCyberNum / 100);
+let tenses = Math.floor(threeCyberNum / 10) % 10;
+let ones = Math.floor(threeCyberNum % 10);
+alert(
+  `Введене Вами число ${threeCyberNum} в зворотньому порядку матиме вигляд ${ones}${tenses}${hundreds}
+  `
 );
 /////////////////////////////////////////////////////////////////////Level MAXIMUM
 /*TASK 1*/
