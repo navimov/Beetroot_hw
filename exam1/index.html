@@ -237,8 +237,6 @@
               <div class="video__container">
                 <video
                   class="video-item"
-                  width="870"
-                  height="539"
                   src="assets/video/abstract.mp4"
                   autoplay
                   controls
@@ -426,7 +424,11 @@
       document.querySelector(".burger").addEventListener("click", function () {
         this.classList.toggle("active");
         document.querySelector(".nav__list").classList.toggle("open");
-        document.querySelector("body").style.overflow = "hidden";
+        if (document.querySelector(".nav__list").classList.contains("open")) {
+          document.querySelector("body").style.overflow = "hidden";
+        } else {
+          document.querySelector("body").style.overflow = "auto";
+        }
       });
     </script>
   </body>

@@ -17,21 +17,11 @@
       -ms-flex-align: center;
           align-items: center;
 }
-@media only screen and (min-width: 600px) and (max-width: 899px) {
-  .header {
-    padding: 0 var(--content-margin);
-  }
-}
-@media only screen and (max-width: 599px) {
-  .header {
-    padding: 0 var(--content-margin);
-  }
-}
 .header__margin {
   margin-top: 30px;
 }
 .header__inner {
-  width: 1170px;
+  width: 100%;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;

@@ -5,6 +5,12 @@
   gap: 90px 30px;
   padding-top: 30px;
 }
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  .benefits {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+}
 .benefits__item {
   position: relative;
   width: 570px;

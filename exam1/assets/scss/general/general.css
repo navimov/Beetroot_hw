@@ -1,4 +1,3 @@
-@import url(../variables.css);
 body {
   font-family: "lato";
   font-size: 18px;
@@ -7,7 +6,7 @@ body {
   background-color: var(--theme-color);
   background-image: url(../../image/pc/hero/hero.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .container {
@@ -17,9 +16,9 @@ body {
 .content__container {
   margin: 150px 135px 0;
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 600px) and (max-width: 899px) {
   .content__container {
-    margin: 10vw var(--content-margin) 0;
+    margin: 150px 70px 0;
   }
 }
 @media only screen and (max-width: 599px) {
@@ -59,7 +58,7 @@ body {
     margin-bottom: 80px;
   }
 }
-@media only screen and (min-width: 600px) and (max-width: 899px) {
+@media only screen and (max-width: 599px) {
   .main > section:not(:last-child) {
     margin-bottom: 40px;
   }
