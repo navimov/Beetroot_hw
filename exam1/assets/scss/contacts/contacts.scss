@@ -32,6 +32,9 @@
     font-weight: 400;
   }
   &__container {
+    @include respond-to(phone){
+      flex-direction: column;
+    }
     display: flex;
     justify-content: space-between;
     width: 100%;

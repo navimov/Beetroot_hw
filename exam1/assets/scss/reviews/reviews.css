@@ -28,6 +28,12 @@
         flex-wrap: wrap;
   }
 }
+@media only screen and (max-width: 599px) {
+  .reviews__content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 .reviews__author {
   position: absolute;
   left: 40px;

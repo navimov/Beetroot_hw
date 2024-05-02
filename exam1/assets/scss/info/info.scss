@@ -29,6 +29,9 @@
   align-items: center;
   position: relative;
   &__text_text-container {
+    @include respond-to(phone) {
+      width: 100%;
+    }
     width: 400px;
     height: 389px;
   }

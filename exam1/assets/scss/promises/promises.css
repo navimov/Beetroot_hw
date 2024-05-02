@@ -19,6 +19,14 @@
             flex-direction: column;
   }
 }
+@media only screen and (max-width: 599px) {
+  .promises {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .promises__text {
   position: relative;
   width: 770px;

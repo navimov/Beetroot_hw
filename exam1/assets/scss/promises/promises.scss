@@ -17,6 +17,9 @@
   @include respond-to(tablet) {
     flex-direction: column;
   }
+  @include respond-to(phone) {
+    flex-direction: column;
+  }
   position: relative;
   height: fit-content;
   width: 100%;

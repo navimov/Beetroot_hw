@@ -11,6 +11,12 @@
     grid-template-rows: 1fr 1fr 1fr 1fr;
   }
 }
+@media only screen and (max-width: 599px) {
+  .benefits {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+}
 .benefits__item {
   position: relative;
   width: 570px;

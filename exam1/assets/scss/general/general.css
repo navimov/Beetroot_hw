@@ -6,7 +6,7 @@ body {
   background-color: var(--theme-color);
   background-image: url(../../image/pc/hero/hero.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 .container {

@@ -32,6 +32,11 @@
   width: 400px;
   height: 389px;
 }
+@media only screen and (max-width: 599px) {
+  .info__text_text-container {
+    width: 100%;
+  }
+}
 .info__picture {
   width: 570px;
   height: 100%;

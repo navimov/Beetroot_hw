@@ -23,6 +23,9 @@
     @include respond-to(tablet) {
       flex-wrap: wrap;
     }
+    @include respond-to(phone) {
+      flex-wrap: wrap;
+    }
     display: flex;
     justify-content: space-between;
   }
