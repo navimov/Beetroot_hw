@@ -58,7 +58,7 @@ alert(
 /*TASK 1*/
 let depositSum = prompt("Введіть суму депозиту");
 const baseIntRate = "5%";
-let userIntRate = parseInt(baseIntRate) / 12;
+let userIntRate = parseInt(baseIntRate) / 6;
 alert(
   `Сума відсотків отриманих за 2 місяці від депозиту розміром ${depositSum}$ при річній ставці ${baseIntRate} становитиме ${
     (depositSum * userIntRate) / 100
