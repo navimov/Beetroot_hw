@@ -1,4 +1,3 @@
-// @import url(../variables.css);
 @mixin respond-to($breakpoint) {
   @if $breakpoint == phone {
     @media only screen and (max-width: 599px) {
@@ -20,7 +19,7 @@ body {
   font-weight: 300;
   color: var(--text-color);
   background-color: var(--theme-color);
-  background-image: url(../../image/pc/hero/hero.jpg);
+  background-image: url(../../image/pc/hero/hero.webp);
   background-repeat: no-repeat;
   background-size: contain;
 }

@@ -18,6 +18,7 @@
   height: fit-content;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-direction: column;
   &__content {
     @include respond-to(tablet) {
@@ -51,6 +52,10 @@
     padding-bottom: 20px;
   }
   &__title {
+    @include respond-to(phone) {
+      margin-bottom: 30px;
+      width: 100%;
+    }
     width: 400px;
   }
   &__content_block {
@@ -61,16 +66,28 @@
   }
 
   &__content_block:not(:last-child) {
+    @include respond-to(phone) {
+      margin-bottom: 20px;
+    }
     margin-right: 30px;
   }
   &-jamika {
-    background-image: url(../../image/pc/main-content/jamika-bg-min.png);
+    background-image: url(../../image/pc/main-content/jamika.webp);
+    @include respond-to(phone) {
+      background-image: url(../../image/phone/main-content/jamika.webp);
+    }
   }
   &-evie {
-    background-image: url(../../image/pc/main-content/evie-bg-min.png);
+    background-image: url(../../image/pc/main-content/evie.webp);
+    @include respond-to(phone) {
+      background-image: url(../../image/phone/main-content/evie.webp);
+    }
   }
   &-elvis {
-    background-image: url(../../image/pc/main-content/elvis-bg-min.png);
+    @include respond-to(phone) {
+      background-image: url(../../image/phone/main-content/elvis.webp);
+    }
+    background-image: url(../../image/pc/main-content/elvis.webp);
   }
   &__author_item {
     font-family: "PlayfairDisplay";

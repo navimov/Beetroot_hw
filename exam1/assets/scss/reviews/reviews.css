@@ -9,6 +9,9 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -56,6 +59,12 @@
 .reviews__title {
   width: 400px;
 }
+@media only screen and (max-width: 599px) {
+  .reviews__title {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+}
 .reviews__content_block {
   position: relative;
   width: 370px;
@@ -65,14 +74,34 @@
 .reviews__content_block:not(:last-child) {
   margin-right: 30px;
 }
+@media only screen and (max-width: 599px) {
+  .reviews__content_block:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
 .reviews-jamika {
-  background-image: url(../../image/pc/main-content/jamika-bg-min.png);
+  background-image: url(../../image/pc/main-content/jamika.webp);
+}
+@media only screen and (max-width: 599px) {
+  .reviews-jamika {
+    background-image: url(../../image/phone/main-content/jamika.webp);
+  }
 }
 .reviews-evie {
-  background-image: url(../../image/pc/main-content/evie-bg-min.png);
+  background-image: url(../../image/pc/main-content/evie.webp);
+}
+@media only screen and (max-width: 599px) {
+  .reviews-evie {
+    background-image: url(../../image/phone/main-content/evie.webp);
+  }
 }
 .reviews-elvis {
-  background-image: url(../../image/pc/main-content/elvis-bg-min.png);
+  background-image: url(../../image/pc/main-content/elvis.webp);
+}
+@media only screen and (max-width: 599px) {
+  .reviews-elvis {
+    background-image: url(../../image/phone/main-content/elvis.webp);
+  }
 }
 .reviews__author_item {
   font-family: "PlayfairDisplay";

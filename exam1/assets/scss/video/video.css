@@ -13,6 +13,16 @@
           justify-content: space-between;
   margin: 0 100px;
 }
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  .video {
+    margin: 0 20px;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .video {
+    margin: 0 20px;
+  }
+}
 .video__text-container_title {
   padding-bottom: 20px;
   font-family: "PlayfairDisplay";

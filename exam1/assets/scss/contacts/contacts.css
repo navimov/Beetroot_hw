@@ -19,6 +19,12 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media only screen and (max-width: 599px) {
+  .contacts__text_block {
+    width: 100%;
+    height: auto;
+  }
+}
 .contacts__text_title {
   font-family: "PlayfairDisplay";
   font-size: 40px;
@@ -34,6 +40,14 @@
   width: 100%;
   height: 240px;
 }
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  .contacts__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 @media only screen and (max-width: 599px) {
   .contacts__container {
     -webkit-box-orient: vertical;
@@ -46,6 +60,12 @@
 .form-container {
   width: 470px;
   height: 240;
+}
+@media only screen and (max-width: 599px) {
+  .form-container {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 form > input:not(:last-child),

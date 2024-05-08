@@ -26,6 +26,14 @@
   display: flex;
   align-items: center;
   &__text {
+    @include respond-to(tablet) {
+      right: 0;
+      width: 100%;
+    }
+    @include respond-to(phone) {
+      right: 0;
+      width: 100%;
+    }
     position: relative;
     width: 770px;
     height: 450px;
@@ -41,6 +49,12 @@
     line-height: 48px;
   }
   &__text_button-container {
+    @include respond-to(tablet) {
+      width: 200px;
+    }
+    @include respond-to(phone) {
+      width: 100px;
+    }
     position: relative;
     width: 300px;
     height: 90px;
@@ -48,6 +62,14 @@
   }
 
   &__text-wrapper {
+    @include respond-to(tablet) {
+      width: 100%;
+    }
+    @include respond-to(phone) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      width: 100%;
+    }
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
