@@ -11,7 +11,12 @@ let showMessage = function () {
     `"let showMessage = function () {do something}" This is function expression method to create function`
   );
 };
-
+// arrow functions
+let arrowFunc = () => 2 * 2;
+//  anonymous function
+(function (a, b) {
+  return a + b;
+});
 //TASK2.Створи функцію, яка буде виводити кількість переданих їй аргументів.
 function showNumberParams(name, age, eyeColor) {
   alert(`Функція приймає ${arguments.length} аргумент(и/ів)`);
