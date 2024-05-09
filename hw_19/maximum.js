@@ -3,8 +3,8 @@ function Fraction(numerator, denominator) {
   this.numerator = numerator;
   this.denominator = denominator;
 }
-let frac1_2 = new Fraction(-45, -15);
-let frac2_3 = new Fraction(18, 4);
+let frac1_2 = new Fraction(-45, 15);
+let frac2_3 = new Fraction(18, -4);
 ///////////////////////////////Створи об'єкт, який має методи роботи з дробом:
 let FractionMethods = {
   ///////////////////Скорочення об'єкта-дробу.
@@ -66,6 +66,14 @@ let FractionMethods = {
   /////////////////////////////Складання 2-х об'єктів-дробів.
   add: function add(frac1, frac2) {
     let numerator, denominator, temp1_numerator, temp2_numerator;
+    if (frac1.numerator < 0 || frac1.denominator < 0) {
+      frac1.numerator = -frac1.numerator;
+      frac1.denominator = -frac1.denominator;
+    }
+    if (frac2.numerator < 0 || frac2.denominator < 0) {
+      frac2.numerator = -frac2.numerator;
+      frac2.denominator = -frac2.denominator;
+    }
     denominator = frac1.denominator * frac2.denominator;
     temp1_numerator = frac1.numerator * frac2.denominator;
     temp2_numerator = frac2.numerator * frac1.denominator;
@@ -80,6 +88,14 @@ let FractionMethods = {
   //////////////////Віднімання 2-х об'єктів-дробів.
   subtraction: function subtr(frac1, frac2) {
     let numerator, denominator, temp1_numerator, temp2_numerator;
+    if (frac1.numerator < 0 || frac1.denominator < 0) {
+      frac1.numerator = -frac1.numerator;
+      frac1.denominator = -frac1.denominator;
+    }
+    if (frac2.numerator < 0 || frac2.denominator < 0) {
+      frac2.numerator = -frac2.numerator;
+      frac2.denominator = -frac2.denominator;
+    }
     denominator = frac1.denominator * frac2.denominator;
     temp1_numerator = frac1.numerator * frac2.denominator;
     temp2_numerator = frac2.numerator * frac1.denominator;
@@ -94,6 +110,14 @@ let FractionMethods = {
   //////////////////Множення 2-х об'єктів-дробів.
   multiply: function subtr(frac1, frac2) {
     let numerator, denominator;
+    if (frac1.numerator < 0 || frac1.denominator < 0) {
+      frac1.numerator = -frac1.numerator;
+      frac1.denominator = -frac1.denominator;
+    }
+    if (frac2.numerator < 0 || frac2.denominator < 0) {
+      frac2.numerator = -frac2.numerator;
+      frac2.denominator = -frac2.denominator;
+    }
     denominator = frac1.denominator * frac2.denominator;
     numerator = frac1.numerator * frac2.numerator;
     let res = {
@@ -106,6 +130,14 @@ let FractionMethods = {
   ////////////////Ділення 2-х об'єктів-дробів.
   divide: function subtr(frac1, frac2) {
     let numerator, denominator;
+    if (frac1.numerator < 0 || frac1.denominator < 0) {
+      frac1.numerator = -frac1.numerator;
+      frac1.denominator = -frac1.denominator;
+    }
+    if (frac2.numerator < 0 || frac2.denominator < 0) {
+      frac2.numerator = -frac2.numerator;
+      frac2.denominator = -frac2.denominator;
+    }
     denominator = frac1.denominator * frac2.numerator;
     numerator = frac1.numerator * frac2.denominator;
     let res = {
