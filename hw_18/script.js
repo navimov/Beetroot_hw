@@ -76,7 +76,6 @@ exitLoop: while (true) {
   if (
     minNum === null ||
     isNaN(+minNum) ||
-    minNum.length != String(+minNum).length ||
     Math.floor(+minNum) !== +minNum ||
     +minNum < 0
   ) {
