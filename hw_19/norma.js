@@ -21,7 +21,7 @@ function TimeObj(hours, minutes, seconds) {
       }
     }
     alert(
-      `Поточний час збережений в об'єкті ${this.hours}:${this.minutes}:${this.seconds}`
+      `Поточний час збережений в об'єкті після додавання секунд ${this.hours}:${this.minutes}:${this.seconds}`
     );
   };
   //Метод для зміни часу на передану кількість хвилин.
@@ -35,7 +35,7 @@ function TimeObj(hours, minutes, seconds) {
       }
     }
     alert(
-      `Поточний час збережений в об'єкті ${this.hours}:${this.minutes}:${this.seconds}`
+      `Поточний час збережений в об'єкті  після додавання хвилин ${this.hours}:${this.minutes}:${this.seconds}`
     );
   };
   //Метод для зміни часу на передану кількість годин.
@@ -45,7 +45,7 @@ function TimeObj(hours, minutes, seconds) {
       this.hours = this.hours % 24;
     }
     alert(
-      `Поточний час збережений в об'єкті ${this.hours}:${this.minutes}:${this.seconds}`
+      `Поточний час збережений в об'єкті  після додавання годин  ${this.hours}:${this.minutes}:${this.seconds}`
     );
   };
 }
