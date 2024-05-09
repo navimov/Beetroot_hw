@@ -3,8 +3,8 @@ function Fraction(numerator, denominator) {
   this.numerator = numerator;
   this.denominator = denominator;
 }
-let frac1_2 = new Fraction(-45, 15);
-let frac2_3 = new Fraction(-18, 4);
+let frac1_2 = new Fraction(-45, -15);
+let frac2_3 = new Fraction(18, 4);
 ///////////////////////////////Створи об'єкт, який має методи роботи з дробом:
 let FractionMethods = {
   ///////////////////Скорочення об'єкта-дробу.
