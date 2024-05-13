@@ -97,7 +97,7 @@
     left: 16px;
   }
   &-jamika {
-    background-image: url(../../image/pc/main-content/jamika.webp);
+    background-image: url(../../image/pc/main-content/jamika.avif);
     background-size: cover;
     @include respond-to(phone) {
       background-image: url(../../image/phone/main-content/jamika.webp);
@@ -105,7 +105,7 @@
     }
   }
   &-evie {
-    background-image: url(../../image/pc/main-content/evie.webp);
+    background-image: url(../../image/pc/main-content/evie.avif);
     background-size: cover;
     @include respond-to(phone) {
       background-image: url(../../image/phone/main-content/evie.webp);
@@ -114,10 +114,10 @@
   }
   &-elvis {
     @include respond-to(phone) {
-      background-image: url(../../image/phone/main-content/elvis.webp);
+      background-image: url(../../image/phone/main-content/elvis.avif);
       background-size: cover;
     }
-    background-image: url(../../image/pc/main-content/elvis.webp);
+    background-image: url(../../image/pc/main-content/elvis.avif);
     background-size: cover;
   }
   &__author_item {

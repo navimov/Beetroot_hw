@@ -126,7 +126,7 @@
   }
 }
 .reviews-jamika {
-  background-image: url(../../image/pc/main-content/jamika.webp);
+  background-image: url(../../image/pc/main-content/jamika.avif);
   background-size: cover;
 }
 @media only screen and (max-width: 599px) {
@@ -136,7 +136,7 @@
   }
 }
 .reviews-evie {
-  background-image: url(../../image/pc/main-content/evie.webp);
+  background-image: url(../../image/pc/main-content/evie.avif);
   background-size: cover;
 }
 @media only screen and (max-width: 599px) {
@@ -146,12 +146,12 @@
   }
 }
 .reviews-elvis {
-  background-image: url(../../image/pc/main-content/elvis.webp);
+  background-image: url(../../image/pc/main-content/elvis.avif);
   background-size: cover;
 }
 @media only screen and (max-width: 599px) {
   .reviews-elvis {
-    background-image: url(../../image/phone/main-content/elvis.webp);
+    background-image: url(../../image/phone/main-content/elvis.avif);
     background-size: cover;
   }
 }
