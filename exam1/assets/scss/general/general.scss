@@ -22,9 +22,16 @@
   }
 }
 body {
+  @include respond-to(phone) {
+    background-image: url(../../image/pc/hero/hero.avif);
+  }
+  @include respond-to(tablet) {
+    background-image: url(../../image/tablet/hero/hero.webp);
+  }
   @include respond-to(middlepc) {
     background-size: auto;
   }
+
   @include respond-to(retina) {
     background-size: cover;
   }
