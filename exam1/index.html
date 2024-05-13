@@ -183,11 +183,26 @@
         </div>
         <main class="main main__margin">
           <section class="info">
-            <img
-              class="info__picture"
-              src="assets/image/pc/main-content/statistic-image-min.avif"
-              alt="street with ofices buildings"
-            />
+            <picture class="info__picture">
+              <source
+                srcset="
+                  assets/image/phone/main-content/statistic-image-min.avif
+                "
+                media="(max-width:599px)"
+                type="image/avif"
+              />
+              <source
+                srcset="assets/image/pc/main-content/statistic-image-min.avif"
+                media="(max-width:1440px)"
+                type="image/avif"
+              />
+
+              <img
+                class="info__picture"
+                src="assets/image/pc/main-content/statistic-image-min.avif"
+                alt="street with ofices buildings"
+              />
+            </picture>
             <article class="info__text">
               <section class="info__text_achievement">
                 <div class="info__achievement_item">
