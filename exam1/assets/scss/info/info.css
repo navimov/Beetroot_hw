@@ -1,5 +1,5 @@
 .info {
-  margin-top: 5px;
+  margin-top: 26px;
   width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -11,6 +11,17 @@
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+}
+@media only screen and (max-width: 1350px) {
+  .info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: self-end;
+        -ms-flex-align: self-end;
+            align-items: self-end;
+  }
 }
 @media only screen and (min-width: 600px) and (max-width: 899px) {
   .info {
@@ -32,14 +43,27 @@
   width: 400px;
   height: 389px;
 }
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  .info__text_text-container {
+    width: 100%;
+    height: auto;
+  }
+}
 @media only screen and (max-width: 599px) {
   .info__text_text-container {
     width: 100%;
+    height: auto;
   }
 }
 .info__picture {
   width: 570px;
   height: 100%;
+}
+@media only screen and (max-width: 1350px) {
+  .info__picture {
+    width: 60%;
+    height: auto;
+  }
 }
 @media only screen and (max-width: 599px) {
   .info__picture {
@@ -48,15 +72,15 @@
 }
 .info__text {
   position: relative;
-  width: 770px;
-  height: 580px;
+  width: 70vw;
+  height: auto;
   background-color: rgba(12, 16, 35, 0.8);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  right: 15%;
-  padding: 45px 0;
+  right: 14%;
+  padding: 45px 20px 45px 0;
 }
 @media only screen and (min-width: 600px) and (max-width: 899px) {
   .info__text {
@@ -96,6 +120,11 @@
       -ms-flex-align: center;
           align-items: center;
 }
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  .info__text_achievement {
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 599px) {
   .info__text_achievement {
     -webkit-box-orient: horizontal;
@@ -128,6 +157,11 @@
           align-items: center;
   gap: 12px;
 }
+@media only screen and (max-width: 599px) {
+  .info__achievement_item {
+    margin-bottom: 30px;
+  }
+}
 
 .info__achievement_item:not(:last-child):after {
   content: "";
@@ -147,19 +181,19 @@
 
 .achievement__title {
   font-family: "PlayfairDisplay";
-  font-size: 68px;
+  font-size: clamp(1.5rem, 0.4423rem + 4.2308vw, 4.25rem);
   line-height: 72px;
   font-weight: 400;
 }
 
 .dolar-sign {
-  font-size: 40px;
+  font-size: clamp(1.5rem, 1.1154rem + 1.5385vw, 2.5rem);
   line-height: 50px;
 }
 
 .achievement__item_title {
   display: inline-block;
-  font-size: 68px;
+  font-size: clamp(1.5rem, 0.4423rem + 4.2308vw, 4.25rem);
   line-height: 72px;
   font-weight: 400;
   font-family: "PlayfairDisplay";
@@ -169,7 +203,7 @@
   .info__text_achievement::after {
     content: "";
     position: absolute;
-    bottom: 30px;
+    bottom: 20px;
     left: 0;
     width: 100%;
     height: 1px;

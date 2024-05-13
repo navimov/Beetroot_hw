@@ -11,12 +11,19 @@
     @media only screen and (min-width: 900px) {
       @content;
     }
+  } @else if $breakpoint == middlepc {
+    @media only screen and (max-width: 1350px) {
+      @content;
+    }
   }
 }
 .benefits {
+  @include respond-to(middlepc) {
+    grid-template-columns: 1fr;
+    align-self: center;
+  }
   @include respond-to(tablet) {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
   }
   @include respond-to(phone) {
     grid-template-columns: 100%;
@@ -28,13 +35,17 @@
   gap: 90px 0;
   padding-top: 30px;
   &__item {
+    @include respond-to(middlepc) {
+      width: 100%;
+    }
     @include respond-to(tablet) {
       width: 100%;
       height: 100%;
     }
     @include respond-to(phone) {
       width: 100%;
-      height: 100%;
+      height: 200px;
+      margin: 70px 0;
     }
     position: relative;
     width: 570px;

@@ -11,6 +11,14 @@
       -ms-flex-align: center;
           align-items: center;
 }
+@media only screen and (max-width: 1350px) {
+  .promises {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 @media only screen and (min-width: 600px) and (max-width: 899px) {
   .promises {
     -webkit-box-orient: vertical;
@@ -25,6 +33,16 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  .promises__picture {
+    display: none;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .promises__picture {
+    display: none;
   }
 }
 .promises__text {
@@ -41,22 +59,35 @@
       -ms-flex-align: center;
           align-items: center;
 }
+@media only screen and (max-width: 1350px) {
+  .promises__text {
+    right: 0;
+  }
+}
 @media only screen and (min-width: 600px) and (max-width: 899px) {
   .promises__text {
     right: 0;
     width: 100%;
+    background-image: url(../../image/pc/main-content/features.webp);
+    height: auto;
   }
 }
 @media only screen and (max-width: 599px) {
   .promises__text {
     right: 0;
     width: 100%;
+    height: auto;
   }
 }
 .promises__text_title {
   font-family: "PlayfairDisplay";
   font-size: 24px;
   line-height: 48px;
+}
+@media only screen and (max-width: 599px) {
+  .promises__text_title {
+    text-align: center;
+  }
 }
 .promises__text_button-container {
   position: relative;
@@ -71,7 +102,7 @@
 }
 @media only screen and (max-width: 599px) {
   .promises__text_button-container {
-    width: 100px;
+    width: 100%;
   }
 }
 .promises__text-wrapper {
@@ -85,6 +116,9 @@
 @media only screen and (min-width: 600px) and (max-width: 899px) {
   .promises__text-wrapper {
     width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 }
 @media only screen and (max-width: 599px) {
@@ -92,6 +126,9 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 }
 .promises__description_margin {

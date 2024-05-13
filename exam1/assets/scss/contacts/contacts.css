@@ -4,6 +4,11 @@
   border-top: 1px solid #515773;
   padding-top: 60px;
 }
+@media only screen and (max-width: 599px) {
+  .contacts {
+    height: 400px;
+  }
+}
 .contacts__text_block {
   width: 470px;
   height: 120px;

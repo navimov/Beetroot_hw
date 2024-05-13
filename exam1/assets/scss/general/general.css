@@ -1,4 +1,5 @@
 body {
+  width: 100%;
   font-family: "lato";
   font-size: 18px;
   font-weight: 300;
@@ -7,6 +8,16 @@ body {
   background-image: url(../../image/pc/hero/hero.webp);
   background-repeat: no-repeat;
   background-size: contain;
+}
+@media only screen and (max-width: 1340px) {
+  body {
+    background-size: auto;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  body {
+    background-size: cover;
+  }
 }
 
 .container {
@@ -60,6 +71,6 @@ body {
 }
 @media only screen and (max-width: 599px) {
   .main > section:not(:last-child) {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
   }
 }

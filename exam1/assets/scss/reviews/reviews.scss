@@ -11,6 +11,10 @@
     @media only screen and (min-width: 900px) {
       @content;
     }
+  } @else if $breakpoint == middlepc {
+    @media only screen and (max-width: 1350px) {
+      @content;
+    }
   }
 }
 .reviews {
@@ -18,13 +22,22 @@
   height: fit-content;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   flex-direction: column;
   &__content {
-    @include respond-to(tablet) {
+    @include respond-to(middlepc) {
+      flex-direction: row;
       flex-wrap: wrap;
+      justify-content: center;
+    }
+    @include respond-to(tablet) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
     }
     @include respond-to(phone) {
+      justify-content: center;
+      flex-direction: row;
       flex-wrap: wrap;
     }
     display: flex;
@@ -45,6 +58,9 @@
     line-height: 26px;
   }
   &__title_item {
+    @include respond-to(phone) {
+      text-align: center;
+    }
     font-family: "PlayfairDisplay";
     font-size: 40px;
     line-height: 48px;
@@ -57,6 +73,8 @@
       width: 100%;
     }
     width: 400px;
+    align-self: self-start;
+    margin-bottom: 30px;
   }
   &__content_block {
     position: relative;
@@ -66,28 +84,41 @@
   }
 
   &__content_block:not(:last-child) {
+    @include respond-to(middlepc) {
+      margin-bottom: 20px;
+    }
+    @include respond-to(tablet) {
+      margin-bottom: 20px;
+    }
     @include respond-to(phone) {
       margin-bottom: 20px;
     }
     margin-right: 30px;
+    left: 16px;
   }
   &-jamika {
     background-image: url(../../image/pc/main-content/jamika.webp);
+    background-size: cover;
     @include respond-to(phone) {
       background-image: url(../../image/phone/main-content/jamika.webp);
+      background-size: cover;
     }
   }
   &-evie {
     background-image: url(../../image/pc/main-content/evie.webp);
+    background-size: cover;
     @include respond-to(phone) {
       background-image: url(../../image/phone/main-content/evie.webp);
+      background-size: cover;
     }
   }
   &-elvis {
     @include respond-to(phone) {
       background-image: url(../../image/phone/main-content/elvis.webp);
+      background-size: cover;
     }
     background-image: url(../../image/pc/main-content/elvis.webp);
+    background-size: cover;
   }
   &__author_item {
     font-family: "PlayfairDisplay";

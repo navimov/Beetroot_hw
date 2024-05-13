@@ -11,9 +11,16 @@
     @media only screen and (min-width: 900px) {
       @content;
     }
+  } @else if $breakpoint == middlepc {
+    @media only screen and (max-width: 1350px) {
+      @content;
+    }
   }
 }
 .promises {
+  @include respond-to(middlepc) {
+    flex-direction: column;
+  }
   @include respond-to(tablet) {
     flex-direction: column;
   }
@@ -25,14 +32,28 @@
   width: 100%;
   display: flex;
   align-items: center;
+  &__picture {
+    @include respond-to(tablet) {
+      display: none;
+    }
+    @include respond-to(phone) {
+      display: none;
+    }
+  }
   &__text {
+    @include respond-to(middlepc) {
+      right: 0;
+    }
     @include respond-to(tablet) {
       right: 0;
       width: 100%;
+      background-image: url(../../image/pc/main-content/features.webp);
+      height: auto;
     }
     @include respond-to(phone) {
       right: 0;
       width: 100%;
+      height: auto;
     }
     position: relative;
     width: 770px;
@@ -44,6 +65,9 @@
     align-items: center;
   }
   &__text_title {
+    @include respond-to(phone) {
+      text-align: center;
+    }
     font-family: "PlayfairDisplay";
     font-size: 24px;
     line-height: 48px;
@@ -53,7 +77,7 @@
       width: 200px;
     }
     @include respond-to(phone) {
-      width: 100px;
+      width: 100%;
     }
     position: relative;
     width: 300px;
@@ -64,11 +88,13 @@
   &__text-wrapper {
     @include respond-to(tablet) {
       width: 100%;
+      height: fit-content;
     }
     @include respond-to(phone) {
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
       width: 100%;
+      height: fit-content;
     }
     display: grid;
     grid-template-columns: 1fr 1fr;
