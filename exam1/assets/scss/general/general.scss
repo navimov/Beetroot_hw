@@ -23,7 +23,7 @@
 }
 body {
   @include respond-to(phone) {
-    background-image: url(../../image/pc/hero/hero.avif);
+    background-image: url(../../image/pc/hero/hero.webp);
   }
   @include respond-to(tablet) {
     background-image: url(../../image/tablet/hero/hero.webp);

@@ -47,7 +47,7 @@
     @include respond-to(tablet) {
       right: 0;
       width: 100%;
-      background-image: url(../../image/pc/main-content/features.webp);
+      background-image: url(../../image/pc/main-content/features.avif);
       height: auto;
     }
     @include respond-to(phone) {

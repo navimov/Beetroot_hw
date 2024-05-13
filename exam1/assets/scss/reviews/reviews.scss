@@ -114,7 +114,7 @@
   }
   &-elvis {
     @include respond-to(phone) {
-      background-image: url(../../image/phone/main-content/elvis.avif);
+      background-image: url(../../image/phone/main-content/elvis.webp);
       background-size: cover;
     }
     background-image: url(../../image/pc/main-content/elvis.avif);
