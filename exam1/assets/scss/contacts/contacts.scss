@@ -41,9 +41,11 @@
   &__container {
     @include respond-to(tablet) {
       flex-direction: column;
+      justify-content: center;
     }
     @include respond-to(phone) {
       flex-direction: column;
+      justify-content: center;
     }
     display: flex;
     justify-content: space-between;
@@ -96,4 +98,9 @@ form > input:last-child {
   border: none;
   background-color: var(--theme-color);
   font-weight: 700;
+}
+#tell-more,
+#user-name,
+#user-email {
+  color: white;
 }
