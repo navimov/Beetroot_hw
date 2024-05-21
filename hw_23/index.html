@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+  </head>
+  <body>
+    <a href="https://dom.spec.whatwg.org/" id="link">some link to nowhere</a>
+    <button id="btn">Click me</button>
+    <script>
+      // document.getElementById("link").onclick = (event) => {
+      //    event.preventDefault();
+      // };
+      // function buttonClick() {
+      //   alert("button clicked2222!!");
+      // }
+      // document.getElementById("btn").onclick = buttonClick;
+      // document.getElementById("btn").onclick = null;
+      // function btnclicked() {
+      //   alert("knopka bula natusnuta");
+      // }
+      // document.getElementById("btn").addEventListener("click", btnclicked);
+      document.body.onclick = function () {
+        console.log(event);
+        console.log(event.target);
+        console.log(this);
+        event.preventDefault();
+      };
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
