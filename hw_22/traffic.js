@@ -15,15 +15,25 @@ btn.classList.add("button");
 btn.innerText = "next color";
 document.body.append(btn);
 let lightItems = [redCircle, yellowCircle, greenCircle];
-let idx = 1;
+let idx = 0;
+
 let toggleClass = () => {
   if (idx < 3) {
-    lightItems[idx].classList.toggle("lightOn");
+    if (!(idx - 1 < 0)) {
+      lightItems[idx].classList.toggle("lightOn");
+      lightItems[idx - 1].classList.toggle("lightOn");
+    } else {
+      lightItems[idx].classList.toggle("lightOn");
+      if (lightItems[2].classList.contains("lightOn")) {
+        lightItems[2].classList.toggle("lightOn");
+      }
+    }
     idx++;
   } else {
-    idx = 1;
-    lightItems[1].classList.toggle("lightOn");
+    idx = 0;
+    lightItems[idx].classList.toggle("lightOn");
     lightItems[2].classList.toggle("lightOn");
+    idx++;
   }
 };
 btn.addEventListener("click", toggleClass);

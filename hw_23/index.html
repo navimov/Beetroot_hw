@@ -6,8 +6,15 @@
     <title>Events</title>
   </head>
   <body>
-    <a href="https://dom.spec.whatwg.org/" id="link">some link to nowhere</a>
+    <a href="https://dom.spec.whatwg.org/" id="link" onclick="return false"
+      >some link to nowhere</a
+    >
     <button id="btn">Click me</button>
+    
+    <input
+      onmousemove="this.value=event.clientX+':'+event.clientY"
+      value="Наведіть курсор на мене"
+    />
     <script>
       // document.getElementById("link").onclick = (event) => {
       //    event.preventDefault();
@@ -22,7 +29,7 @@
       // }
       // document.getElementById("btn").addEventListener("click", btnclicked);
       document.body.onclick = function () {
-        console.log(event);
+        // console.log(event);
         console.log(event.target);
         console.log(this);
         event.preventDefault();

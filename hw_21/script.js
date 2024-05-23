@@ -40,8 +40,8 @@ function deleteProd(name) {
   let resFilter = toBuyList.filter((item) => item.name !== name);
   return resFilter;
 }
-toBuyList = deleteProd("tomatoes");
-console.log(toBuyList);
+deleteProd("tomatoes");
+console.log(deleteProd("tomatoes"));
 //////////////variant 2  зробив просто для цікавості, щоб використати метод splice
 let delIdx;
 function deleteForFun(name) {
