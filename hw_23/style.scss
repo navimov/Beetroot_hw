@@ -1,0 +1,53 @@
+table,
+th,
+td,
+tr {
+  border: 1px solid;
+  border-collapse: collapse;
+}
+th {
+  width: 200px;
+}
+tr {
+  height: 30px;
+}
+tbody tr th {
+  font-size: 12px;
+}
+.container {
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  align-items: center;
+}
+thead th {
+  cursor: pointer;
+}
+.resizeBox {
+  position: relative;
+  width: 300px;
+  height: 100px;
+  border: solid 1px black;
+  padding: 15px;
+}
+.corner {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  cursor: nw-resize;
+}
+.edit_area {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+.edit_container {
+  width: 700px;
+  height: 200px;
+}
+.text {
+  width: 100%;
+  height: 100%;
+}
