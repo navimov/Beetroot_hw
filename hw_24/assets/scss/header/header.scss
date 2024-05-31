@@ -1,0 +1,158 @@
+@import url(../variables/variables.css);
+@import url(../../fonts/fonts.css);
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 602px) {
+      @content;
+    }
+  } @else if $breakpoint == tablet {
+    @media only screen and (min-width: 603px) and (max-width: 912px) {
+      @content;
+    }
+  } @else if $breakpoint == desktop {
+    @media only screen and (min-width: 913px) {
+      @content;
+    }
+  }
+}
+.header {
+  @include respond-to(tablet) {
+    padding: 0 15px;
+  }
+  @include respond-to(phone) {
+    padding: 0 10px;
+  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+  height: 80px;
+  width: 100%;
+  background-color: var(--brown-light);
+}
+.logo {
+  @include respond-to(tablet) {
+    max-width: 168px;
+    max-height: 31px;
+  }
+  @include respond-to(phone) {
+    max-width: 100px;
+    max-height: 19px;
+  }
+  max-width: 182px;
+  max-height: 34px;
+}
+.search-profile-container {
+  margin-right: 60px;
+  & > img:not(:first-child) {
+    @include respond-to(tablet) {
+      margin-left: 10px;
+    }
+    @include respond-to(phone) {
+      margin-left: 10px;
+    }
+    margin-left: 30px;
+  }
+  & * {
+    @include respond-to(tablet) {
+      max-width: 27px;
+      max-height: 27px;
+    }
+    @include respond-to(phone) {
+      max-width: 20px;
+      max-height: 20px;
+    }
+    max-width: 36px;
+    max-height: 36px;
+  }
+}
+.nav {
+  height: 100%;
+  @include respond-to(phone) {
+    display: none;
+  }
+  &__item {
+    @include respond-to(tablet) {
+      padding-right: 0.5vw;
+      padding-left: 0.5vw;
+    }
+    @include respond-to(phone) {
+      width: 100%;
+      text-align: center;
+    }
+    display: inline-block;
+    height: 100%;
+    align-content: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-decoration: none;
+    color: var(--black);
+  }
+  &__item:hover {
+    background-color: var(--tomato-light);
+    color: #fff;
+  }
+}
+.burger {
+  @include respond-to(phone) {
+    display: block;
+    right: 20px;
+    top: 40px;
+    z-index: 10;
+  }
+  display: none;
+  width: 34px;
+  height: 25px;
+  position: absolute;
+  right: 135px;
+  bottom: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  span {
+    display: inline-block;
+    height: 2px;
+    width: 100%;
+    background-color: var(--black);
+  }
+
+  span::after,
+  span::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: var(--black);
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+  span::before {
+    top: 0;
+  }
+  span::after {
+    bottom: 0;
+  }
+  &.active span {
+    background: none;
+  }
+  &.active span::before {
+    top: 45%;
+    transform: rotate(-45deg);
+  }
+  &.active span::after {
+    bottom: 50%;
+    transform: rotate(45deg);
+  }
+}
+.nav.open {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--brown-light);
+}
