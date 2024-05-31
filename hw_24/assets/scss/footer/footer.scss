@@ -16,14 +16,37 @@
   }
 }
 .footer {
+  @include respond-to(tablet) {
+    padding: 50px 24px;
+    height: 232px;
+  }
+  @include respond-to(phone) {
+    padding: 100px 24px 0 24px;
+    height: 322px;
+  }
   position: relative;
   max-width: 100%;
-  max-height: 350px;
+  height: 350px;
   background-color: var(--brown-dark);
   padding: 75px 129px;
+  &__left-side {
+    @include respond-to(tablet) {
+      display: flex;
+    }
+  }
   &__logo_item {
+    @include respond-to(phone) {
+      position: absolute;
+      top: 40px;
+      right: 50%;
+      transform: translateX(50%);
+    }
+    @include respond-to(tablet) {
+      margin-right: 12vw;
+    }
     margin-bottom: 35px;
   }
+
   &__wrapper {
     display: flex;
     justify-content: space-between;
@@ -34,6 +57,12 @@
     gap: 10px;
   }
   &__nav_item {
+    @include respond-to(tablet) {
+      font-size: 16px;
+    }
+    @include respond-to(phone) {
+      font-size: 16px;
+    }
     text-decoration: none;
     color: var(--brown-light);
     font-size: 20px;
@@ -43,9 +72,18 @@
   }
 }
 .socials__list {
+  @include respond-to(tablet) {
+    padding: 2.1rem 0 1.25rem;
+  }
+  @include respond-to(phone) {
+    padding: 2.1rem 0 1.25rem;
+  }
   display: flex;
   padding: 3rem 0 2rem;
   &_item {
+    @include respond-to(tablet) {
+      width: 40px;
+    }
     width: 60px;
   }
   &_item a:hover svg path {
@@ -54,18 +92,40 @@
   }
 }
 .rights {
+  @include respond-to(phone) {
+    font-size: 12px;
+  }
   position: absolute;
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
   color: var(--brown-light);
+  font-size: 14px;
 }
 h3 {
   color: var(--brown-light);
   font-size: 26px;
 }
 .tel-num {
+  @include respond-to(tablet) {
+    font-size: 20px;
+  }
+  @include respond-to(phone) {
+    font-size: 20px;
+  }
   color: var(--brown-light);
   text-decoration: none;
   font-size: 26px;
+}
+.socials__list_item a svg {
+  width: 100%;
+}
+
+.socials__list_item a svg {
+  @include respond-to(tablet) {
+    width: 66.67%;
+  }
+  @include respond-to(phone) {
+    width: 45%;
+  }
 }

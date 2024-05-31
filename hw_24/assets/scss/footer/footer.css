@@ -3,12 +3,45 @@
 .footer {
   position: relative;
   max-width: 100%;
-  max-height: 350px;
+  height: 350px;
   background-color: var(--brown-dark);
   padding: 75px 129px;
 }
+@media only screen and (min-width: 603px) and (max-width: 912px) {
+  .footer {
+    padding: 50px 24px;
+    height: 232px;
+  }
+}
+@media only screen and (max-width: 602px) {
+  .footer {
+    padding: 100px 24px 0 24px;
+    height: 322px;
+  }
+}
+@media only screen and (min-width: 603px) and (max-width: 912px) {
+  .footer__left-side {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 .footer__logo_item {
   margin-bottom: 35px;
+}
+@media only screen and (max-width: 602px) {
+  .footer__logo_item {
+    position: absolute;
+    top: 40px;
+    right: 50%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+}
+@media only screen and (min-width: 603px) and (max-width: 912px) {
+  .footer__logo_item {
+    margin-right: 12vw;
+  }
 }
 .footer__wrapper {
   display: -webkit-box;
@@ -33,6 +66,16 @@
   color: var(--brown-light);
   font-size: 20px;
 }
+@media only screen and (min-width: 603px) and (max-width: 912px) {
+  .footer__nav_item {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 602px) {
+  .footer__nav_item {
+    font-size: 16px;
+  }
+}
 .footer__nav_item:hover {
   color: var(--tomato-light);
 }
@@ -43,8 +86,23 @@
   display: flex;
   padding: 3rem 0 2rem;
 }
+@media only screen and (min-width: 603px) and (max-width: 912px) {
+  .socials__list {
+    padding: 2.1rem 0 1.25rem;
+  }
+}
+@media only screen and (max-width: 602px) {
+  .socials__list {
+    padding: 2.1rem 0 1.25rem;
+  }
+}
 .socials__list_item {
   width: 60px;
+}
+@media only screen and (min-width: 603px) and (max-width: 912px) {
+  .socials__list_item {
+    width: 40px;
+  }
 }
 .socials__list_item a:hover svg path {
   stroke: var(--tomato-light);
@@ -58,6 +116,12 @@
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   color: var(--brown-light);
+  font-size: 14px;
+}
+@media only screen and (max-width: 602px) {
+  .rights {
+    font-size: 12px;
+  }
 }
 
 h3 {
@@ -69,4 +133,29 @@ h3 {
   color: var(--brown-light);
   text-decoration: none;
   font-size: 26px;
+}
+@media only screen and (min-width: 603px) and (max-width: 912px) {
+  .tel-num {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 602px) {
+  .tel-num {
+    font-size: 20px;
+  }
+}
+
+.socials__list_item a svg {
+  width: 100%;
+}
+
+@media only screen and (min-width: 603px) and (max-width: 912px) {
+  .socials__list_item a svg {
+    width: 66.67%;
+  }
+}
+@media only screen and (max-width: 602px) {
+  .socials__list_item a svg {
+    width: 45%;
+  }
 }
