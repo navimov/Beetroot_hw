@@ -56,9 +56,17 @@
       height: 74px;
       width: 40px;
       background: url(../../pictures/icons/prev.svg);
+      background-size: contain;
       &-hovered {
         background: url(../../pictures/icons/next-active.svg);
         transform: rotate(180deg);
+      }
+      @include respond-to(tablet) {
+        height: 30px;
+        width: 16px;
+      }
+      @include respond-to(phone) {
+        display: none;
       }
     }
     &__next {
@@ -70,8 +78,16 @@
       height: 74px;
       width: 40px;
       background: url(../../pictures/icons/next.svg);
+      background-size: contain;
       &-hovered {
         background: url(../../pictures/icons/next-active.svg);
+      }
+      @include respond-to(tablet) {
+        height: 30px;
+        width: 16px;
+      }
+      @include respond-to(phone) {
+        display: none;
       }
     }
   }
@@ -79,4 +95,39 @@
     position: relative;
     padding: 0 50px;
   }
+}
+.partners-dots {
+  display: flex;
+  gap: 30px;
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  @include respond-to(phone) {
+    gap: 10px;
+    bottom: -60px;
+    transform: translateX(-50%);
+  }
+}
+.partners-dots li {
+  position: relative;
+}
+.partners-dots li button {
+  color: transparent;
+  background: transparent;
+  border-color: transparent;
+}
+.partners-dots li button:before {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  content: "";
+  border-radius: 50%;
+  background: var(--black);
+  @include respond-to(phone) {
+    width: 10px;
+  height: 10px;
+  }
+}
+.partners-dots li.slick-active button:before {
+  background: var(--tomato-light);
 }

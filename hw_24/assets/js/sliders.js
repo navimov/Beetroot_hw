@@ -5,7 +5,7 @@ $(document).ready(function () {
     slidesToShow: 1,
     arrows: false,
     dots: true,
-    dotsClass: "slider-dots",
+    dotsClass: "hero-dots",
   });
   $(".partners-slider__list").slick({
     autoplay: true,
@@ -13,6 +13,32 @@ $(document).ready(function () {
     arrows: true,
     prevArrow: $(".partners-slider__next"),
     nextArrow: $(".partners-slider__prev"),
+    responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 5,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 3,
+          arrows: false,
+          dots: true,
+          dotsClass: "partners-dots",
+        },
+      },
+      {
+        breakpoint: 400,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+          dots: true,
+          dotsClass: "partners-dots",
+        },
+      },
+    ],
   });
   $(".arrivals-slider__list").slick({
     autoplay: true,
@@ -20,6 +46,23 @@ $(document).ready(function () {
     slidesToShow: 4.99,
     prevArrow: $(".arrivals-slider__next"),
     nextArrow: $(".arrivals-slider__prev"),
+    responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+          dots: true,
+          dotsClass: "arrivals-dots",
+        },
+      },
+    ],
   });
   $.getJSON("assets/data/arrivals.json", function (data) {
     data.forEach((slide) => {

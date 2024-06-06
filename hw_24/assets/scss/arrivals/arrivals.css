@@ -58,6 +58,13 @@
 .arrivals-slider__item-hovered {
   border-color: red;
 }
+.arrivals-slider__item img {
+  position: relative;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
 .arrivals-slider__title {
   font-family: "montserrat";
   font-weight: 600;
@@ -73,11 +80,23 @@
   height: 74px;
   width: 40px;
   background: url(../../pictures/icons/prev.svg);
+  background-size: contain;
 }
 .arrivals-slider__prev-hovered {
   background: url(../../pictures/icons/next-active.svg);
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+@media only screen and (min-width: 603px) and (max-width: 912px) {
+  .arrivals-slider__prev {
+    height: 30px;
+    width: 16px;
+  }
+}
+@media only screen and (max-width: 602px) {
+  .arrivals-slider__prev {
+    display: none;
+  }
 }
 .arrivals-slider__next {
   position: absolute;
@@ -86,9 +105,21 @@
   height: 74px;
   width: 40px;
   background: url(../../pictures/icons/next.svg);
+  background-size: contain;
 }
 .arrivals-slider__next-hovered {
   background: url(../../pictures/icons/next-active.svg);
+}
+@media only screen and (min-width: 603px) and (max-width: 912px) {
+  .arrivals-slider__next {
+    height: 30px;
+    width: 16px;
+  }
+}
+@media only screen and (max-width: 602px) {
+  .arrivals-slider__next {
+    display: none;
+  }
 }
 .arrivals-slider__price {
   font-size: 24px;
@@ -121,4 +152,45 @@
   color: #000000;
   border: 2px solid black;
   margin-top: 50px;
+}
+
+.arrivals-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+}
+@media only screen and (max-width: 602px) {
+  .arrivals-dots {
+    gap: 20px;
+    bottom: -40px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+.arrivals-dots li {
+  position: relative;
+}
+
+.arrivals-dots li button {
+  color: transparent;
+  background: transparent;
+  border-color: transparent;
+}
+
+.arrivals-dots li button:before {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  content: "";
+  border-radius: 50%;
+  background: var(--black);
+}
+
+.arrivals-dots li.slick-active button:before {
+  background: var(--tomato-light);
 }
