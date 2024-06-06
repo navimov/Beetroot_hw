@@ -1,0 +1,78 @@
+@import url(../variables/variables.css);
+@import url(../../fonts/fonts.css);
+.hero-slider__item {
+  position: relative;
+}
+.hero-slider__item img {
+  width: 100%;
+}
+
+.cta {
+  color: var(--brown-light);
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
+  position: absolute;
+  top: 120px;
+  right: 100px;
+}
+.cta__title {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60.95px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.cta__btn {
+  padding: 15px 57px;
+  border: 2px solid var(--brown-light);
+  font-size: 18px;
+  line-height: 21.94px;
+  text-align: center;
+  background: transparent;
+  color: var(--brown-light);
+}
+.cta__btn-hovered {
+  background-color: var(--tomato-light);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.slider-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+}
+
+.slider-dots li {
+  position: relative;
+}
+
+.slider-dots li button {
+  color: transparent;
+  background: transparent;
+  border-color: transparent;
+}
+
+.slider-dots li button:before {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  content: "";
+  border-radius: 50%;
+  background: var(--brown-light);
+}
+
+.slider-dots li.slick-active button:before {
+  background: var(--tomato-light);
+}

@@ -66,9 +66,9 @@
     text-decoration: none;
     color: var(--brown-light);
     font-size: 20px;
-  }
-  &__nav_item:hover {
-    color: var(--tomato-light);
+    &-hovered {
+      color: var(--tomato-light);
+    }
   }
 }
 .socials__list {

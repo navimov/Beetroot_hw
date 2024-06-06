@@ -1,0 +1,81 @@
+@import url(../variables/variables.css);
+@import url(../../fonts/fonts.css);
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 602px) {
+      @content;
+    }
+  } @else if $breakpoint == tablet {
+    @media only screen and (min-width: 603px) and (max-width: 912px) {
+      @content;
+    }
+  } @else if $breakpoint == desktop {
+    @media only screen and (min-width: 913px) {
+      @content;
+    }
+  }
+}
+.hero-slider {
+  &__item {
+    img {
+      width: 100%;
+    }
+    position: relative;
+  }
+}
+.cta {
+  color: var(--brown-light);
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  position: absolute;
+  top: 120px;
+  right: 100px;
+  &__title {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60.95px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__btn {
+    padding: 15px 57px;
+    border: 2px solid var(--brown-light);
+    font-size: 18px;
+    line-height: 21.94px;
+    text-align: center;
+    background: transparent;
+    color: var(--brown-light);
+    &-hovered {
+      background-color: var(--tomato-light);
+      transition: 0.3s ease-in-out;
+    }
+  }
+}
+.slider-dots {
+  display: flex;
+  gap: 30px;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+}
+.slider-dots li {
+  position: relative;
+}
+.slider-dots li button {
+  color: transparent;
+  background: transparent;
+  border-color: transparent;
+}
+.slider-dots li button:before {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  content: "";
+  border-radius: 50%;
+  background: var(--brown-light);
+}
+.slider-dots li.slick-active button:before {
+  background: var(--tomato-light);
+}

@@ -106,7 +106,7 @@
     text-align: center;
   }
 }
-.nav__item:hover {
+.nav__item-hovered {
   background-color: var(--tomato-light);
   color: #fff;
 }

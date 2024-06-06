@@ -1,0 +1,124 @@
+@import url(../variables/variables.css);
+@import url(../../fonts/fonts.css);
+.arrivals__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 70px 0 50px;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 19.5px;
+  text-align: center;
+  padding: 0 10px;
+  padding-bottom: 10px;
+  font-weight: 700;
+}
+.arrivals__container {
+  position: relative;
+  padding: 0 50px;
+}
+.arrivals-slider__label {
+  position: absolute;
+  width: 60px;
+  height: 20px;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 12.19px;
+  text-align: center;
+  line-height: 20px;
+  background-color: var(--tomato-light);
+  color: var(--brown-light);
+}
+.arrivals-slider__label[data-stock=sold] {
+  color: var(--black);
+  background-color: var(--brown-light);
+}
+.arrivals-slider__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid var(--brown-light);
+  margin: 0 10px;
+  height: inherit !important;
+}
+.arrivals-slider__item-hovered {
+  border-color: red;
+}
+.arrivals-slider__title {
+  font-family: "montserrat";
+  font-weight: 600;
+  padding-top: 30px;
+  font-size: 18px;
+  color: black;
+  text-align: center;
+}
+.arrivals-slider__prev {
+  position: absolute;
+  left: 0;
+  top: 40%;
+  height: 74px;
+  width: 40px;
+  background: url(../../pictures/icons/prev.svg);
+}
+.arrivals-slider__prev-hovered {
+  background: url(../../pictures/icons/next-active.svg);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.arrivals-slider__next {
+  position: absolute;
+  right: 0;
+  top: 40%;
+  height: 74px;
+  width: 40px;
+  background: url(../../pictures/icons/next.svg);
+}
+.arrivals-slider__next-hovered {
+  background: url(../../pictures/icons/next-active.svg);
+}
+.arrivals-slider__price {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29.26px;
+  text-align: center;
+  padding: 0 10px;
+  padding-bottom: 20px;
+}
+.arrivals__img {
+  display: block;
+  width: 204px;
+  height: 300px;
+  padding: 20px 10px 10px;
+}
+
+.view-more {
+  position: relative;
+  left: 50vw;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 227px;
+  height: 50px;
+  font-family: "montserrat";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  border: 2px solid black;
+  margin-top: 50px;
+}

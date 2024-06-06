@@ -76,7 +76,7 @@
     font-size: 16px;
   }
 }
-.footer__nav_item:hover {
+.footer__nav_item-hovered {
   color: var(--tomato-light);
 }
 

@@ -1,0 +1,128 @@
+@import url(../variables/variables.css);
+@import url(../../fonts/fonts.css);
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 602px) {
+      @content;
+    }
+  } @else if $breakpoint == tablet {
+    @media only screen and (min-width: 603px) and (max-width: 912px) {
+      @content;
+    }
+  } @else if $breakpoint == desktop {
+    @media only screen and (min-width: 913px) {
+      @content;
+    }
+  }
+}
+.arrivals {
+  &__title {
+    display: flex;
+    justify-content: center;
+    margin: 70px 0 50px;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 19.5px;
+    text-align: center;
+    padding: 0 10px;
+    padding-bottom: 10px;
+    font-weight: 700;
+  }
+  &__container {
+    position: relative;
+    padding: 0 50px;
+  }
+  &-slider {
+    &__label {
+      position: absolute;
+      width: 60px;
+      height: 20px;
+      text-transform: uppercase;
+      font-size: 10px;
+      font-weight: 500;
+      line-height: 12.19px;
+      text-align: center;
+      line-height: 20px;
+      background-color: var(--tomato-light);
+      color: var(--brown-light);
+      &[data-stock="sold"] {
+        color: var(--black);
+        background-color: var(--brown-light);
+      }
+    }
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--brown-light);
+      margin: 0 10px;
+      height: inherit !important;
+      &-hovered {
+        border-color: red;
+      }
+    }
+    &__title {
+      font-family: "montserrat";
+      font-weight: 600;
+      padding-top: 30px;
+      font-size: 18px;
+      color: black;
+      text-align: center;
+    }
+    &__prev {
+      position: absolute;
+      left: 0;
+      top: 40%;
+      height: 74px;
+      width: 40px;
+      background: url(../../pictures/icons/prev.svg);
+      &-hovered {
+        background: url(../../pictures/icons/next-active.svg);
+        transform: rotate(180deg);
+      }
+    }
+    &__next {
+      position: absolute;
+      right: 0;
+      top: 40%;
+      height: 74px;
+      width: 40px;
+      background: url(../../pictures/icons/next.svg);
+      &-hovered {
+        background: url(../../pictures/icons/next-active.svg);
+      }
+    }
+    &__price {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 29.26px;
+      text-align: center;
+      padding: 0 10px;
+      padding-bottom: 20px;
+    }
+  }
+
+  &__img {
+    display: block;
+    width: 204px;
+    height: 300px;
+    padding: 20px 10px 10px;
+  }
+}
+.view-more {
+  position: relative;
+  left: 50vw;
+  transform: translateX(-50%);
+  width: 227px;
+  height: 50px;
+  font-family: "montserrat";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  border: 2px solid black;
+  margin-top: 50px;
+}
