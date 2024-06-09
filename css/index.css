@@ -33,11 +33,6 @@ h2 {
 }
 
 .pagination {
-  position: absolute;
-  top: 150px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
   margin: 50px 0;
 }
 
@@ -66,5 +61,13 @@ button {
 }
 
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
   background-color: rgb(211, 226, 229);
 }

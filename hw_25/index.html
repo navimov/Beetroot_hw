@@ -9,18 +9,19 @@
   </head>
   <body>
     <form id="films-form">
-      <input type="text" name="films" />
+      <input type="text" name="films" placeholder="Enter film name" />
       <select id="type" name="type">
         <option value="">-=Choose movie type=-</option>
-        <option value="FE">Movie</option>
-        <option value="Java">Series</option>
-        <option value="DevOps">Episode</option>
+        <option value="movie">movie</option>
+        <option value="series">series</option>
+        <option value="episode">episode</option>
       </select>
-      <button type="submit">Search</button>
+      <button type="submit">search</button>
     </form>
     <section class="films">
       <ul class="films_list"></ul>
     </section>
+    <section class="pagination"></section>
     <script src="assets/js/films.js" type="module"></script>
   </body>
 </html>
