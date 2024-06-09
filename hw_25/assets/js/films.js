@@ -20,7 +20,7 @@ FORM.addEventListener("submit", function (event) {
 });
 
 function fetchFilms(filmsInput, typeInput, page) {
-  const API_URL = `http://www.omdbapi.com/?apikey=${API_KEY}&s=${filmsInput}&type=${typeInput}&page=${page}`;
+  const API_URL = `https://www.omdbapi.com/?apikey=${API_KEY}&s=${filmsInput}&type=${typeInput}&page=${page}`;
   fetch(API_URL)
     .then((response) => response.json())
     .then((data) => {
@@ -72,7 +72,7 @@ function toggleFilmDetails(imdbID) {
 }
 
 function fetchFilmDetails(imdbID, container) {
-  const API_URL = `http://www.omdbapi.com/?apikey=${API_KEY}&i=${imdbID}`;
+  const API_URL = `https://www.omdbapi.com/?apikey=${API_KEY}&i=${imdbID}`;
   fetch(API_URL)
     .then((response) => response.json())
     .then((data) => {
