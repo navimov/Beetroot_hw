@@ -72,7 +72,7 @@ function toggleFilmDetails(imdbID) {
 }
 
 function fetchFilmDetails(imdbID, container) {
-  const API_URL = `http://www.omdbapi.com/?apikey=${API_KEY}&i=${imdbID}`;
+  const API_URL = `https://www.omdbapi.com/?apikey=${API_KEY}&i=${imdbID}`;
   fetch(API_URL)
     .then((response) => response.json())
     .then((data) => {
