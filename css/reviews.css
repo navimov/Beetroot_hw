@@ -1,0 +1,163 @@
+.reviews {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.reviews__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media only screen and (max-width: 1350px) {
+  .reviews__content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  .reviews__content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .reviews__content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+.reviews__author {
+  position: absolute;
+  left: 40px;
+  bottom: 30px;
+}
+.reviews__description {
+  position: relative;
+  font-family: "lato";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.reviews__title_item {
+  font-family: "PlayfairDisplay";
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+@media only screen and (max-width: 599px) {
+  .reviews__title_item {
+    text-align: center;
+  }
+}
+.reviews__title {
+  width: 400px;
+  -ms-flex-item-align: self-start;
+      align-self: self-start;
+  margin-bottom: 30px;
+}
+@media only screen and (max-width: 599px) {
+  .reviews__title {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+}
+.reviews__content_block {
+  position: relative;
+  width: 370px;
+  height: 340px;
+  padding: 30px 40px;
+}
+.reviews__content_block:not(:last-child) {
+  margin-right: 30px;
+  left: 16px;
+}
+@media only screen and (max-width: 1350px) {
+  .reviews__content_block:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  .reviews__content_block:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .reviews__content_block:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.reviews-jamika {
+  background-image: url(../../image/pc/main-content/jamika.avif);
+  background-size: cover;
+}
+@media only screen and (max-width: 599px) {
+  .reviews-jamika {
+    background-image: url(../../image/phone/main-content/jamika.webp);
+    background-size: cover;
+  }
+}
+.reviews-evie {
+  background-image: url(../../image/pc/main-content/evie.avif);
+  background-size: cover;
+}
+@media only screen and (max-width: 599px) {
+  .reviews-evie {
+    background-image: url(../../image/phone/main-content/evie.webp);
+    background-size: cover;
+  }
+}
+.reviews-elvis {
+  background-image: url(../../image/pc/main-content/elvis.avif);
+  background-size: cover;
+}
+@media only screen and (max-width: 599px) {
+  .reviews-elvis {
+    background-image: url(../../image/phone/main-content/elvis.webp);
+    background-size: cover;
+  }
+}
+.reviews__author_item {
+  font-family: "PlayfairDisplay";
+  font-size: 20px;
+  font-style: italic;
+  letter-spacing: 1.6px;
+}

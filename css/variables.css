@@ -1,0 +1,15 @@
+:root {
+  --black: #000;
+  --brown-dark:#35312D;
+  --arrow-inactive:#202020;
+  --tomato:#C62100;
+  --tomato-light:#F16A50;
+  --brown-light:#F8F1EA;
+  --dark-dot-inactive:#CAC2BA;
+};
+  --big-link-color: #53f3cd;
+  --big-link-hover-color: #02e0ab;
+  --button-color: #53f3cd;
+  --button-hover-color: #02e0ab;
+  --content-margin: 9vw;
+}

@@ -1,0 +1,86 @@
+body {
+  font-family: "montserrat";
+  font-size: 16px;
+  font-weight: 500;
+}t: 300;
+  color: var(--text-color);
+  background-color: var(--theme-color);
+  background-image: url(../../image/pc/hero/hero.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media only screen and (max-width: 599px) {
+  body {
+    background-image: url(../../image/pc/hero/hero.webp);
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  body {
+    background-image: url(../../image/tablet/hero/hero.webp);
+  }
+}
+@media only screen and (max-width: 1340px) {
+  body {
+    background-size: auto;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  body {
+    background-size: cover;
+  }
+}
+
+.container {
+  width: 100%;
+}
+
+.content__container {
+  margin: 150px 135px 0;
+}
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  .content__container {
+    margin: 150px 70px 0;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .content__container {
+    margin: 5vw var(--content-margin) 0;
+  }
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.main__margin {
+  margin: 150px 0 100px;
+}
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  .main__margin {
+    margin: 100px 0 70px;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .main__margin {
+    margin: 50px 0 40px;
+  }
+}
+
+.main > section:not(:last-child) {
+  margin-bottom: 120px;
+}
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  .main > section:not(:last-child) {
+    margin-bottom: 80px;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .main > section:not(:last-child) {
+    margin-bottom: 60px;
+  }
+}

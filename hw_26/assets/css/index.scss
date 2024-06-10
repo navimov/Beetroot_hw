@@ -1,0 +1,26 @@
+h2 {
+  font-size: 45px;
+  margin: 20px 0;
+}
+p {
+  font-size: 28px;
+  margin: 10px 0;
+}
+.weather {
+  position: absolute;
+  left:400px;
+  transform: translateX(-50%);
+  &_list li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+  }
+}
+body {
+  background-image: url(../img/pogoda.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:#000;
+}
