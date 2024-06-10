@@ -17,7 +17,7 @@ if (isCashedReq) {
 }
 
 function fetchWeather(lat, lon) {
-  const API_URL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;  
+  const API_URL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
   fetch(API_URL)
     .then((response) => response.json())
     .then((data) => {
@@ -30,11 +30,11 @@ function fetchWeather(lat, lon) {
 
 function displayWeather(data) {
   console.log(data);
-  const TEMP = Math.round(data.list[0].main.temp);
-  const HUMIDITY = Math.round(data.list[0].main.humidity);
-  const PRESSURE = Math.round(data.list[0].main.pressure);
-  const VISIBILITY = Math.round(data.list[0].visibility);
-  const WIND = Math.round(data.list[0].wind.speed);
+  const TEMP = Math.round(data.main.temp);
+  const HUMIDITY = Math.round(data.main.humidity);
+  const PRESSURE = Math.round(data.main.pressure);
+  const VISIBILITY = Math.round(data.visibility);
+  const WIND = Math.round(data.wind.speed);
 
   let markup = `
     <li>
