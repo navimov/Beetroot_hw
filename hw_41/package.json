@@ -1,0 +1,37 @@
+{
+  "dependencies": {
+    "-": "^0.0.1",
+    "css-loader": "^7.1.2",
+    "d": "^1.0.2",
+    "mini-css-extract-plugin": "^2.9.0",
+    "postcss-loader": "^8.1.1",
+    "postcss-preset-env": "^9.5.14",
+    "sass": "^1.77.5",
+    "sass-loader": "^14.2.1",
+    "webpack": "^5.92.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  },
+  "name": "hw_41",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "@squoosh/lib": "^0.5.3",
+    "copy-webpack-plugin": "^12.0.2",
+    "html-webpack-plugin": "^5.6.0",
+    "image-minimizer-webpack-plugin": "^4.0.2",
+    "imagemin": "^9.0.0",
+    "sharp": "^0.33.4",
+    "svgo": "^3.3.2"
+  },
+  "scripts": {
+    "server": "webpack serve --open --mode development",
+    "dev": "webpack --watch --mode development",
+    "prod": "webpack --watch --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
