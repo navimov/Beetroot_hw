@@ -1,0 +1,19 @@
+.slider {
+  width: 100%;
+  height: 800px;
+  &__item {
+    background-image: url(../../img/retina/hero-background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+  }
+}
+.hero {
+  width: 100%;
+  height: 800px;
+}
+.slick-dots {
+  display: flex;
+  flex-direction: column;
+}
