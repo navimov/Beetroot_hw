@@ -20,9 +20,9 @@ class Round {
 }
 let round = new Round();
 console.log(round);
-console.log(round.getRadius);
+console.log("Радіус кола рівний " + round.getRadius);
 round.setRadius = 20;
-console.log(round.getRadius);
-console.log(round.getDiametr);
-console.log(round.squareRound());
-console.log(round.lengthRound());
+console.log("Радіус кола після внесення змін рівний " + round.getRadius);
+console.log("Діаметр кола рівний " + round.getDiametr);
+console.log("Площа кола рівна " + round.squareRound());
+console.log("Довжина кола рівна " + round.lengthRound());

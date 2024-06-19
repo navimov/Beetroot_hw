@@ -13,7 +13,6 @@ class Marker {
       }
       resStr += workArr.shift();
     }
-    console.log(resStr);
     this.inkCount = inkAmount + "%";
     let markerText = document.querySelector(".marker");
     markerText.textContent = resStr;
@@ -33,10 +32,18 @@ class SuperMarker extends Marker {
     if (inkAmount > 100) {
       this.inkCount = 100 + "%";
     } else {
-      this.inkCount = inkAmount;
+      this.inkCount = inkAmount + "%";
     }
   }
 }
 let rechargableMarker = new SuperMarker();
+console.log(
+  "Кількість чорнил в маркері до заправки становить " +
+    rechargableMarker.inkCount
+);
 rechargableMarker.charge(20);
-console.log(rechargableMarker.inkCount);
+
+console.log(
+  "Кількість чорнил в маркері після заправки становить " +
+    rechargableMarker.inkCount
+);
