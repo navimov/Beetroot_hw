@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@font-face {
+  font-family: "fontAwesome";
+  src: url(../../fonts/font-awesome/fa-regular-400.woff2) format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "sourceSansPro";
+  src: url(../../fonts/source-sans-pro/sourcesanspro.woff2) format("woff2");
+  font-weight: 400;
+}
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 602px) {
+      @content;
+    }
+  } @else if $breakpoint == tablet {
+    @media only screen and (min-width: 603px) and (max-width: 912px) {
+      @content;
+    }
+  } @else if $breakpoint == desktop {
+    @media only screen and (min-width: 913px) {
+      @content;
+    }
+  }
+}
+.whatwedo {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  &__trade {
+    display: flex;
+  }
+  &__commerce {
+    display: flex;
+  }
+  &__header_item {
+    font-family: "Montserrat";
+    font-size: 44px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  &__header {
+    margin: 0 auto;
+    width: 324px;
+    height: 84px;
+  }
+  &__main-header::before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 110px;
+    width: 100px;
+    height: 1px;
+    background-color: #2c4058;
+  }
+  &__main-header {
+    position: relative;
+  }
+}

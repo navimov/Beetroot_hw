@@ -123,7 +123,6 @@
     display: none;
   }
 }
-//***************
 .burger {
   @include respond-to(phone) {
     display: block;
