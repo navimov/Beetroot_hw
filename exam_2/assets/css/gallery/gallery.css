@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@font-face {
+  font-family: "fontAwesome";
+  src: url(../../fonts/font-awesome/fa-regular-400.woff2) format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "sourceSansPro";
+  src: url(../../fonts/source-sans-pro/sourcesanspro.woff2) format("woff2");
+  font-weight: 400;
+}
+.gallery {
+  position: relative;
+  margin: 150px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1170px;
+  height: 722px;
+}
+.gallery__content_imgs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.gallery__left {
+  margin-right: 10px;
+}
+.gallery__right_top {
+  margin-bottom: 10px;
+}
+.gallery-button {
+  margin: 0 auto;
+}
+.gallery__head::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 35vw;
+  width: 100px;
+  height: 1px;
+  background-color: #2c4058;
+}
+.gallery__head {
+  font-family: "Montserrat";
+  font-size: 44px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #2c4058;
+  margin: 0 auto;
+}

@@ -23,17 +23,85 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 90px;
+}
+.whatwedo__trade_left {
+  width: 845px;
+  height: 527px;
+  position: relative;
+}
+.whatwedo__trade_right {
+  width: 470px;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  top: 151px;
+  left: 70px;
+}
+.whatwedo__trade-desc {
+  font-family: "open sans";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
 }
 .whatwedo__commerce {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 1325px;
+  height: 527px;
+  position: relative;
+  margin-top: 120px;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+.whatwedo__commerce_left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 476px;
+  height: 350px;
+  position: relative;
+  left: 120px;
+  top: 151px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.whatwedo__commerce_right {
+  width: 845px;
+  height: 527px;
+}
+.whatwedo__commerce_right-purple-back {
+  width: 585px;
+  height: 470px;
+  background-color: #7e5aff;
+}
+.whatwedo__commerce_right-img {
+  position: absolute;
+  top: 40px;
+  left: 320px;
 }
 .whatwedo__header_item {
   font-family: "Montserrat";
   font-size: 44px;
   font-weight: 700;
   text-transform: uppercase;
+  color: #2c4058;
 }
 .whatwedo__header {
   margin: 0 auto;
@@ -51,4 +119,30 @@
 }
 .whatwedo__main-header {
   position: relative;
+}
+.whatwedo__trade_left-blue-back {
+  width: 585px;
+  height: 470px;
+  background-color: #55b7ff;
+}
+.whatwedo__trade_left-img {
+  position: absolute;
+  top: 40px;
+  left: 220px;
+}
+
+.over-head-text {
+  font-family: "Montserrat";
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.button {
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  width: 190px;
+  height: 50px;
 }

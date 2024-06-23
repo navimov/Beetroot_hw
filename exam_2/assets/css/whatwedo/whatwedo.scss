@@ -30,15 +30,67 @@
   flex-direction: column;
   &__trade {
     display: flex;
+    margin-top: 90px;
+    &_left {
+      width: 845px;
+      height: 527px;
+      position: relative;
+    }
+    &_right {
+      width: 470px;
+      height: 350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      top: 151px;
+      left: 70px;
+    }
+    &-desc {
+      font-family: "open sans";
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 30px;
+    }
   }
   &__commerce {
     display: flex;
+    width: 1325px;
+    height: 527px;
+    position: relative;
+    margin-top: 120px;
+    justify-content: right;
+    &_left {
+      display: flex;
+      flex-direction: column;
+      width: 476px;
+      height: 350px;
+      position: relative;
+      left: 120px;
+      top: 151px;
+      justify-content: space-between;
+    }
+    &_right {
+      width: 845px;
+      height: 527px;
+      &-purple-back {
+        width: 585px;
+        height: 470px;
+        background-color: #7e5aff;
+      }
+      &-img {
+        position: absolute;
+        top: 40px;
+        left: 320px;
+      }
+    }
   }
   &__header_item {
     font-family: "Montserrat";
     font-size: 44px;
     font-weight: 700;
     text-transform: uppercase;
+    color: #2c4058;
   }
   &__header {
     margin: 0 auto;
@@ -57,4 +109,28 @@
   &__main-header {
     position: relative;
   }
+  &__trade_left-blue-back {
+    width: 585px;
+    height: 470px;
+    background-color: #55b7ff;
+  }
+  &__trade_left-img {
+    position: absolute;
+    top: 40px;
+    left: 220px;
+  }
+}
+.over-head-text {
+  font-family: "Montserrat";
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.button {
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  width: 190px;
+  height: 50px;
 }

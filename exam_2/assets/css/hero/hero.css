@@ -12,9 +12,10 @@
 .slider {
   width: 100%;
   height: 800px;
+  background-image: url(../../img/retina/hero-background.webp);
 }
 .slider__item {
-  background-image: url(../../img/retina/hero-background.webp);
+  background-image: url(../../img/retina/heromask.webp);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
