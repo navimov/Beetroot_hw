@@ -11,18 +11,20 @@
 }
 .slider {
   width: 100%;
-  height: 800px;
+  height: auto;
   background-image: url(../../img/retina/hero-background.webp);
+  background-repeat: no-repeat;
 }
 .slider__item {
   background-image: url(../../img/retina/heromask.webp);
   background-repeat: no-repeat;
-  background-size: cover;
   width: 100%;
   height: 800px;
   padding: 223px 0 50px;
 }
 .slider__item_content {
+  position: relative;
+  left: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,20 +38,22 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 919px;
+  width: 925px;
   height: 420px;
-  margin: 0 auto;
+  margin: 114px auto;
 }
 @media only screen and (min-width: 603px) and (max-width: 912px) {
   .slider__item_content {
     width: 57vw;
     height: 32vw;
+    margin: 0 auto;
   }
 }
 @media only screen and (max-width: 602px) {
   .slider__item_content {
     width: 57vw;
     height: 32vw;
+    margin: 0 auto;
   }
 }
 .slider__item_content-header {
@@ -66,6 +70,7 @@
 }
 
 .hero {
+  position: relative;
   width: 100%;
   height: 800px;
 }
@@ -75,6 +80,7 @@
   font-size: 18px;
   font-weight: 400;
   color: white;
+  letter-spacing: 5.4px;
 }
 @media only screen and (min-width: 603px) and (max-width: 912px) {
   .hero__subtext {
@@ -87,20 +93,11 @@
   }
 }
 
-.slick-dots {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 h1 {
   font-family: "Montserrat";
   font-weight: 700;
   font-size: 80px;
+  letter-spacing: 8px;
   color: #fff;
 }
 @media only screen and (min-width: 603px) and (max-width: 912px) {
@@ -112,4 +109,60 @@ h1 {
   h1 {
     font-size: 5vw;
   }
+}
+
+.hero-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  position: absolute;
+  top: 35%;
+  right: 52px;
+}
+@media only screen and (min-width: 603px) and (max-width: 912px) {
+  .hero-dots {
+    gap: 20px;
+    right: 32px;
+  }
+}
+@media only screen and (max-width: 602px) {
+  .hero-dots {
+    gap: 20px;
+    right: 32px;
+  }
+}
+
+.hero-dots li {
+  position: relative;
+}
+
+.hero-dots li button {
+  color: transparent;
+  background: transparent;
+  border-color: transparent;
+}
+
+.hero-dots li button:before {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  content: "";
+  border-radius: 50%;
+  border: solid 1px #fff;
+  background: transparent;
+}
+@media only screen and (max-width: 602px) {
+  .hero-dots li button:before {
+    width: 5px;
+    height: 5px;
+  }
+}
+
+.hero-dots li.slick-active button:before {
+  background: #fff;
 }

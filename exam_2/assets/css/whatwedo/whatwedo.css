@@ -10,7 +10,7 @@
   font-weight: 400;
 }
 .whatwedo {
-  margin-top: 100px;
+  padding-top: 140px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,7 +23,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 90px;
+  margin-top: 50px;
 }
 .whatwedo__trade_left {
   width: 845px;
@@ -33,25 +33,17 @@
 .whatwedo__trade_right {
   width: 470px;
   height: 350px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   position: relative;
-  top: 151px;
+  top: 161px;
   left: 70px;
 }
-.whatwedo__trade-desc {
+.whatwedo__trade_right-desc {
   font-family: "open sans";
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
+  margin-top: 25px;
+  margin-bottom: 30px;
 }
 .whatwedo__commerce {
   display: -webkit-box;
@@ -102,6 +94,7 @@
   font-weight: 700;
   text-transform: uppercase;
   color: #2c4058;
+  margin-top: 0px;
 }
 .whatwedo__header {
   margin: 0 auto;
@@ -111,7 +104,7 @@
 .whatwedo__main-header::before {
   content: "";
   position: absolute;
-  top: -40px;
+  top: -35px;
   left: 110px;
   width: 100px;
   height: 1px;
@@ -119,6 +112,8 @@
 }
 .whatwedo__main-header {
   position: relative;
+  left: 42px;
+  top: -5px;
 }
 .whatwedo__trade_left-blue-back {
   width: 585px;
@@ -127,8 +122,8 @@
 }
 .whatwedo__trade_left-img {
   position: absolute;
-  top: 40px;
-  left: 220px;
+  top: 58px;
+  left: 215px;
 }
 
 .over-head-text {
@@ -145,4 +140,8 @@
   text-transform: uppercase;
   width: 190px;
   height: 50px;
+}
+
+.map-address {
+  margin-top: 45px;
 }
