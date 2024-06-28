@@ -63,7 +63,7 @@ class WorldClock {
 
 async function fetchTimezone(city) {
   try {
-    const response = await fetch(`http://worldtimeapi.org/api/timezone`);
+    const response = await fetch(`https://worldtimeapi.org/api/timezone`);
     const data = await response.json();
     const timezone = data.find((zone) => zone.includes(city));
     if (timezone) {
