@@ -3,9 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="clocks.css" />
     <title>Classes Inharitance</title>
   </head>
   <body>
+    <div class="entries-container">
+      <select id="cityInput" name="city" required>
+        <option value="">-=Choose city=-</option>
+        <option value="Kyiv">Kyiv</option>
+        <option value="Tokyo">Tokyo</option>
+        <option value="London">London</option>
+        <option value="Madrid">Madrid</option>
+      </select>
+      <button id="addClockBtn">Add Clock</button>
+    </div>
+
+    <div id="clockContainer"></div>
+    <script type="module" src="clocks.js"></script>
     <script type="module" src="script.js"></script>
   </body>
 </html>

@@ -24,17 +24,91 @@
     }
   }
 }
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 50vw;
+  &__subtext {
+    margin-top: 30px;
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    letter-spacing: calc(18px / 100 * 30);
+    @include respond-to(tablet) {
+      font-size: 2vw;
+    }
+    @include respond-to(phone) {
+      font-size: 2vw;
+    }
+  }
+  &-dots {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: absolute;
+    top: 35%;
+    right: 52px;
+    @include respond-to(tablet) {
+      gap: 20px;
+      right: 32px;
+    }
+    @include respond-to(phone) {
+      gap: 20px;
+      right: 32px;
+    }
+    & li {
+      position: relative;
+      &.slick-active button:before {
+        background: #fff;
+      }
+      & button {
+        color: transparent;
+        background: transparent;
+        border-color: transparent;
+        &:before {
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          content: "";
+          border-radius: 50%;
+          border: solid 1px #fff;
+          background: transparent;
+          @include respond-to(phone) {
+            width: 5px;
+            height: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
 .slider {
   width: 100%;
-  height: auto;
   background-image: url(../../img/retina/hero-background.webp);
   background-repeat: no-repeat;
+  @include respond-to(tablet) {
+    background-image: url(../../img/desctop/hero-background.webp);
+  }
+  @include respond-to(phone) {
+    background-image: url(../../img/tablet/webp/hero-background.webp);
+  }
   &__item {
     background-image: url(../../img/retina/heromask.webp);
-    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
-    height: 800px;
-    padding: 223px 0 50px;
+    padding: 223px 0 158px;
+    @include respond-to(decktop) {
+      background-image: url(../../img/tablet/webp/heromask.webp);
+    }
+    @include respond-to(tablet) {
+      background-image: url(../../img/tablet/webp/heromask.webp);
+    }
+    @include respond-to(phone) {
+      background-image: url(../../img/tablet/webp/heromask.webp);
+    }
     &_content {
       position: relative;
       left: 40px;
@@ -44,7 +118,8 @@
       justify-content: space-between;
       width: 925px;
       height: 420px;
-      margin: 114px auto;
+      margin: 0 auto;
+      padding: 114px 0;
       @include respond-to(tablet) {
         width: 57vw;
         height: 32vw;
@@ -63,30 +138,10 @@
     }
   }
 }
-.hero {
-  position: relative;
-  width: 100%;
-  height: 800px;
-  &__subtext {
-    margin-top: 20px;
-    font-family: "Montserrat";
-    font-size: 18px;
-    font-weight: 400;
-    color: white;
-    letter-spacing: calc(18px / 100 * 30);
-    @include respond-to(tablet) {
-      font-size: 2vw;
-    }
-    @include respond-to(phone) {
-      font-size: 2vw;
-    }
-  }
-}
-
 h1 {
   font-family: "Montserrat";
   font-weight: 700;
-  font-size: 80px;
+  font-size: clamp(2.5rem, 1.6667rem + 3.3333vw, 5rem);
   letter-spacing: 8px;
   color: #fff;
   @include respond-to(tablet) {
@@ -96,43 +151,7 @@ h1 {
     font-size: 5vw;
   }
 }
-.hero-dots {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+.arrow {
   position: absolute;
-  top: 35%;
-  right: 52px;
-  @include respond-to(tablet) {
-    gap: 20px;
-    right: 32px;
-  }
-  @include respond-to(phone) {
-    gap: 20px;
-    right: 32px;
-  }
-}
-.hero-dots li {
-  position: relative;
-}
-.hero-dots li button {
-  color: transparent;
-  background: transparent;
-  border-color: transparent;
-}
-.hero-dots li button:before {
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  content: "";
-  border-radius: 50%;
-  border: solid 1px #fff;
-  background: transparent;
-  @include respond-to(phone) {
-    width: 5px;
-    height: 5px;
-  }
-}
-.hero-dots li.slick-active button:before {
-  background: #fff;
+  bottom: -110px;
 }

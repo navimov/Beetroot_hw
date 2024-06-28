@@ -22,17 +22,30 @@
     @media only screen and (min-width: 913px) {
       @content;
     }
+  } @else if $breakpoint == deskrina {
+    @media only screen and (min-width: 914px) and (max-width: 1360px) {
+      @content;
+    }
   }
 }
 .whatwedo {
-  padding-top: 140px;
+  margin-top: 165px;
   display: flex;
   flex-direction: column;
   &__trade {
     display: flex;
-    margin-top: 50px;
+    margin-top: 55px;
+    @include respond-to(tablet) {
+      flex-direction: column;
+      margin-top: -50px;
+      justify-content: center;
+      align-items: center;
+    }
+    @include respond-to(phone) {
+      flex-direction: column;
+    }
     &_left {
-      width: 845px;
+      width: 52vw;
       height: 527px;
       position: relative;
     }
@@ -41,7 +54,11 @@
       height: 350px;
       position: relative;
       top: 161px;
-      left: 70px;
+      left: 116px;
+      @include respond-to(deskrina) {
+        width: 320px;
+        left: 56px;
+      }
       &-desc {
         font-family: "open sans";
         font-size: 18px;
@@ -54,43 +71,74 @@
   }
   &__commerce {
     display: flex;
-    width: 1325px;
+    width: 100%;
     height: 527px;
     position: relative;
     margin-top: 120px;
-    justify-content: right;
+    padding-left: 215px;
+    justify-content: space-between;
+    @include respond-to(tablet) {
+      flex-direction: column;
+      align-items: center;
+    }
+    @include respond-to(phone) {
+      flex-direction: column;
+      align-items: center;
+    }
+    &_over-head-text {
+      font-family: "Montserrat";
+      font-size: 22px;
+      font-weight: 400;
+      text-transform: uppercase;
+      padding-bottom: 12px;
+    }
     &_left {
+      padding-top: 150px;
       display: flex;
       flex-direction: column;
-      width: 476px;
-      height: 350px;
-      position: relative;
-      left: 120px;
-      top: 151px;
       justify-content: space-between;
+      width: 486px;
+      height: 350px;
+      &-desc {
+        font-family: "Open Sans";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        padding-bottom: 34px;
+      }
     }
     &_right {
-      width: 845px;
+      width: 52vw;
       height: 527px;
+      display: flex;
+      justify-content: right;
       &-purple-back {
         width: 585px;
         height: 470px;
         background-color: #7e5aff;
+        @include respond-to(tablet) {
+          display: none;
+        }
+        @include respond-to(phone) {
+          display: none;
+        }
       }
       &-img {
         position: absolute;
-        top: 40px;
-        left: 320px;
+        top: 55px;
+        right: 135px;
+        @include respond-to(tablet) {
+          position: static;
+        }
       }
     }
   }
   &__header_item {
     font-family: "Montserrat";
-    font-size: 44px;
+    font-size: clamp(1.375rem, 0.75rem + 2vw, 2.75rem);
     font-weight: 700;
     text-transform: uppercase;
     color: #2c4058;
-    margin-top: 0px;
   }
   &__header {
     margin: 0 auto;
@@ -109,17 +157,32 @@
   &__main-header {
     position: relative;
     left: 42px;
-    top: -5px;
   }
   &__trade_left-blue-back {
     width: 585px;
     height: 470px;
     background-color: #55b7ff;
+    @include respond-to(deskrina) {
+      width: 485px;
+    }
+    @include respond-to(tablet) {
+      display: none;
+    }
+    @include respond-to(phone) {
+      display: none;
+    }
   }
   &__trade_left-img {
     position: absolute;
     top: 58px;
-    left: 215px;
+    left: 14vw;
+    @include respond-to(deskrina) {
+      left: -120px;
+    }
+    @include respond-to(tablet) {
+      position: static;
+      margin: 0 auto;
+    }
   }
 }
 .over-head-text {
@@ -135,6 +198,9 @@
   text-transform: uppercase;
   width: 190px;
   height: 50px;
+  &__commerce {
+    padding: 15px 20px 20px;
+  }
 }
 .map-address {
   margin-top: 45px;

@@ -29,6 +29,10 @@
   width: 241px;
   height: 54px;
   margin-right: 95px;
+  @include respond-to(tablet) {
+    margin-right: 45px;
+  }
+
 }
 .logo__item {
   width: 241px;
@@ -49,15 +53,15 @@
 .header {
   margin: 0 auto;
   padding-top: 80px;
-  padding-left: 18px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   max-width: 1170px;
-  width: 73vw;
+  width: 71vw;
   height: 54px;
   @include respond-to(tablet) {
     width: 85vw;
+    padding-left: 8px;
   }
   &__container {
     z-index: 20;
@@ -70,21 +74,7 @@
     }
   }
 }
-.nav__list {
-  display: flex;
-  justify-content: space-between;
-  width: 32vw;
-  @include respond-to(tablet) {
-    width: 40vw;
-  }
-  &_item {
-    position: relative;
-    color: #fff;
-    font-family: "sourceSansPro";
-    font-size: 14px;
-    text-decoration: none;
-  }
-}
+
 .socials {
   margin-left: 20px;
   width: 160px;
@@ -93,21 +83,12 @@
   @include respond-to(phone) {
     display: none;
   }
+  &__item {
+    width: 40px;
+    height: 40px;
+  }
 }
-.social__item {
-  width: 40px;
-  height: 40px;
-}
-.nav__list_item::before {
-  content: "";
-  position: absolute;
-  top: 3px;
-  left: -15px;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  border: 1px solid #fff;
-}
+
 .active-list-item::before {
   content: "";
   position: absolute;
@@ -122,6 +103,43 @@
 .nav {
   @include respond-to(phone) {
     display: none;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    width: 32vw;
+    @include respond-to(tablet) {
+      width: 40vw;
+    }
+    &_item {
+      position: relative;
+      color: #fff;
+      font-family: "sourceSansPro";
+      font-size: 14px;
+      text-decoration: none;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 3px;
+        left: -15px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 1px solid #fff;
+      }
+    }
+  }
+  &.open {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
   }
 }
 .burger {
@@ -174,15 +192,4 @@
     transform: rotate(45deg);
   }
 }
-.nav.open {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
+

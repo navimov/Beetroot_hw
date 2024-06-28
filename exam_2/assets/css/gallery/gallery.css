@@ -22,7 +22,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 1170px;
+  width: 85vw;
   height: 722px;
 }
 .gallery__content_imgs {

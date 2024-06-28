@@ -22,50 +22,115 @@
     @media only screen and (min-width: 913px) {
       @content;
     }
+  } @else if $breakpoint == deskrina {
+    @media only screen and (min-width: 914px) and (max-width: 1360px) {
+      @content;
+    }
   }
 }
 .news {
   position: relative;
   width: 100%;
   height: 978px;
+  margin-top: 150px;
   padding: 120px 0 170px;
   background-image: url(../../img/retina/Background-news.webp);
   &__header {
+    position: relative;
+    left: 38px;
     font-family: "Montserrat";
     font-size: 44px;
     font-weight: 700;
     text-transform: uppercase;
     color: #fff;
     margin: 0 auto;
+    padding-top: 38px;
     width: 327px;
     height: 84px;
     &::before {
       content: "";
       position: absolute;
-      top: 90px;
-      left: 720px;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
       width: 100px;
       height: 1px;
       background-color: #fff;
     }
   }
   &__slider {
-    display: flex;
-    justify-content: space-between;
+    position: relative;
+    // left: 38px;
     height: 514px;
     width: 1170px;
     margin: 90px auto 0;
+    @include respond-to(deskrina) {
+      width: 800px;
+    }
+    @include respond-to(desctop) {
+      width: 800px;
+    }
+    @include respond-to(tablet) {
+      width: 500px;
+      height: 514px;
+    }
+    @include respond-to(phone) {
+      width: 370px;
+    }
     &_item {
       width: 370px;
       height: 100%;
       background-color: #fff;
+      margin: 0 20px;
       &-content {
         padding: 30px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 274px;
+      }
+    }
+  }
+  &-dots {
+    display: flex;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    gap: 42px;
+    bottom: -63px;
+    @include respond-to(phone) {
+      bottom: -25px;
+    }
+    & li {
+      position: relative;
+      &.slick-active button:before {
+        background: #fff;
+      }
+      & button {
+        color: transparent;
+        background: transparent;
+        border-color: transparent;
+        &:before {
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          content: "";
+          border-radius: 50%;
+          border: solid 1px #fff;
+          background: transparent;
+          @include respond-to(phone) {
+            width: 5px;
+            height: 5px;
+          }
+        }
       }
     }
   }
 }
 .slider__item {
+  &_img {
+    width: 100%;
+  }
   &_author-info {
     display: flex;
     gap: 20px;
@@ -104,4 +169,38 @@ time {
   font-size: 14px;
   font-weight: 400;
   color: #55b7ff;
+}
+.next-button {
+  &__item {
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    &:hover {
+      cursor: pointer;
+    }
+    @include respond-to(tablet) {
+      display: none;
+    }
+    @include respond-to(phone) {
+      display: none;
+    }
+  }
+}
+.prev-button {
+  &__item {
+    transform: rotate(90deg);
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    &:hover {
+      cursor: pointer;
+    }
+    @include respond-to(tablet) {
+      display: none;
+    }
+    @include respond-to(phone) {
+      display: none;
+    }
+  }
 }
