@@ -1,0 +1,77 @@
+.table-container {
+  display: grid;
+  grid-template-columns: (4, 1fr);
+  grid-template-rows: (4, 1fr);
+  grid-column-gap: 2px;
+  grid-row-gap: 2px;
+  background-color: #fff;
+  border: 2px solid #fff;
+  width: 1166px;
+  height: 500px;
+  margin: 35px 0;
+}
+#lisbon {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+  background-color: #3399cc;
+}
+#paris {
+  grid-column: 3/ 4;
+  grid-row: 1 / 2;
+  background-color: #33cccc;
+}
+#belgrade {
+  grid-column: 4/ 5;
+  grid-row: 1 / 2;
+  background-color: #996699;
+}
+#venice {
+  grid-column: 1/ 2;
+  grid-row: 2 / 3;
+  background-color: #c24747;
+}
+#tel-avive {
+  grid-column: 2/ 3;
+  grid-row: 2 / 3;
+  background-color: #e2674a;
+}
+#cair {
+  grid-column: 3/ 4;
+  grid-row: 2 / 3;
+  background-color: #ffcc66;
+}
+#new-york {
+  grid-column: 4/ 5;
+  grid-row: 2 / 3;
+  background-color: #99cc99;
+}
+#new-delhi {
+  grid-column: 1/ 2;
+  grid-row: 3 / 4;
+  background-color: #669999;
+}
+#san-francisco {
+  grid-column: 2/ 4;
+  grid-row: 3 / 4;
+  background-color: #cc6699;
+}
+#tokyo {
+  grid-column: 4/ 5;
+  grid-row: 3 / 4;
+  background-color: #339966;
+}
+#sydney {
+  grid-column: 1/ 5;
+  grid-row: 4 / 5;
+  background-color: #666699;
+}
+.item-content__temp {
+  display: flex;
+  align-items: center;
+  gap:11px;
+}
+.city {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
