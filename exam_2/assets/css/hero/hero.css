@@ -112,7 +112,7 @@
 }
 @media only screen and (max-width: 602px) {
   .slider__item {
-    background-image: url(../../img/tablet/webp/heromask.webp);
+    background-image: url(../../img/phone/webp/heromask.png);
   }
 }
 .slider__item_content {
