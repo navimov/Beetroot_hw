@@ -91,7 +91,7 @@
 }
 @media only screen and (min-width: 603px) and (max-width: 912px) {
   .slider {
-    background-image: url(../../img/desctop/hero-background.webp);
+    background-image: url(../../img/tablet/webp/hero-background.webp);
   }
 }
 @media only screen and (max-width: 602px) {
@@ -112,7 +112,7 @@
 }
 @media only screen and (max-width: 602px) {
   .slider__item {
-    background-image: url(../../img/phone/webp/heromask.png);
+    background-image: url(../../img/tablet/webp/heromask.webp);
   }
 }
 .slider__item_content {

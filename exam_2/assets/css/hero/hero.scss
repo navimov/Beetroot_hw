@@ -19,7 +19,7 @@
       @content;
     }
   } @else if $breakpoint == desktop {
-    @media only screen and (min-width: 913px) {
+    @media only screen and (min-width: 913px) and (max-width: 1400px) {
       @content;
     }
   }
@@ -90,7 +90,7 @@
   background-image: url(../../img/retina/hero-background.webp);
   background-repeat: no-repeat;
   @include respond-to(tablet) {
-    background-image: url(../../img/desctop/hero-background.webp);
+    background-image: url(../../img/tablet/webp/hero-background.webp);
   }
   @include respond-to(phone) {
     background-image: url(../../img/tablet/webp/hero-background.webp);
@@ -101,13 +101,13 @@
     width: 100%;
     padding: 223px 0 158px;
     @include respond-to(decktop) {
-      background-image: url(../../img/tablet/webp/heromask.webp);
+      background-image: url(../../img/decktop/webp/heromask.webp);
     }
     @include respond-to(tablet) {
       background-image: url(../../img/tablet/webp/heromask.webp);
     }
     @include respond-to(phone) {
-      background-image: url(../../img/phone/webp/heromask.png);
+      background-image: url(../../img/tablet/webp/heromask.webp);
     }
     &_content {
       position: relative;
