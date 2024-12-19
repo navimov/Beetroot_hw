@@ -28,11 +28,10 @@
 .logo-container {
   width: 241px;
   height: 54px;
-  margin-right: 95px;
+  margin-right: 85px;
   @include respond-to(tablet) {
     margin-right: 45px;
   }
-
 }
 .logo__item {
   width: 241px;
@@ -42,7 +41,6 @@
   }
 }
 .icons {
-  fill: transparent;
   width: 40px;
   height: 40px;
   @include respond-to(tablet) {
@@ -50,6 +48,7 @@
     height: 30px;
   }
 }
+
 .header {
   margin: 0 auto;
   padding-top: 80px;
@@ -192,4 +191,3 @@
     transform: rotate(45deg);
   }
 }
-

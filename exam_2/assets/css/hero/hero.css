@@ -12,7 +12,7 @@
 .hero {
   position: relative;
   width: 100%;
-  height: 50vw;
+  height: 100vh;
 }
 .hero__subtext {
   margin-top: 30px;
@@ -85,35 +85,26 @@
 }
 
 .slider {
-  width: 100%;
-  background-image: url(../../img/retina/hero-background.webp);
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../../img/retina/heromask.webp), url(../../img/retina/hero-background.webp);
   background-repeat: no-repeat;
 }
 @media only screen and (min-width: 603px) and (max-width: 912px) {
   .slider {
-    background-image: url(../../img/tablet/webp/hero-background.webp);
+    background-image: url(../../img/desctop/heromask.webp), url(../../img/desctop/hero-background.webp);
   }
 }
 @media only screen and (max-width: 602px) {
   .slider {
-    background-image: url(../../img/tablet/webp/hero-background.webp);
+    background-image: url(../../img/tablet/webp/heromask.webp), url(../../img/tablet/webp/hero-background.webp);
   }
 }
 .slider__item {
-  background-image: url(../../img/retina/heromask.webp);
-  background-size: cover;
   width: 100%;
-  padding: 223px 0 158px;
-}
-@media only screen and (min-width: 603px) and (max-width: 912px) {
-  .slider__item {
-    background-image: url(../../img/tablet/webp/heromask.webp);
-  }
-}
-@media only screen and (max-width: 602px) {
-  .slider__item {
-    background-image: url(../../img/tablet/webp/heromask.webp);
-  }
+  height: 100%;
+  background-size: cover;
+  padding-top: 25vh;
 }
 .slider__item_content {
   position: relative;
@@ -139,15 +130,13 @@
 @media only screen and (min-width: 603px) and (max-width: 912px) {
   .slider__item_content {
     width: 57vw;
-    height: 32vw;
-    margin: 0 auto;
+    height: 50vw;
   }
 }
 @media only screen and (max-width: 602px) {
   .slider__item_content {
     width: 57vw;
     height: 32vw;
-    margin: 0 auto;
   }
 }
 .slider__item_content-header {
@@ -181,7 +170,7 @@ h1 {
   }
 }
 
-.arrow {
-  position: absolute;
-  bottom: -110px;
+.arrows {
+  position: relative;
+  top: 10vh;
 }

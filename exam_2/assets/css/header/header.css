@@ -12,7 +12,7 @@
 .logo-container {
   width: 241px;
   height: 54px;
-  margin-right: 95px;
+  margin-right: 85px;
 }
 @media only screen and (min-width: 603px) and (max-width: 912px) {
   .logo-container {
@@ -31,7 +31,6 @@
 }
 
 .icons {
-  fill: transparent;
   width: 40px;
   height: 40px;
 }
