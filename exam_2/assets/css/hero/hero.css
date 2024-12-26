@@ -89,6 +89,7 @@
   height: 100vh;
   background-image: url(../../img/retina/heromask.webp), url(../../img/retina/hero-background.webp);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 @media only screen and (min-width: 603px) and (max-width: 912px) {
   .slider {
@@ -173,4 +174,6 @@ h1 {
 .arrows {
   position: relative;
   top: 10vh;
+  width: 42px;
+  height: 40px;
 }

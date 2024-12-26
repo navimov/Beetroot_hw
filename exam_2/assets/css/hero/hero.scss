@@ -91,6 +91,7 @@
   background-image: url(../../img/retina/heromask.webp),
     url(../../img/retina/hero-background.webp);
   background-repeat: no-repeat;
+  background-size: cover;
   @include respond-to(tablet) {
     background-image: url(../../img/desctop/heromask.webp),
       url(../../img/desctop/hero-background.webp);
@@ -147,4 +148,6 @@ h1 {
 .arrows {
   position: relative;
   top: 10vh;
+  width:42px;
+  height:40px;
 }
