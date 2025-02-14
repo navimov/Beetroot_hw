@@ -110,6 +110,10 @@
     @include respond-to(tablet) {
       width: 40vw;
     }
+    @include respond-to(phone) {
+      flex-direction: column;
+      width: 40vw;
+    }
     &_item {
       position: relative;
       color: #fff;

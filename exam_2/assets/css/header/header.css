@@ -127,6 +127,15 @@
     width: 40vw;
   }
 }
+@media only screen and (max-width: 602px) {
+  .nav__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 40vw;
+  }
+}
 .nav__list_item {
   position: relative;
   color: #fff;
