@@ -36,11 +36,14 @@
     font-weight: 400;
     color: white;
     letter-spacing: calc(18px / 100 * 30);
+    text-align: center;
     @include respond-to(tablet) {
-      font-size: 2vw;
+      font-size: 3vw;
+      line-height: 4vw;
     }
     @include respond-to(phone) {
-      font-size: 2vw;
+      font-size: 3vw;
+      line-height: 4vw;
     }
   }
   &-dots {
@@ -120,12 +123,13 @@
         height: 50vw;
       }
       @include respond-to(phone) {
-        width: 57vw;
+        width: 67vw;
         height: 32vw;
       }
       &-header {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
       }
     }
@@ -137,11 +141,12 @@ h1 {
   font-size: clamp(2.5rem, 1.6667rem + 3.3333vw, 5rem);
   letter-spacing: 8px;
   color: #fff;
+  text-align: center;
   @include respond-to(tablet) {
-    font-size: 5vw;
+    font-size: clamp(1.375rem, -0.6984rem + 5.5016vw, 2.4375rem);
   }
   @include respond-to(phone) {
-    font-size: 5vw;
+    font-size: 25px;
   }
 }
 .arrows {

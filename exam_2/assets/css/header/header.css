@@ -10,24 +10,31 @@
   font-weight: 400;
 }
 .logo-container {
-  width: 241px;
+  position: relative;
+  max-width: 241px;
   height: 54px;
-  margin-right: 85px;
+  width: 33vw;
+  margin-right: 10%;
 }
 @media only screen and (min-width: 603px) and (max-width: 912px) {
   .logo-container {
-    margin-right: 45px;
+    margin-right: 5%;
+  }
+}
+@media only screen and (max-width: 602px) {
+  .logo-container {
+    width: 100vw;
+    margin-right: 0;
   }
 }
 
-.logo__item {
-  width: 241px;
-  height: 54px;
-}
-@media only screen and (min-width: 603px) and (max-width: 912px) {
-  .logo__item {
-    width: 150px;
-  }
+#logo {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .icons {
@@ -54,7 +61,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   max-width: 1170px;
-  width: 71vw;
+  width: 90%;
   height: 54px;
 }
 @media only screen and (min-width: 603px) and (max-width: 912px) {
@@ -78,7 +85,9 @@
 
 .socials {
   margin-left: 20px;
-  width: 160px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -94,6 +103,10 @@
 .socials__item {
   width: 40px;
   height: 40px;
+}
+
+.socials > *:not(:first-child) {
+  margin-left: 10px;
 }
 
 .active-list-item::before {
