@@ -9,6 +9,10 @@
   src: url(../../fonts/source-sans-pro/sourcesanspro.woff2) format("woff2");
   font-weight: 400;
 }
+body {
+  overflow-x: hidden;
+}
+
 .hero {
   position: relative;
   width: 100%;
@@ -25,8 +29,8 @@
 }
 @media only screen and (min-width: 603px) and (max-width: 912px) {
   .hero__subtext {
-    font-size: 3vw;
-    line-height: 4vw;
+    font-size: 2vw;
+    line-height: 3vw;
   }
 }
 @media only screen and (max-width: 602px) {
@@ -126,20 +130,18 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 925px;
-  height: 420px;
+  height: 80vh;
   margin: 0 auto;
   padding: 114px 0;
 }
 @media only screen and (min-width: 603px) and (max-width: 912px) {
   .slider__item_content {
     width: 57vw;
-    height: 50vw;
   }
 }
 @media only screen and (max-width: 602px) {
   .slider__item_content {
     width: 67vw;
-    height: 32vw;
   }
 }
 .slider__item_content-header {
@@ -177,9 +179,12 @@ h1 {
   }
 }
 
+#whatwedo {
+  width: 42px;
+  height: 40px;
+}
+
 .arrows {
-  position: relative;
-  top: 10vh;
   width: 42px;
   height: 40px;
 }

@@ -10,7 +10,7 @@
   font-weight: 400;
 }
 .whatwedo {
-  margin-top: 165px;
+  margin-top: 13vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,7 +23,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 55px;
+  margin-top: 5vw;
 }
 @media only screen and (min-width: 603px) and (max-width: 912px) {
   .whatwedo__trade {
@@ -31,7 +31,6 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-top: -50px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;

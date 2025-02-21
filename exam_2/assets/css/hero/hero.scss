@@ -25,6 +25,10 @@
   }
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .hero {
   position: relative;
   width: 100%;
@@ -38,8 +42,8 @@
     letter-spacing: calc(18px / 100 * 30);
     text-align: center;
     @include respond-to(tablet) {
-      font-size: 3vw;
-      line-height: 4vw;
+      font-size: 2vw;
+      line-height: 3vw;
     }
     @include respond-to(phone) {
       font-size: 3vw;
@@ -115,16 +119,14 @@
       align-items: center;
       justify-content: space-between;
       width: 925px;
-      height: 420px;
+      height: 80vh;
       margin: 0 auto;
       padding: 114px 0;
       @include respond-to(tablet) {
         width: 57vw;
-        height: 50vw;
       }
       @include respond-to(phone) {
         width: 67vw;
-        height: 32vw;
       }
       &-header {
         display: flex;
@@ -149,9 +151,11 @@ h1 {
     font-size: 25px;
   }
 }
+#whatwedo {
+  width: 42px;
+  height: 40px;
+}
 .arrows {
-  position: relative;
-  top: 10vh;
   width: 42px;
   height: 40px;
 }

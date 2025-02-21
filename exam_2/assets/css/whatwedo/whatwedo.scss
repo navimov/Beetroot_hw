@@ -29,15 +29,14 @@
   }
 }
 .whatwedo {
-  margin-top: 165px;
+  margin-top: 13vw;
   display: flex;
   flex-direction: column;
   &__trade {
     display: flex;
-    margin-top: 55px;
+    margin-top: 5vw;
     @include respond-to(tablet) {
       flex-direction: column;
-      margin-top: -50px;
       justify-content: center;
       align-items: center;
     }
