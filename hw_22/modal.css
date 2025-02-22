@@ -3,8 +3,7 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   z-index: 100;
   text-align: center;
   width: 300px;
@@ -19,8 +18,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 200px;
   height: 100px;
   font-size: 50px;
@@ -39,4 +37,4 @@
 }
 #modal_wrapper.modal_open {
   display: block;
-}
+}/*# sourceMappingURL=modal.css.map */

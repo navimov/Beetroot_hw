@@ -17,8 +17,7 @@
   font-size: 32px;
   line-height: 39px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   text-transform: uppercase;
   color: #000000;
 }
@@ -27,12 +26,8 @@
   height: 65px;
 }
 .partners-slider__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 .partners-slider__prev {
   position: absolute;
@@ -47,8 +42,7 @@
 }
 .partners-slider__prev-hovered {
   background: url(../../pictures/icons/next-active.svg);
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 @media only screen and (min-width: 603px) and (max-width: 912px) {
   .partners-slider__prev {
@@ -92,8 +86,6 @@
 }
 
 .partners-dots {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 30px;
   position: absolute;
@@ -104,8 +96,7 @@
   .partners-dots {
     gap: 10px;
     bottom: -60px;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    transform: translateX(-50%);
   }
 }
 
@@ -136,4 +127,4 @@
 
 .partners-dots li.slick-active button:before {
   background: var(--tomato-light);
-}
+}/*# sourceMappingURL=partners.css.map */

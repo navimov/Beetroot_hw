@@ -13,16 +13,9 @@
   width: 470px;
   height: 120px;
   margin-top: 21px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
 @media only screen and (max-width: 599px) {
   .contacts__text_block {
@@ -36,35 +29,21 @@
   font-weight: 400;
 }
 .contacts__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   width: 100%;
   height: 240px;
 }
 @media only screen and (min-width: 600px) and (max-width: 899px) {
   .contacts__container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 @media only screen and (max-width: 599px) {
   .contacts__container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
@@ -94,31 +73,7 @@ form > input:last-child {
   height: 24px;
 }
 
-#user-name::-webkit-input-placeholder, #user-email::-webkit-input-placeholder, #tell-more::-webkit-input-placeholder {
-  font-style: italic;
-  font-family: "PlayfairDisplay";
-  font-size: 18px;
-  line-height: 20px;
-  letter-spacing: 1.44px;
-}
-
 #user-name::-moz-placeholder, #user-email::-moz-placeholder, #tell-more::-moz-placeholder {
-  font-style: italic;
-  font-family: "PlayfairDisplay";
-  font-size: 18px;
-  line-height: 20px;
-  letter-spacing: 1.44px;
-}
-
-#user-name:-ms-input-placeholder, #user-email:-ms-input-placeholder, #tell-more:-ms-input-placeholder {
-  font-style: italic;
-  font-family: "PlayfairDisplay";
-  font-size: 18px;
-  line-height: 20px;
-  letter-spacing: 1.44px;
-}
-
-#user-name::-ms-input-placeholder, #user-email::-ms-input-placeholder, #tell-more::-ms-input-placeholder {
   font-style: italic;
   font-family: "PlayfairDisplay";
   font-size: 18px;
@@ -139,16 +94,9 @@ form > input:last-child {
 .form-container form {
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .submit-link {
@@ -163,4 +111,4 @@ form > input:last-child {
 #user-name,
 #user-email {
   color: white;
-}
+}/*# sourceMappingURL=contacts.css.map */
