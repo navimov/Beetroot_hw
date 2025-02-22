@@ -36,7 +36,7 @@ body {
   &__subtext {
     margin-top: 30px;
     font-family: "Montserrat";
-    font-size: 19px;
+    font-size: 18px;
     font-weight: 400;
     color: white;
     letter-spacing: calc(18px / 100 * 30);
@@ -53,7 +53,6 @@ body {
   &-dots {
     display: flex;
     flex-direction: column;
-    gap: 30px;
     gap: 30px;
     position: absolute;
     top: 35%;
@@ -85,7 +84,7 @@ body {
           background: transparent;
           @include respond-to(phone) {
             width: 5px;
-            height: 5px;
+            height: 105px;
           }
         }
       }

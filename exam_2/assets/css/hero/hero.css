@@ -21,7 +21,7 @@ body {
 .hero__subtext {
   margin-top: 30px;
   font-family: "Montserrat";
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 400;
   color: white;
   letter-spacing: 5.4px;
@@ -42,7 +42,6 @@ body {
 .hero-dots {
   display: flex;
   flex-direction: column;
-  gap: 30px;
   gap: 30px;
   position: absolute;
   top: 35%;
@@ -83,7 +82,7 @@ body {
 @media only screen and (max-width: 602px) {
   .hero-dots li button:before {
     width: 5px;
-    height: 5px;
+    height: 105px;
   }
 }
 
