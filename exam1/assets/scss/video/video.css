@@ -1,9 +1,16 @@
 .video {
   width: 67vw;
   height: 54vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0 100px;
 }
 @media only screen and (min-width: 600px) and (max-width: 899px) {
@@ -55,13 +62,17 @@
   left: 10px;
   width: 10px;
   height: 10px;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 .video__wrapper::after {
   right: 10px;
   width: 35px;
   height: 35px;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 @media only screen and (min-width: 600px) and (max-width: 899px) {
   .video__wrapper::after {
@@ -101,4 +112,4 @@ video {
 
 video::-webkit-media-controls {
   opacity: 0;
-}/*# sourceMappingURL=video.css.map */
+}

@@ -1,8 +1,12 @@
 @import url(../variables/variables.css);
 @import url(../../fonts/fonts.css);
 .arrivals__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 70px 0 50px;
   font-size: 32px;
   font-weight: 600;
@@ -34,10 +38,19 @@
   background-color: var(--brown-light);
 }
 .arrivals-slider__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border: 1px solid var(--brown-light);
   margin: 0 10px;
   height: inherit !important;
@@ -49,7 +62,9 @@
   position: relative;
   left: 50%;
   top: 0;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 .arrivals-slider__title {
   font-family: "montserrat";
@@ -70,7 +85,9 @@
 }
 .arrivals-slider__prev-hovered {
   background: url(../../pictures/icons/next-active.svg);
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 @media only screen and (min-width: 603px) and (max-width: 912px) {
   .arrivals-slider__prev {
@@ -124,7 +141,9 @@
 .view-more {
   position: relative;
   left: 50vw;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   width: 227px;
   height: 50px;
   font-family: "montserrat";
@@ -139,6 +158,8 @@
 }
 
 .arrivals-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 30px;
   position: absolute;
@@ -149,7 +170,9 @@
   .arrivals-dots {
     gap: 20px;
     bottom: -40px;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 }
 
@@ -174,4 +197,4 @@
 
 .arrivals-dots li.slick-active button:before {
   background: var(--tomato-light);
-}/*# sourceMappingURL=arrivals.css.map */
+}

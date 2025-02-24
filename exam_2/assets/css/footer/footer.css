@@ -15,8 +15,12 @@
   height: 549px;
 }
 .footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 770px;
   height: 112px;
   margin: 0 auto;
@@ -29,4 +33,4 @@
   font-weight: 400;
   color: #fff;
   margin-top: 41px;
-}/*# sourceMappingURL=footer.css.map */
+}

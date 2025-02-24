@@ -1,17 +1,28 @@
 .rights {
   width: 100%;
   height: 86px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-top: 1px solid var(--divider-color);
 }
 @media only screen and (max-width: 599px) {
   .rights {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 .rights__agree-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .rights__agree-block .rights__text:first-child {
@@ -37,4 +48,4 @@
 
 span.rights__sub-text {
   padding-right: 12px;
-}/*# sourceMappingURL=rights.css.map */
+}

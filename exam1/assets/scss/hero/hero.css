@@ -4,9 +4,16 @@
 }
 @media only screen and (max-width: 599px) {
   .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
   }
 }
@@ -41,6 +48,7 @@
 }
 
 .link {
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   font-weight: 700;
@@ -70,4 +78,4 @@
   background-color: rgba(83, 243, 205, 0.3);
   bottom: -2px;
   left: 8%;
-}/*# sourceMappingURL=hero.css.map */
+}

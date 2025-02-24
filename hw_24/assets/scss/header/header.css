@@ -1,9 +1,15 @@
 @import url(../variables/variables.css);
 @import url(../../fonts/fonts.css);
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0 100px;
   height: 80px;
   width: 100%;
@@ -81,7 +87,8 @@
 .nav__item {
   display: inline-block;
   height: 100%;
-  align-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   padding-right: 15px;
   padding-left: 15px;
   text-decoration: none;
@@ -111,7 +118,9 @@
   position: absolute;
   right: 135px;
   bottom: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   cursor: pointer;
 }
 @media only screen and (max-width: 602px) {
@@ -136,6 +145,7 @@
   width: 100%;
   background-color: var(--black);
   left: 0;
+  -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
 .burger span::before {
@@ -149,23 +159,38 @@
 }
 .burger.active span::before {
   top: 45%;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 .burger.active span::after {
   bottom: 50%;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .nav.open {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   background-color: var(--brown-light);
-}/*# sourceMappingURL=header.css.map */
+}

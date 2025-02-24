@@ -10,8 +10,13 @@
 .cta {
   color: var(--brown-light);
   width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 50px;
   position: absolute;
   top: 120px;
@@ -67,10 +72,13 @@
 }
 .cta__btn-hovered {
   background-color: var(--tomato-light);
+  -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
 
 .hero-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 30px;
   position: absolute;
@@ -81,7 +89,9 @@
   .hero-dots {
     gap: 20px;
     bottom: 20px;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 }
 
@@ -106,4 +116,4 @@
 
 .hero-dots li.slick-active button:before {
   background: var(--tomato-light);
-}/*# sourceMappingURL=hero.css.map */
+}
