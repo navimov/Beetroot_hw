@@ -40,13 +40,13 @@
 }
 @media only screen and (min-width: 603px) and (max-width: 912px) {
   .whatwedo__header_item {
-    margin: 0 auto;
+    text-align: center;
     margin-bottom: 1.5rem;
   }
 }
 @media only screen and (max-width: 602px) {
   .whatwedo__header_item {
-    margin: 0 auto;
+    text-align: center;
     margin-bottom: 1.5rem;
   }
 }
@@ -96,12 +96,12 @@
 }
 @media only screen and (min-width: 603px) and (max-width: 912px) {
   .whatwedo__trade_right {
-    width: 70%;
+    width: 80%;
   }
 }
 @media only screen and (max-width: 602px) {
   .whatwedo__trade_right {
-    width: 70%;
+    width: 80%;
   }
 }
 .whatwedo__trade_right-desc {
@@ -176,6 +176,30 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media only screen and (min-width: 603px) and (max-width: 912px) {
+  .whatwedo__commerce {
+    width: 100%;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+@media only screen and (max-width: 602px) {
+  .whatwedo__commerce {
+    width: 100%;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+.whatwedo__commerce_picture {
+  width: 100%;
+  height: 100%;
+}
 .whatwedo__commerce_left {
   width: 33.935%;
   height: 350px;
@@ -183,7 +207,14 @@
 }
 @media only screen and (min-width: 603px) and (max-width: 912px) {
   .whatwedo__commerce_left {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 602px) {
+  .whatwedo__commerce_left {
+    width: 80%;
+    margin: 0 auto;
   }
 }
 .whatwedo__commerce_left-desc {
@@ -198,6 +229,18 @@
   position: relative;
   width: 61%;
   height: 100%;
+}
+@media only screen and (min-width: 603px) and (max-width: 912px) {
+  .whatwedo__commerce_right {
+    width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 602px) {
+  .whatwedo__commerce_right {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 .whatwedo__commerce_right-purple-back {
   position: absolute;
@@ -222,12 +265,20 @@
   left: 0;
   bottom: 0;
   width: 74.5562%;
-  height: 89.184%;
+  height: auto;
+}
+@media only screen and (min-width: 603px) and (max-width: 912px) {
+  .whatwedo__commerce_right-img {
+    margin: 0 auto 5vh;
+    position: static;
+  }
 }
 @media only screen and (max-width: 602px) {
   .whatwedo__commerce_right-img {
+    margin: 0 auto 5vw;
+    position: static;
+    height: auto;
     width: 100%;
-    height: 100%;
   }
 }
 .whatwedo__main-header {
@@ -266,6 +317,18 @@
   font-family: "montserrat";
   font-size: clamp(1rem, 0.7108rem + 0.7673vw, 1.375rem);
   text-transform: uppercase;
+}
+@media only screen and (min-width: 603px) and (max-width: 912px) {
+  .over-head-text {
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 602px) {
+  .over-head-text {
+    text-align: center;
+  }
 }
 
 .button {

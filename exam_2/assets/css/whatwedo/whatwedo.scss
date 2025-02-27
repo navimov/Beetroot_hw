@@ -50,11 +50,11 @@
   font-weight: 700;
   margin-bottom:19px;
   @include respond-to(tablet) {
-    margin: 0 auto;
+    text-align: center;
     margin-bottom:1.5rem;
   }
-  @include respond-to(phone) {
-    margin: 0 auto;
+  @include respond-to(phone) {    
+    text-align: center;
     margin-bottom:1.5rem;
   }
 }
@@ -81,10 +81,10 @@
       height:auto;     
       margin-bottom: 26px;
       @include respond-to(tablet) {
-        width:70%;
+        width:80%;
        }  
        @include respond-to(phone) {
-        width:70%;
+        width:80%;
        }  
       &-desc{
         font-family: "open sans";
@@ -111,7 +111,6 @@
         background: #55b7ff;
         width:69.2307%;
         height:89.1840%; 
-
       }
       &-img{
         position: absolute;
@@ -144,12 +143,31 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    @include respond-to(tablet) {
+      width:100%;
+      height:auto;
+      flex-direction: column-reverse;
+     }
+     @include respond-to(phone) {
+      width:100%;
+      height:auto;
+      flex-direction: column-reverse;
+     }
+     &_picture{
+      width:100%;
+      height:100%;
+    }
     &_left{
       width: 33.9350%;
       height:350px;     
       margin-bottom: 26px;
       @include respond-to(tablet) {
-        width:100%;
+        width:80%;
+        margin:0 auto;
+       }
+       @include respond-to(phone) {
+        width:80%;
+        margin:0 auto;
        }
       &-desc{
         font-family: "open sans";
@@ -164,6 +182,14 @@
       position:relative;
       width: 61%;
       height:100%;
+      @include respond-to(tablet) {
+        width:100%;
+        height:auto;
+       }
+       @include respond-to(phone) {
+        width:80%;
+        margin:0 auto;
+       }
       &-purple-back {
         position:absolute;
         top:0;
@@ -182,12 +208,18 @@
         position: absolute;
         left: 0;
         bottom:0;
-        width:74.5562%;
-        height:89.1840%;     
-        @include respond-to(phone) {
-          width:100%;
-          height:100%;  
-         } 
+        width:74.5562%;  
+        height:auto;
+        @include respond-to(tablet) {
+          margin:0 auto 5vh;
+           position: static;  
+          } 
+         @include respond-to(phone) {
+           margin:0 auto 5vw;
+           position: static;
+           height:auto;
+           width:100%;  
+          } 
       }
     }   
   }
@@ -223,6 +255,14 @@ text-align: center;
   font-family: "montserrat";
   font-size: clamp(1rem, 0.7108rem + 0.7673vw, 1.375rem);
   text-transform: uppercase;
+  @include respond-to(tablet) {
+    display: inline-block;
+    text-align: center;
+    margin:0 auto;
+   }
+   @include respond-to(phone) {
+    text-align: center;
+   }
 }
 .button{
   width:190px;
