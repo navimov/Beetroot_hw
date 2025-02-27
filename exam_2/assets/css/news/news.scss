@@ -30,11 +30,12 @@
 }
 .news {
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 978px;
-  margin-top: 150px;
-  padding: 120px 0 170px;
+  margin-top: 9.375vw;
+  padding-top: 7.5vw;
   background-image: url(../../img/retina/Background-news.webp);
+  background-size: cover;
   &__header {
     position: relative;
     left: 38px;
@@ -47,6 +48,12 @@
     padding-top: 38px;
     width: 327px;
     height: 84px;
+    @include respond-to(phone) {
+      position: static;
+      margin:0 auto;
+      width: fit-content;
+      font-size: clamp(1.75rem, 1.2095rem + 2.7027vw, 2.75rem);
+      }
     &::before {
       content: "";
       position: absolute;
@@ -55,27 +62,17 @@
       transform: translateX(-50%);
       width: 100px;
       height: 1px;
-      background-color: #fff;
-    }
+      background-color: #fff;  
+      @include respond-to(phone) {
+        top: 50px;
+      }
   }
+}
   &__slider {
     position: relative;
-    height: 514px;
-    width: 1170px;
-    margin: 90px auto 0;
-    @include respond-to(deskrina) {
-      width: 800px;
-    }
-    @include respond-to(desctop) {
-      width: 800px;
-    }
-    @include respond-to(tablet) {
-      width: 500px;
-      height: 514px;
-    }
-    @include respond-to(phone) {
-      width: 370px;
-    }
+    height: auto;
+    width: 73.125vw;
+    margin: 5.625vw auto;
     &_item {
       width: 370px;
       height: 100%;
@@ -86,7 +83,13 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 274px;
+        height: 294px;
+        @include respond-to(tablet) {
+          height: 320px;
+        }
+        @include respond-to(phone) {
+          height: auto;
+        }
       }
     }
   }
@@ -96,9 +99,9 @@
     transform: translateX(-50%);
     left: 50%;
     gap: 42px;
-    bottom: -63px;
+    bottom: -65px;
     @include respond-to(phone) {
-      bottom: -25px;
+      bottom: -65px;
     }
     & li {
       position: relative;
@@ -126,6 +129,7 @@
     }
   }
 }
+
 .slider__item {
   &_img {
     width: 100%;
@@ -147,6 +151,10 @@
     text-transform: uppercase;
     padding-bottom: 15px;
     color: #2c4058;
+    @include respond-to(phone) {
+      font-size: clamp(1rem, 0.5745rem + 2.1277vw, 1.375rem);      
+    text-align: center;
+    }
   }
   &_desc {
     font-family: "Open Sans";
@@ -173,33 +181,35 @@ time {
   &__item {
     transform: rotate(-90deg);
     position: absolute;
-    top: 35%;
-    right: -100px;
+    top: 52%;
+    right: 6.25vw;
+    width: 48px;
+    height: 48px;
     &:hover {
       cursor: pointer;
     }
     @include respond-to(tablet) {
-      display: none;
+      z-index: -1;
     }
     @include respond-to(phone) {
-      display: none;
+      z-index: -1;
     }
   }
 }
-.prev-button {
-  &__item {
+.prev-button__item {
     transform: rotate(90deg);
     position: absolute;
-    top: 63%;
-    left: -100px;
+    top: 52%;
+    left: 6.25vw;
+    width: 48px;
+    height: 48px;
     &:hover {
       cursor: pointer;
     }
     @include respond-to(tablet) {
-      display: none;
+      z-index: -1;
     }
     @include respond-to(phone) {
-      display: none;
+      z-index: -1;
     }
-  }
 }

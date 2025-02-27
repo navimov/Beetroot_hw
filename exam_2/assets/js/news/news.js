@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $(".news__slider").slick({
-    autoplay: true,
+    autoplay: false,
     slidesToShow: 3,
     arrows: true,
     prevArrow: $(".prev-button__item"),
@@ -15,7 +15,7 @@ $(document).ready(function () {
         },
       },
       {
-        breakpoint: 900,
+        breakpoint: 800,
         settings: {
           slidesToShow: 1,
         },
