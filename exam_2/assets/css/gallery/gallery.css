@@ -12,7 +12,7 @@
 .gallery {
   width: 73.125vw;
   height: auto;
-  margin: 150px auto 0;
+  margin: 150px auto 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

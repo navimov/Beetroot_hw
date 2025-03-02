@@ -37,6 +37,11 @@
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
+@media only screen and (max-width: 602px) {
+  #logo {
+    left: 60%;
+  }
+}
 
 .icons {
   width: 40px;

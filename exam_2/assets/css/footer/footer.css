@@ -11,9 +11,19 @@
 }
 .footer {
   background-image: url(../../img/retina/Backgroundfooter.webp);
-  width: 100%;
+  width: 100vw;
   height: 549px;
   background-size: cover;
+}
+@media only screen and (min-width: 603px) and (max-width: 912px) {
+  .footer {
+    height: 349px;
+  }
+}
+@media only screen and (max-width: 602px) {
+  .footer {
+    height: 349px;
+  }
 }
 .footer__container {
   display: -webkit-box;
@@ -22,10 +32,26 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 770px;
+  max-width: 770px;
+  width: 80%;
   height: 112px;
   margin: 0 auto;
   padding-top: 203px;
+}
+@media only screen and (max-width: 602px) {
+  .footer__container {
+    padding-top: 103px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .rights {
