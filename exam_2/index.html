@@ -344,39 +344,51 @@
         </section>
         <section class="gallery">
           <h2 class="gallery__head">Gallery</h2>
-          <div class="gallery__collection">
+          <div class="gallery__collection">         
+             <div class="collection__block">
+              <picture class="collection__picture">
+                <source
+                  srcset="assets/img/phone/webp/business-center.webp"
+                  media="(max-width:600px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="assets/img/tablet/webp/business-center.webp"
+                  media="(max-width:900px)"
+                  type="image/webp"
+                />
+                <img
+                  src="assets/img/desctop/business-center.webp"
+                  alt="business center"
+                />
+              </picture>
+              <div class="collection__grid">
+               <img
+                class="collection__grid_item"
+                src="assets/img/general/high-building.webp"
+                alt="high-building office"
+              /> 
+              <img
+              class="collection__grid_item"
+              src="assets/img/general/brown-building.webp"
+              alt="brown-building office"
+            />
+            <img
+            class="collection__grid_item"
+            src="assets/img/general/half-round-building.webp"
+            alt="half-round-building office"
+          />
+          <img
+          class="collection__grid_item"
+          src="assets/img/general/futuristic-building.webp"
+          alt="futuristic-building office"
+        />
+              </div>
+             </div>
           <button class="gallery-button button">see more</button>
         </div>
         </section>
-        <!-- <section class="map">
-          <div id="contacts" class="map__getInTouch">
-            <h2 class="getInTouch__head">get in touch</h2>
-            <div class="map__content">
-              <div class="map__content_left">
-                <img
-                  src="assets/img/desctop/contacts.png"
-                  alt="contacts"
-                  class="contacts"
-                />
-              </div>
-              <div class="map__content_right">
-                <p class="form__header">mobile medina</p>
-                <form action="" method="get" class="form">
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Email"
-                    required
-                  />
-                  <button class="button button__submit" type="submit">
-                    submit
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </section>-->
+        
       </main>
       <!--
       <footer class="footer">
