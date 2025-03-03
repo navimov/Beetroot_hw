@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head>    
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/reset/reset.css" />
@@ -15,6 +15,17 @@
       href="assets/slick/slick-1.8.1/slick/slick-theme.css"
     />
     <link rel="stylesheet" href="assets/css/index.css" />
+    <!--mapppppppppppppppppppppppp-->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsjhUPBMM4ww-WPUKJDdFiFXgnso1KNnQ&callback=initMap"></script>
+    <script>
+      function initMap() {
+        let map = new google.maps.Map(document.getElementById('map__container'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+    </script>
+       <!--mappppppppppppppppppppppppppppppppppppppp-->
   </head>
   <body>
     <div class="container">
@@ -388,7 +399,50 @@
           <button class="gallery-button button">see more</button>
         </div>
         </section>
-        
+        <section class="map">
+          <div id="map__container"></div>
+        <div class="contacts">
+          <h2 class="contact__header">get in touch</h2>
+          <div class="contacts__container">
+            <address class="address__container">
+              <div class="address__container_item">
+                <img src="assets/icons/location-marker.svg" alt="dot geolocation" />
+              <p>91 Nolan Extension Suite 670</p>
+            </div>
+              <div class="address__container_item">
+                <img src="assets/icons/phone.svg" alt="phone" />
+                <a href="tel:001 3568682454">001 356-868-2454</a>
+              </div>
+              <div class="address__container_item"> 
+                <img src="assets/icons/email.svg" alt="email" />
+                <a href="mailto:montichello@service.com">montichello@service.com</a>
+              </div>
+                <div class="address__container_item">
+                  <img src="assets/icons/clock.svg" alt="time" />
+                  <p>From <time>07:05</time>AM to <time>19:30</time>PM</p>
+                </div>
+            </address>
+            <form action="#" class="contacts-form">
+              <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="1"
+              class="contacts-form__textarea"
+              placeholder="Your Message">
+            </textarea>
+              <input
+                type="email"
+                class="contacts-form__input"
+                placeholder="Email"
+              />
+            
+              <button class="button contacts__button">submit</button>                                          
+            </form>
+          </div>
+          
+        </div>
+        </section>
       </main>
       <footer class="footer">
         <div class="footer__container">
@@ -396,7 +450,7 @@
             <img src="assets/img/svg/logo.svg" alt="logo" />
             <p class="rights">Copyrights © 2020 Montichello</p>
           </div>
-          <div class="footer__socials">
+          <div id="contacts" class="footer__socials">
             <a href="https://www.facebook.com" class="social__item">
               <svg class="icons">
                 <use

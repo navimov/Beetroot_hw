@@ -10,6 +10,7 @@
   font-weight: 400;
 }
 .footer {
+  z-index: 1;
   background-image: url(../../img/retina/Backgroundfooter.webp);
   width: 100vw;
   height: 549px;
